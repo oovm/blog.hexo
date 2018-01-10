@@ -1,7 +1,22 @@
+# 缓存文件
 .DS_Store
 Thumbs.db
 db.json
+
+# 日志文件
 *.log
+
+# Idea 工程文件
+.idea/
+
+# build 工程
 node_modules/
 public/
 .deploy*/
+
+# Github 同步调整
+.github*/
+
+# NexT 同步调整
+themes/next/docs/
+themes/next/README.md
