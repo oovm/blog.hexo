@@ -36,3 +36,19 @@ $$\sum_{n\geq 0}n^{k}f_{n}z^{n}=\sum_{j=0}^{k}\left\{\begin{matrix}k\\j\end{matr
 $$ \sum (f *g)(n):=\left(\sum_{n=0}^\infty f_n x^n\right) \cdot \left(\sum_{n=0}^\infty g_n x^n\right) = \sum_{k=0}^\infty h_n x^n$$
 
 where $\displaystyle h_{k}=\sum_{l=0}^{k}f_{l}g_{k-l}$.
+
+
+### Faá di Bruno 复合
+
+
+$$\widehat {H}(z):=\widehat {F}(\widehat {G}(z))=\sum_{n=0}^{\infty }{\frac {h_n}{n!}}z^n$$
+
+where: $\displaystyle h_n=\sum_{1\leq k\leq n}f_k\cdot B_{n,k}(g_1,g_2,\cdots,g_{n-k+1})+f_0\cdot\delta_{n,0}$
+
+### 取自幂
+
+$$ F(z)^{m}=f_{0}^{m}+\sum_{n\geq 1}\left(\sum_{1\leq k\leq n}(m)_{k}f_{0}^{m-k}B_{n,k}(f_{1}\cdot 1!,f_{2}\cdot 2!,\ldots )\right){\frac {z^{n}}{n!}}$$
+
+### 取对数
+
+$$\log F(z)=\sum_{n\geq 1}\left(\sum_{1\leq k\leq n}(-1)^{k-1}(k-1)!B_{n,k}(f_{1}\cdot 1!,f_{2}\cdot 2!,\ldots )\right){\frac {z^{n}}{n!}}$$

@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://0x0.life
 root: /
-permalink: :year/:month/:title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -73,7 +73,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-
+plugins:
+  # - hexo-math
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
