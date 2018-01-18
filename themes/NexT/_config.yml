@@ -373,14 +373,8 @@ font:
 # Math Equations Render Support
 math:
   enable: true
-
-  # Default(true) will load mathjax/katex script on demand
-  # That is it only render those page who has 'mathjax: true' in Front Matter.
-  # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
-  per_page: false
-
-  engine: mathjax
-  # engine: katex
+  per_page: false # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
+  engine: katex
 
   # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
   mathjax:
@@ -395,9 +389,9 @@ math:
   # needed to full Katex support.
   katex:
     # Use Katex 0.7.1 as default
-    # cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
+    cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
     # If you want to try the latest version of Katex, use one below instead
-    cdn: //cdn.jsdelivr.net/katex/latest/katex.min.css
+    # cdn: //cdn.jsdelivr.net/katex/latest/katex.min.css
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
