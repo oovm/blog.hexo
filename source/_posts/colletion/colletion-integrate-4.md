@@ -40,7 +40,7 @@ $$\begin{aligned}
 &=\frac{\Gamma(1+\frac{1}{n})^2}{\Gamma(1 + \frac{2}{n})}\quad\square
 \end{aligned}$$
 
-* * *
+---
 
 然后看个类似的:
 
@@ -86,7 +86,7 @@ $$\begin{aligned}
 &=\large{{\frac{\pi}{b\sin\left(\frac{a\pi}{b}\right)}}}
 \end{aligned}$$
 
-* * *
+---
 
 一个研究简单高次曲线时会碰到的积分:
 
@@ -111,7 +111,7 @@ I &= \frac{1}{n}\int_0^1 {\left[ {{t^{ - 1/n}}{{\left( {1/t - 1} \right)}^{1/n -
 
 然后用这个引理:
 
-$$\int_0^1 {\frac{{{t^a} - 1}}{{{{(1 - t)}^{2/n + 1}}}}}  dt = \frac{n}{2} + \Gamma (a + 1)\Gamma ( - \frac{2}{n})/(a - \frac{2}{n})!\quad n &gt; 2$$
+$$\int_0^1 {\frac{{{t^a} - 1}}{{{{(1 - t)}^{2/n + 1}}}}}  dt = \frac{n}{2} + \Gamma (a + 1)\Gamma ( - \frac{2}{n})/(a - \frac{2}{n})!\quad n > 2$$
 
 合起来就是:
 
@@ -127,7 +127,7 @@ $$\begin{aligned}
 
 $$\bigstar\int_0^\infty  ( \sqrt[m]{{1 + {x^n}}} - \sqrt[m]{{{x^n}}})dx = \frac{n}{{n + m}}C{\left( { - \frac{1}{m},\frac{1}{n}} \right)^{ - 1}}$$
 
-* * *
+---
 
 来道水题放松下:
 
@@ -140,7 +140,7 @@ $$\begin{aligned}
 &= \frac{\pi}{2} \sec \frac{\pi}{2n}
 \end{aligned}$$
 
-* * *
+---
 
 $$S(a) = a \cdot {2^{a - 1}}\left[ {\frac{1}{2}\;\beta \left( {\frac{a}{2},\;\frac{a}{2}} \right)\; + \beta \left( {\frac{{a + 1}}{2},\;\frac{{a + 1}}{2}} \right)} \right]$$
 

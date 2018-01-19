@@ -62,7 +62,7 @@ I &= \alpha \mathop {\lim }\limits_{n \to \infty } \left( {\sum\limits_{k = 2}^{
 &= \alpha \log \alpha \quad \square
 \end{aligned}$$
 
-* * *
+---
 
 也不是没有简单点的解法,用取整函数的傅里叶展开式:
 
@@ -76,7 +76,7 @@ I &= - a\int_{1/a}^1 d q\left( {\frac{1}{{2{q^2}}} - \frac{1}{q}} \right) + \fra
 &= a\ln a\quad\square
 \end{aligned}$$
 
-* * *
+---
 
 一道经典题,求证:
 
@@ -100,11 +100,11 @@ $$\begin{aligned}
 &= \frac{{{\pi ^2}}}{6} - 1
 \end{aligned}$$
 
-* * *
+---
 
 这是这个积分的特例.
 
-$$\int_0^1 {{{ \lfloor {x^{ - 1}} \rfloor }^{ - 1}}} ((s + 1){x^s} - s{x^{s - 1}})dx = \zeta (s + 2) - 1\quad s &gt; 0$$
+$$\int_0^1 {{{ \lfloor {x^{ - 1}} \rfloor }^{ - 1}}} ((s + 1){x^s} - s{x^{s - 1}})dx = \zeta (s + 2) - 1\quad s > 0$$
 
 证,设$t = {x^{ - 1}},dx =  - {t^{ - 2}}dt$
 
@@ -112,9 +112,9 @@ $$\begin{aligned}
 \int_{1}^\infty \lfloor t\rfloor^{-1} t^{-(s+2)}dt
 &= \sum_{k=1}^\infty \frac{1}k\int_{k}^{k+1}t^{-(s+2)}dt \\&= \frac{1}{s+1}\sum_{k=1}^\infty \frac{1}{k}\left(k^{-(s+1)}-(k+1)^{-(s+1)}\right)\\
 &= \frac{1}{s+1}\left(\sum_{k=1}^\infty \frac{1}{k^{s+2}}-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}}\right)\\
-\int_0^1 \lfloor x^{-1} \rfloor^{-1} (s+1)\:x^s \:\mathrm dx &= \zeta(s+2)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}} \quad s &gt;1\\
-\int_0^1 \lfloor x^{-1} \rfloor^{-1} s\:x^{s-1} \:\mathrm dx &= \zeta(s+1)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}} \quad\quad s &gt;2\\
+\int_0^1 \lfloor x^{-1} \rfloor^{-1} (s+1)\:x^s \:\mathrm dx &= \zeta(s+2)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}} \quad s >1\\
+\int_0^1 \lfloor x^{-1} \rfloor^{-1} s\:x^{s-1} \:\mathrm dx &= \zeta(s+1)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}} \quad\quad s >2\\
 \sum_{k=1}^\infty \frac{1}{k(k+1)^{s}}-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}}&=\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}}\left(1-\frac{1}{(k+1)}\right)=\zeta(s+1)-1\\
-\int_0^1 \lfloor x^{-1} \rfloor^{-1} ((s+1)x^s-sx^{s-1}) dx &= \zeta(s+2)-1 \quad s &gt;0 \quad\square
+\int_0^1 \lfloor x^{-1} \rfloor^{-1} ((s+1)x^s-sx^{s-1}) dx &= \zeta(s+2)-1 \quad s >0 \quad\square
 \end{aligned}$$
 <p>```

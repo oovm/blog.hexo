@@ -11,7 +11,7 @@ date: 2016-10-03 20:50:02
 ---
 
 > Q:求解傅里叶变换的不动点,即求解积分方程
-> $$f(x) = \mathfrak{F}(f(x)) = \int_{ - \infty }^\infty  {f(\xi ){e^{ - 2\pi ix\xi }}d\xi } $$
+> $$f(x) = \mathfrak{F}(f(x)) = \int_{ - \infty }^\infty  {f(\xi ){e^{ - 2\pi ix\xi }}\mathrm{d}\xi } $$
 
 考虑矩阵方程 ${F^4} = I$, 取
 $$F=\left( {\begin{array}{cccc}
@@ -21,7 +21,7 @@ $$F=\left( {\begin{array}{cccc}
 1&i&-1&-i\\
 \end{array}} \right)$$
 
-那么存在`$\displaystyle \frac{f}{4}F = ({f_1},{f_i},{f_{ - 1}},{f_{ - i}})$` 使得 `$\mathfrak{F}({f_1},{f_i},{f_{ - 1}},{f_{ - i}}) = ({f_1},i{f_i}, - {f_{ - 1}}, - i{f_{ - i}})$` ,所以对于任意函数 $g(x)$, 有
+那么存在$\displaystyle \frac{f}{4}F = ({f_1},{f_i},{f_{ - 1}},{f_{ - i}})$ 使得 $\mathfrak{F}({f_1},{f_i},{f_{ - 1}},{f_{ - i}}) = ({f_1},i{f_i}, - {f_{ - 1}}, - i{f_{ - i}})$, 所以对于任意函数 $g(x)$, 有
 
 $${f_1} = \frac{1}{4}\left( {1 + \mathfrak{F} + {\mathfrak{F}^2} + {\mathfrak{F}^3}} \right)g\left( x \right)$$
 
@@ -35,7 +35,7 @@ g=E^(-x^2);
 g1=FourierTransform[g,x,t1];
 g2=FourierTransform[g1,t1,x];
 g3=FourierTransform[g2,x,t1];
-(g+g1+g2+g3)/4/.t1-&gt;x</pre>
+(g+g1+g2+g3)/4/.t1->x
 ```
 
 取 $\displaystyle g(x) = {e^{ - x^2}} \Rightarrow f(x) = \frac{\sqrt 2 }{4}(\sqrt 2 {e^{-x^2}} + {e^{-\frac{x^2}{4}}})$
@@ -110,7 +110,7 @@ f(x) &= cx,&g(x) &= 1\\
 f(x) &= k,&g(x) &= 1/3\\
 \end{aligned} \right.$$
 
-* * *
+---
 
 > 求解微分方程:
 > 
@@ -137,7 +137,10 @@ y(x) & = 2ArcCot\left[ {{{\text{e}}^{ - x}}\cot \frac{1}{2}} \right]\\
 <pre class="lang:mathematica decode:true ">tri={Sin,Cos,Tan,Cot,Sec,Csc};
 funs=(y^$$Prime])[x]==#[y[x]]&/@tri;
 Quiet@DSolve[#,{y[x]},x]&/@funs//TableForm</pre>
+
+```
 写成公式就是:
+```
 
 $$
 \begin{aligned}

@@ -26,7 +26,7 @@ $$\begin{aligned}
 
 两个路线都能算出来,但是如果选下面那种就要用到特殊函数了...这不找事情吗.
 
-* * *
+---
 
 真正的麻烦在于这个积分:
 
@@ -104,12 +104,12 @@ $$\begin{aligned}
 当然其实积分积$y$的时候也能这么代换,那样的话积分结果就是:
 > $$\int {{x^{{y^z}}}} \mathrm{d}z =  - \frac{y}{z}{E_{1 - \frac{1}{z}}}\left( { - {y^z}\ln x} \right)$$
 
-* * *
+---
 
 其实再接下去也是这种死法:
 
 $$\begin{aligned}
-&\quad\;\int_{{{[0,1]}^4}} {x_1^{x_2^{x_3^{{x_4}}}}{\mkern 1mu} } \mathrm{d}{x_1}\;\mathrm{d}{x_2}\;\mathrm{d}{x_3}\;\mathrm{d}{x_4}\\
+&\quad\;\int_{{{[0,1]}^4}} {x_1^{x_2^{x_3^{{x_4}}}}} \mathrm{d}{x_1}\;\mathrm{d}{x_2}\;\mathrm{d}{x_3}\;\mathrm{d}{x_4}\\
 &= \iiint\limits_{{{[0,1]}^3}} {\frac{{\mathrm{d}{x_2}\;\mathrm{d}{x_3}\;\mathrm{d}{x_4}}}{{x_2^{x_3^{{x_4}}} + 1}}}\\
 &= \iint\limits_{{{[0,1]}^2}} {\frac{1}{2}x_3^{ - {x_4}}\left( {{\psi ^{(0)}}\left( {\frac{1}{2}\left( {x_3^{ - {x_4}} + 1} \right)} \right) - {\psi ^{(0)}}\left( {\frac{{x_3^{ - {x_4}}}}{2}} \right)} \right)}\mathrm{d}{x_4}\;\mathrm{d}{x_3}\\
 &= - \frac{1}{2}\int_0^1 {\frac{{2\log \Gamma \left( {\frac{1}{2} + \frac{1}{{2{x_3}}}} \right) - 2\log \Gamma \left( {\frac{1}{{2{x_3}}}} \right) + \log \pi }}{{\log {x_3}}}} \mathrm{d}{x_3}

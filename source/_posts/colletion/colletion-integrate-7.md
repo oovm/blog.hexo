@@ -32,6 +32,6 @@ I(s) &= \int_0^1 {\int_0^1 {\frac{{{{\left( {\ln x\ln y} \right)}^s}}}{{1 - xy}}
 &= {\Gamma ^2}(1 + s)\:\zeta (2 + 2s)
 \end{aligned}$$
 
-* * *
+---
 
-&nbsp;```
+```

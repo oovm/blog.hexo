@@ -12,7 +12,7 @@ $$I = \int {\frac{{c\sin x + d\cos x}}{{a\sin x + b\cos x}}\mathrm{d}x}$$
 
 如果你不知道这个怎么算的话的话......你可能买到了假参考书,你可能用的是假课本,你可能遇到了假老师,你可能选的是假课,你可能上了假学校,你可能是个假人.....
 
-* * *
+---
 
 不过我们想知道的是,这是唯一一种情况吗?
 
@@ -27,7 +27,7 @@ Join[subs,List/@funs,List/@anses,2]//TableForm</pre>
 
 不对......我是不是拿错剧本了....不好意思输错了.....
 
-* * *
+---
 
 <pre class="lang:default decode:true">subs=Subsets[{Sin,Cos,Tan,Cot,Sec,Csc},{2}];
 mod=(c #1[x]+d #2[x])/(a #1[x]+b #2[x])&;
@@ -64,7 +64,7 @@ I_8 &= \int {\frac{{c\cos x + d\sec x}}{{a\cos x + b\sec x}}\mathrm{d}x} = \int 
 I_{10} &= \int {\frac{{c\tan x + d\cot x}}{{a\tan x + b\cot x}}\mathrm{d}x} = \int {\frac{{c + d{{\cot }^2}x}}{{a + b{{\cot }^2}x}}\mathrm{d}x}
 \end{aligned}$$
 
-* * *
+---
 
 话说这题我都快背出来了:
 
@@ -79,7 +79,7 @@ I_1 &= \int {\frac{{c\sin x + d\cos x}}{{a\sin x + b\cos x}}\mathrm{d}x} = dP + 
 &= \frac{{ac + bd}}{{{a^2} + {b^2}}}x + \frac{{ad - bc}}{{{a^2} + {b^2}}}\ln \left| {a\sin x + b\cos x} \right|
 \end{aligned}$$
 
-* * *
+---
 
 然后是
 ```

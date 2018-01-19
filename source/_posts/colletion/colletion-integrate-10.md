@@ -34,7 +34,7 @@ $$\begin{aligned}
 
 $$\bigstar \int_{ - \infty }^\infty {{{\left[ {{{\left( {x - \sum\limits_{i = 0}^b {\frac{1}{{i + x}}} } \right)}^{2a}} + 1} \right]}^{ - 1}}{\rm{dx}}} = \int_{ - \infty }^\infty {\frac{1}{{{x^{2a}} + 1}}{\rm{dx}}} = \frac{\pi }{{a}}\csc \left( {\frac{\pi }{{2a}}} \right)\quad a,b \in + $$
 
-* * *
+---
 
 求证:
 
@@ -42,7 +42,7 @@ $$\int_{ - \infty }^{ + \infty } {{e^{ - \pi {x^2}{{\left( {\frac{{\alpha  + x}
 
 格拉瑟主定理多取一阶就有:
 
-$$\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \int_{ - \infty }^{ + \infty } f (x)dx\quad a &gt; 0$$
+$$\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \int_{ - \infty }^{ + \infty } f (x)dx\quad a > 0$$
 
 来,凑配一下秒了...
 
@@ -62,7 +62,7 @@ $$\bigstar I(a,b) = \int_{ - \infty }^{ + \infty } {xf\left( {x - \frac{a}{{x - 
 
 还是取这个:
 
-$$S=\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \int_{ - \infty }^{ + \infty } f (x)dx\quad a &gt; 0$$
+$$S=\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \int_{ - \infty }^{ + \infty } f (x)dx\quad a > 0$$
 
 求偏导:
 
@@ -89,13 +89,13 @@ $$\begin{aligned}
 
 $$\int_{ - \infty }^\infty  {x{e^{ - \pi {x^2}{{\left( {\frac{{a + x}}{{b + x}}} \right)}^2}}}{\rm{dx}}}  = b - a$$
 
-对于$\alpha&gt;\beta$继续强化武器:
+对于$\alpha>\beta$继续强化武器:
 
-$$\begin{align}
+$$\begin{aligned}
 \int_{-\infty}^{+\infty}xf\left(x\frac{\alpha +x}{\beta +x}\right){d}x&=\int_{-\infty}^{+\infty}xf\left(x-\frac{(\alpha-\beta)\beta}{x+\beta}+\alpha-\beta\right)dx\\
 &=\int_{-\infty}^{+\infty}(x+\beta-\alpha)f\left(x-\frac{(\alpha-\beta)\beta}{x+2\beta-\alpha}\right)dx\\
 &=I((\alpha-\beta)\beta,\alpha-2\beta)+(\beta-\alpha)\cdot \int_{-\infty}^{+\infty} f(x)dx
-\end{align}$$
+\end{aligned}$$
 
 取$f(x) = {e^{ - \pi {x^2}}}$秒了:
 

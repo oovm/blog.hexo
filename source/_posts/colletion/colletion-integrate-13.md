@@ -21,7 +21,7 @@ P + Q &= \int {\frac{{{{\sin }^2}x + {{\cos }^2}x}}{{a\sin x + b\cos x}}\mathrm{
 &= \frac{{d - c}}{{{a^2} + {b^2}}}(a\cos x + b\sin x) - \frac{{2\left( {{a^2}d + {b^2}c} \right)}}{{{{\left( {{a^2} + {b^2}} \right)}^{3/2}}}}{\tanh ^{ - 1}}\left( {\frac{{a - b\tan (x/2)}}{{\sqrt {{a^2} + {b^2}} }}} \right)
 \end{aligned}$$
 
-* * *
+---
 
 $$\begin{aligned}
 P &= \int {\frac{{{{\sec }^2}x}}{{a\sec x + b\tan x}}\mathrm{d}x} \\
@@ -40,7 +40,7 @@ $${I_{a = b = 1}} =  - \frac{1}{2}\left( {\frac{{c + d}}{{\sin (x) + 1}} + (c +
 
 极限法失效.
 
-* * *
+---
 
 $$\begin{aligned}
 P &= \int {\frac{{{{\csc }^2}x}}{{a\csc x + b\cot x}}\mathrm{d}x} \\
@@ -57,7 +57,7 @@ P - Q &= \int {\frac{{\mathrm{d}x}}{{a\csc x + b\cot x}}} \\
 
 $${I_{a = b=1}} = \frac{1}{4}\left( {(c + d){{\sec }^2}\frac{x}{2} + 2(c + d)\log \sin \frac{x}{2} - 2(c - 3d)\log \cos \frac{x}{2}} \right)$$
 
-* * *
+---
 
 $$\begin{aligned}
 P &= \int {\frac{{{{\tan }^2}x}}{{a\tan x + b\cot x}}\mathrm{d}x} \\
@@ -75,7 +75,7 @@ Q &= \int {\frac{{{{\cot }^2}x}}{{a\tan x + b\cot x}}\mathrm{d}x} \\
 
 $${I_{a = b=1}} = \frac{1}{4}(c + d)\cos 2x - c\log \cos x + d\log \sin x$$
 
-* * *
+---
 
 $$\begin{aligned}
 P &= \int {\frac{{{{\sec }^2}x}}{{a\sec x + b\csc x}}\mathrm{d}x} \\
@@ -93,7 +93,7 @@ $${I_{a = b = 1}} = - \sqrt 2 (c + d){\tanh ^{ - 1}}\left( {\frac{{\sqrt 2 }}{2}
 
 好奇葩,无法通过极限法处理就算了,参数少反而更难....
 
-* * *
+---
 
 各种奇葩除零问题,极限法无效,参数少俩形式更烦.....简直莫名其妙...
 

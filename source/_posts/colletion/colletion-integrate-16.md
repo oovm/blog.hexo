@@ -37,7 +37,7 @@ $$\begin{aligned}
 &{S_n}(R) = {V_n}(R)\mathrm{d}R &&\Leftrightarrow {R_n}(S) = {2^{\frac{1}{{1 - n}}}}{\left( {{\pi ^{ - \frac{n}{2}}}s\Gamma \left( {\frac{n}{2}} \right)} \right)^{\frac{1}{{n - 1}}}}
 \end{aligned}$$
 
-* * *
+---
 
 上次那种约定还是太烦了,这次我准备了一种新约定,写出来大概是这样的:
 
@@ -57,16 +57,16 @@ Well,其实就是Mathematica语法来着,下标表示初始值,终点值,步长,
 
 $$E[\varphi ({X_{1,n}})] = \int_{{\Re ^n}} {\varphi ({x_{1,n}})\prod {\text{PDF}({x_{1,n}})} \mathrm{d}{x_{1,n}}} $$
 
-* * *
+---
 
-$$\boxed{\bigstar\mathop {\lim }\limits_{n \to \infty } \int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \right){\mkern 1mu} \mathrm{d}{x_{1,n}}}  = f(\frac{1}{2})}$$
+$$\boxed{\bigstar\mathop {\lim }\limits_{n \to \infty } \int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \right)\mathrm{d}{x_{1,n}}}  = f(\frac{1}{2})}$$
 
 记${\psi _n}(x) = { * ^n}\left( {n{\chi _{[0,1/n]}}} \right)$是$n\chi_{[0,1/n]}$的$n$重自卷积.
 
 $$\begin{aligned}
-&\quad \;\int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \right){\mkern 1mu} \mathrm{d}{x_{1,n}}} \\
-&= {n^n}\int_{{{[0,1/n]}^n}} {f\left( {\sum {{x_{1,n}}} } \right){\mkern 1mu} \mathrm{d}{x_{1,n}}} \\
-&= \int_R f (x){\psi _n}(x){\mkern 1mu} \mathrm{d}x
+&\quad \;\int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \right)\mathrm{d}{x_{1,n}}} \\
+&= {n^n}\int_{{{[0,1/n]}^n}} {f\left( {\sum {{x_{1,n}}} } \right)\mathrm{d}{x_{1,n}}} \\
+&= \int_R f (x){\psi _n}(x)\mathrm{d}x
 \end{aligned}$$
 
 根据中心极限定理,$n\chi_{[0,1/n]}$的期望为$\frac1{2n}$而方差为$\frac1{12n^2}$,所以有:
@@ -76,13 +76,13 @@ $${\psi _n}\sim \sqrt {\frac{{6n}}{\pi }} \;{e^{ - 6n{{(x - \frac{1}{2})}^2}}}$$
 于是:
 
 $$\begin{aligned}
-&\quad \;\mathop {\lim }\limits_{n \to \infty } \int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \right){\mkern 1mu} \mathrm{d}{x_{1,n}}} \\
-&= \mathop {\lim }\limits_{n \to \infty } \int_R f (x){\psi _n}(x){\mkern 1mu} \mathrm{d}x= f(\frac{1}{2})
+&\quad \;\mathop {\lim }\limits_{n \to \infty } \int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \right)\mathrm{d}{x_{1,n}}} \\
+&= \mathop {\lim }\limits_{n \to \infty } \int_R f (x){\psi _n}(x)\mathrm{d}x= f(\frac{1}{2})
 \end{aligned}$$
 
 为什么我会有种正在研究量子力学的感觉...
 
-* * *
+---
 
 这个结论可以用来秒一些比较麻烦的玩意儿,比如正常解法下:
 
@@ -99,7 +99,7 @@ $$\begin{aligned}
 
 但是可以直接用概率模型秒之.
 
-* * *
+---
 
 刚刚用到了均匀分布的累加和趋于正态分布,确切的说
 
@@ -136,17 +136,17 @@ $$\begin{aligned}
 \end{aligned}$$
 
 然后我示范一下错误的代码写法,唔,其实是复制粘贴的,调试的时候Ctrl+C/V大法那是极好的,但是如果发布出去还这么搞要被吐fen槽ci的:
-<pre class="lang:haskell decode:true">Integrate[DiracDelta[(x+y)-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]
-Integrate[DiracDelta[(x-y)-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]
-Integrate[DiracDelta[(x y)-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]
-Integrate[DiracDelta[(x/y)-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]
-Integrate[DiracDelta[Min[x,y]-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]
-Integrate[DiracDelta[Max[x,y]-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]
+<pre class="lang:haskell decode:true">Integrate[DiracDelta[(x+y)-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]
+Integrate[DiracDelta[(x-y)-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]
+Integrate[DiracDelta[(x y)-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]
+Integrate[DiracDelta[(x/y)-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]
+Integrate[DiracDelta[Min[x,y]-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]
+Integrate[DiracDelta[Max[x,y]-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]
 
 "更好的写法是下面这种,可以作用于任意二元运算符";
 list={Plus,Subtract,Times,Divide,Power,Surd,Max,Min}
-cal=Integrate[DiracDelta[#[x,y]-z],{x,0,1},{y,0,1},Assumptions-&gt;-1&lt;z&lt;1]&
-TableForm[cal/@list,TableHeadings-&gt;{list}]
+cal=Integrate[DiracDelta[#[x,y]-z],{x,0,1},{y,0,1},Assumptions->-1<z<1]&
+TableForm[cal/@list,TableHeadings->{list}]
 
 "n重积分值验证";
 UniformSumF[n_]:=InverseFourierTransform[CharacteristicFunction[UniformDistribution[],t]^n,t,x];

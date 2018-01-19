@@ -11,20 +11,20 @@ tags:
 双曲积分:
 
 $$\begin{aligned}
-\bigstar C(s,n) &= \int_0^\infty {\frac{{{x^{2n}}}}{{\cosh (\pi x/s)}}} {\mkern 1mu} dx\quad(n,s)\geqslant1\\
+\bigstar C(s,n) &= \int_0^\infty {\frac{{{x^{2n}}}}{{\cosh (\pi x/s)}}} dx\quad(n,s)\geqslant1\\
 &= {16^{ - n}}n{\pi ^{ - 2n - 1}}{s^{2n + 1}}\left( {\zeta \left( {2n + 1,\frac{1}{4}} \right) - \zeta \left( {2n + 1,\frac{3}{4}} \right)} \right)\Gamma (2n)\\
-\bigstar S(s,n) &=\int_0^\infty {\frac{{{x^{2n - 1}}}}{{\sinh (\pi x/s)}}} {\mkern 1mu} dx\quad(n,s)\geqslant1\\
+\bigstar S(s,n) &=\int_0^\infty {\frac{{{x^{2n - 1}}}}{{\sinh (\pi x/s)}}} dx\quad(n,s)\geqslant1\\
 &= \frac{{{4^n} - 1}}{n}{(2\pi )^{ - 2n}}{s^{2n}}\zeta (2n)\Gamma (2n + 1)
 \end{aligned}$$
 
-Integrate[x^(2n)/Cosh[(Pi*x)/s], {x, 0, Infinity},Assumptions-&gt;n&gt;s&gt;1]
+Integrate[x^(2n)/Cosh[(Pi*x)/s], {x, 0, Infinity},Assumptions->n>s>1]
 (*16^-n n $$Pi]^(-1-2 n) s^(1+2 n) Gamma[2 n] (Zeta[1+2 n,1/4]-Zeta[1+2 n,3/4])*)
-Integrate[x^(2n-1)/Sinh[(Pi*x)/s], {x, 0, Infinity},Assumptions-&gt;n&gt;s&gt;1]
+Integrate[x^(2n-1)/Sinh[(Pi*x)/s], {x, 0, Infinity},Assumptions->n>s>1]
 (*((-1+4^n) (2 $$Pi])^(-2 n) s^(2 n) Gamma[1+2 n] Zeta[2 n])/n*)
 
 补证:
 
-$$\begin{align}
+$$\begin{aligned}
 \frac {I(m)}2:
 =\int_0^\infty \frac{t^m}{2\,\cosh(t)}dt
 &=\int_0^\infty \frac{t^m\;e^{-t}}{1+e^{-2t}}dt\\
@@ -32,6 +32,6 @@ $$\begin{align}
 &=\sum_{k=0}^\infty\frac {(-1)^k}{(2k+1)^m}\int_0^\infty u^m\;e^{-u}\frac{du}{2k+1}\;\\
 &=\Gamma(m+1)\sum_{k=0}^\infty\frac {(-1)^k}{(2k+1)^{m+1}}\\
 &=\Gamma(m+1)\,\beta(m+1)
-\end{align}$$
+\end{aligned}$$
 
 这里的β不是欧拉Beta函数而是狄利克雷Beta函数,ζ不是黎曼Zeta函数而是赫尔维茨Zeta函数.```

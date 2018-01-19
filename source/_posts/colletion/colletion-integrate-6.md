@@ -38,7 +38,7 @@ $$\begin{aligned}
 &= \frac{1}{n}\Gamma \left( {\frac{1}{n}} \right)
 \end{aligned}$$
 
-* * *
+---
 
 计算:
 
@@ -70,7 +70,7 @@ I(a,b) &= \int_0^1 {\frac{{{x^b} - {x^a}}}{{\ln x}}} dx\\
 
 然后代值进去就好了.
 
-* * *
+---
 
 有个类似的积分:
 
@@ -78,7 +78,7 @@ $$\int_0^1 {\frac{{{x^{1/2}} - {x^{ - 1/2}}}}{{x - 1}}} \mathrm{d}x = 2$$
 
 还是参数化,试着证明:
 
-$$I(a) = \int_0^1 {\frac{{{x^a} - {x^{ - a}}}}{{x - 1}}} \mathrm{d}x = \frac{1}{a} - \pi \cot (\pi a)\quad \left| a \right| &lt; 1$$
+$$I(a) = \int_0^1 {\frac{{{x^a} - {x^{ - a}}}}{{x - 1}}} \mathrm{d}x = \frac{1}{a} - \pi \cot (\pi a)\quad \left| a \right| < 1$$
 
 $$\begin{aligned}
 \frac{{{x^{ - a}} - {x^a}}}{{1 - x}} &= ({x^{ - a}} - {x^a})\sum\limits_{n = 0}^\infty {{x^n}} \\
@@ -90,7 +90,7 @@ $$\begin{aligned}
 
 嗯,猜想没错...
 
-* * *
+---
 
 再进一步,求证:
 
@@ -108,7 +108,7 @@ I(f(x)) &= \int_0^\infty {\frac{{f\left( {{x^n}} \right) - f\left( {{x^m}} \righ
 
 然后把函数代进去...
 
-* * *
+---
 
 计算参积分:
 
@@ -138,7 +138,7 @@ $$\begin{aligned}
 
 $\psi $是双Gamma函数,在我这里见过很多次了应该.
 
-* * *
+---
 
 求证:
 

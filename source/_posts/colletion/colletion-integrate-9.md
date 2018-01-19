@@ -11,7 +11,7 @@ date: 2017-01-06 15:29:44
 ```
 又到了喜闻乐见的杂题时间了,不过今天到场的有个重量级人物:
 
-$$\int_0^1 {{e^{i\pi x}}} {\mkern 1mu} {x^x}{(1 - x)^{1 - x}}{\mkern 1mu} dx = \frac{e}{2}\frac{\pi }{3}\frac{i}{4}$$
+$$\int_0^1 {{e^{i\pi x}}} {x^x}{(1 - x)^{1 - x}}dx = \frac{e}{2}\frac{\pi }{3}\frac{i}{4}$$
 
 哈,牛逼的木有吧,神奇的把$0,1,2,3,4,i,e,\pi,x^x$结合在了一起.
 
@@ -23,7 +23,7 @@ $$\int_0^1 {{e^{i\pi x}}} {\mkern 1mu} {x^x}{(1 - x)^{1 - x}}{\mkern 1mu} dx = \
 
 ![](http://geis.xyz/wp-content/uploads/2017/01/Amazing.png)
 
-&nbsp;
+
 
 $$\begin{aligned}
 f(z) &= {e^{i\pi + z\ln z + (1 - z)\ln (1 - z)}}\\
@@ -36,7 +36,7 @@ Inv\;f({\left. z \right|_\infty }) &\mapsto - \frac{z}{e} + \frac{1}{2} {\color{
 
 PS:只有真正的粉丝才能懂得这个积分中蕴含的哲理!
 
-* * *
+---
 
 $$I=\int_0^\infty \int_0^\infty \frac{\log x \log y}{\sqrt {xy}}\cos(x+y)\,\text{d}x\,\text{d}y$$
 
@@ -69,7 +69,7 @@ $$\begin{aligned}
 
 $$I=(\gamma+2\log 2)\pi^2$$
 
-* * *
+---
 
 调和级数的积分形式:
 
@@ -93,7 +93,7 @@ $$\begin{aligned}
 &=-4\int _{0}^{\infty }e^{-x^{2}}x\cdot \ln x\mathrm{d}x\\
 &=-\int _{0}^{1}\ln \left(\ln {\frac {1}{x}}\right)dx\\
 &=\int _{0}^{\infty }\left({\frac {1}{e^{x}-1}}-{\frac {1}{x\cdot e^{x}}}\right)dx\\
-&=\int _{0}^{1}\left({\frac {1}{\ln x}}+{\frac {1}{1-x}}\right)dx\\&=\int _{0}^{\infty }\left({\frac {1}{1+x^{k}}}-e^{-x}\right){\frac {dx}{x}}\;\quad k&gt;0\\
+&=\int _{0}^{1}\left({\frac {1}{\ln x}}+{\frac {1}{1-x}}\right)dx\\&=\int _{0}^{\infty }\left({\frac {1}{1+x^{k}}}-e^{-x}\right){\frac {dx}{x}}\;\quad k>0\\
 &=\int _{0}^{1}H_{x}\mathrm{d}x
 \end{aligned}$$
 

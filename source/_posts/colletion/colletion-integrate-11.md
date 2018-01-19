@@ -13,7 +13,7 @@ date: 2017-01-15 21:20:06
 
 一般用于三角函数积分.....就是用的多了会养成习惯....然后连简单的积分都用这个.....然后就没有然后了,因为简单的考试题用基本的积分技巧就能秒了,用这个不是找事情么....
 
-* * *
+---
 
 我们来研究这样一个积分:
 
@@ -37,7 +37,7 @@ $$\begin{aligned}
 = \left\{ {\frac{{c\tan (x) + d}}{{a\tan (x) + b}},\frac{{c\cos (x) + d}}{{a\cos (x) + b}},\frac{{c\sin (x) + d}}{{a\sin (x) + b}}} \right\}
 \end{aligned}$$
 
-* * *
+---
 
 我们知道这些积分总是可以积出来的,因为万能代换嘛,转化为多项式积分,多项式积分总是存在原函数的.但是简单情况还好,复杂情况比如这三道这么做的话........
 
@@ -94,7 +94,7 @@ $$\begin{aligned}
 &= \frac{c}{a}x + \frac{{2(ad - bc)}}{{a\sqrt {{b^2} - {a^2}} }}\arctan \left( {\frac{{a + b\tan (x/2)}}{{\sqrt {{b^2} - {a^2}} }}} \right)
 \end{aligned}$$
 
-* * *
+---
 
 设:
 
@@ -131,7 +131,7 @@ I_{\cos } &= \int {\frac{{c + d\cos x}}{{a + b\cos x}}\mathrm{d}x} = \frac{{dx}}
 I_{\sec } &= \int {\frac{{c + d\sec x}}{{a + b\sec x}}\mathrm{d}x} = \frac{{cx}}{a} + \frac{{2(bc - ad)}}{{a\sqrt {{a^2} - {b^2}} }}{\tanh ^{ - 1}}\left( {\frac{{(b - a)\tan (x/2)}}{{\sqrt {{a^2} - {b^2}} }}} \right)
 \end{aligned}$$
 
-* * *
+---
 
 这个反倒更加简单,设:
 
@@ -165,7 +165,7 @@ $$\begin{aligned}
 &= \frac{{ac + bd}}{{{a^2} + {b^2}}}x + \frac{{ad - bc}}{{{a^2} + {b^2}}}\log (a\sin x + b\cos x)
 \end{aligned}$$
 
-* * *
+---
 
 还没完呢,是不是得考虑下$a = b$时的积分?此时下面的系数可以直接提出来,所以就是:
 

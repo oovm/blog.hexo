@@ -22,12 +22,12 @@ Well....你以为打一大堆积分号不累啊...
 
 $$\begin{aligned}
 I(n) &= \int_{{{[0,1]}^n}} {\mathop {\min }\limits_{i \in 1\sim n} [{x_i}]\mathrm{d}{x_i}} \\
-&= \int_0^1 \cdots \int_0^1 {\min } \{ {x_1}, \cdots ,{x_n}\} {\mkern 1mu} \mathrm{d}{x_n} \cdots \mathrm{d}{x_1}\\
+&= \int_0^1 \cdots \int_0^1 {\min } \{ {x_1}, \cdots ,{x_n}\} \mathrm{d}{x_n} \cdots \mathrm{d}{x_1}\\
 &= \mathbb{E}(\min \{ {U_1}, \cdots ,{U_n}\} )\\
-&= \int_0^1 \mathbb{P} (\min \{ {U_1}, \cdots ,{U_n}\} &gt; x){\mkern 1mu} \mathrm{d}x\\
-&= \int_0^1 \mathbb{P} ({U_1} &gt; x, \cdots ,{U_n} &gt; x){\mkern 1mu} \mathrm{d}x\\
-&= \int_0^1 \mathbb{P} {({U_1} &gt; x)^n}{\mkern 1mu} \mathrm{d}x\\
-&= \int_0^1 {{{(1 - x)}^n}} {\mkern 1mu} \mathrm{d}x\\
+&= \int_0^1 \mathbb{P} (\min \{ {U_1}, \cdots ,{U_n}\} > x)\mathrm{d}x\\
+&= \int_0^1 \mathbb{P} ({U_1} > x, \cdots ,{U_n} > x)\mathrm{d}x\\
+&= \int_0^1 \mathbb{P} {({U_1} > x)^n}\mathrm{d}x\\
+&= \int_0^1 {{{(1 - x)}^n}} \mathrm{d}x\\
 &= \frac{1}{{n + 1}}\\
 \end{aligned}$$
 
@@ -37,13 +37,13 @@ I(n) &= \int_{{{[0,1]}^n}} {\mathop {\min }\limits_{i \in 1\sim n} [{x_i}]\mathr
 
 这样的话就是:
 
-$$I{\text{(n)}} = \int_0^1 {\int_t^1  \cdots  } \int_t^1 {\mkern 1mu}  \mathrm{d}{x_n} \cdots \mathrm{d}{x_1}{\mkern 1mu} \mathrm{d}t = \int_0^1 {{{(1 - t)}^n}} {\mkern 1mu} \mathrm{d}t = \frac{1}{{n + 1}}$$
+$$I{\text{(n)}} = \int_0^1 {\int_t^1  \cdots  } \int_t^1  \mathrm{d}{x_n} \cdots \mathrm{d}{x_1}\mathrm{d}t = \int_0^1 {{{(1 - t)}^n}} \mathrm{d}t = \frac{1}{{n + 1}}$$
 
 同理可证:
 
-$$I(n) = \int_{{{[0,s]}^n}} {\mathop {\min }\limits_{i \in 1\sim n} [{x_i}]\mathrm{d}{x_i}}  = \int_0^s {{{(s - x)}^n}} {\mkern 1mu} dx = \frac{{{s^{n + 1}}}}{{n + 1}}$$
+$$I(n) = \int_{{{[0,s]}^n}} {\mathop {\min }\limits_{i \in 1\sim n} [{x_i}]\mathrm{d}{x_i}}  = \int_0^s {{{(s - x)}^n}} dx = \frac{{{s^{n + 1}}}}{{n + 1}}$$
 
-* * *
+---
 
 来加强这个问题:
 
@@ -54,9 +54,9 @@ $$\boxed{\bigstar {I_p}(n) = \int_{{{[0,1]}^n}} {{{\left( {\mathop {\min }\limit
 这次要用到递推积分了:
 
 $$\begin{aligned}
-{I_p}(n) &= n!\int_{0 &lt; {x_1} &lt; \ldots &lt; {x_n} &lt; 1} {{{(\mathop {\min }\limits_{i \in 1\sim n} [{x_i}])}^p}} \mathrm{d}{x_1} \ldots \mathrm{d}{x_n}\\
-&= n!\int_{0 &lt; {x_1} &lt; \ldots &lt; {x_n} &lt; 1} {x_1^p} \mathrm{d}{x_1} \ldots \mathrm{d}{x_n}\\
-&= n!\int_{0 &lt; {x_2} &lt; \ldots &lt; {x_n} &lt; 1} {\frac{{x_2^{p + 1}}}{{\alpha + 1}}} \mathrm{d}{x_2} \ldots \mathrm{d}{x_n}\\
+{I_p}(n) &= n!\int_{0 < {x_1} < \ldots < {x_n} < 1} {{{(\mathop {\min }\limits_{i \in 1\sim n} [{x_i}])}^p}} \mathrm{d}{x_1} \ldots \mathrm{d}{x_n}\\
+&= n!\int_{0 < {x_1} < \ldots < {x_n} < 1} {x_1^p} \mathrm{d}{x_1} \ldots \mathrm{d}{x_n}\\
+&= n!\int_{0 < {x_2} < \ldots < {x_n} < 1} {\frac{{x_2^{p + 1}}}{{\alpha + 1}}} \mathrm{d}{x_2} \ldots \mathrm{d}{x_n}\\
 &= \cdots = \frac{n}{{p + 1}}{I_{p + 1}}(n - 1)\\
 \end{aligned}$$
 
@@ -64,7 +64,7 @@ $$\begin{aligned}
 
 $${I_p}(n) = n!{I_{p + n - 1}}(1)\prod\limits_{i = 1}^{n - 1} {\frac{1}{{p + i}}}  = n!\prod\limits_{i = 1}^n {\frac{1}{{p + i}}}  = n!{\left( {\frac{1}{p} + 1} \right)_n}$$
 
-* * *
+---
 
 在之前的文章中我们计算过这些积分:
 
@@ -76,10 +76,10 @@ $$\begin{aligned}
 接下来我们来作更多的推导.
 > **引理1:**> 
 > $$\int_{0}^{1} x^{s}\left\{1/x\right\}^{2}\:\mathrm{d}x = -\frac{2\zeta(s)}{s(1+s)}-\frac{\zeta(1+s)}{1+s}-\frac{1}{1-s}$$> 
-> 其中$-1&lt;\Re{s}&lt;1, s\neq 0$
+> 其中$-1<\Re{s}<1, s\neq 0$
 **引证:**
 
-$$\begin{align}
+$$\begin{aligned}
 \displaystyle \int_{0}^{1} x^{s}\left\{1/x\right\}^{2}\:\mathrm{d}x & = \sum_{k=1}^{\infty}
 \displaystyle \int_{1/(k+1)}^{1/k} x^{s}\left\{1/x\right\}^{2} \:\mathrm{d}x \\
 & = \sum_{k=1}^{\infty} \displaystyle \int_{k}^{k+1} (x-k)^{2} \frac{\mathrm{d}x}{x^{s+2}} \\
@@ -88,14 +88,14 @@ $$\begin{align}
 & = \sum_{k=1}^{\infty} \displaystyle \left. \left( -\frac{1}{(s-1)} \frac{1}{(x+k)^{s-1}} +\frac{2}{s}\frac{k}{(x+k)^{s}}
 -\frac{k^{2}}{(s+1)(x+k)^{s+1}} \right) \right|_{0}^{1}\\
 & = -\frac{1}{1-s} -\frac{2\zeta(s)}{s(1+s)}-\frac{\zeta(1+s)}{1+s}.
-\end{align}$$
+\end{aligned}$$
 > **引理2:**> 
 > $$\frac{(-1)^{n-1}}{(n-1)!} \int_{0}^{1} \left\{1/x\right\}^{2} \ln ^{n-1} x\: \mathrm{d}x = (-1)^{n}+1 -\sum_{k=0}^{n-1}\frac{\gamma_{k}}{k!}+2\sum_{k=0}^{n} \frac{(-1)^k}{k!}\zeta^{(k)}(0)$$> 
 > 其中$\gamma_{k}$是洛朗- 斯蒂尔杰斯常数(Laurent-Stieltjes Constants),其定义为:> 
 > $$\gamma_{k} = \displaystyle \lim_{N \rightarrow \infty}\left(\sum_{m=1}^{N}\frac{\ln^{k}m}{m}-\frac{\ln^{k+1}N}{k+1} \right)$$
 **引证:**
 
-对于 $0&lt;\Re{s}&lt;1$,使用引理1,我们有
+对于 $0<\Re{s}<1$,使用引理1,我们有
 $$\int_{0}^{1} x^{s}\left\{1/x\right\}^2 \:\mathrm{d}x = \sum_{n=0}^{\infty}\left(\int_{0}^{1} \left\{1/x\right\}^2 \ln^{n}x \:\mathrm{d}x \right) \frac{s^{n}}{n!}$$
 
 考虑洛朗级数
@@ -112,14 +112,14 @@ $$\zeta (1 + s) = \frac{1}{s} + \sum\limits_{k = 0}^\infty  {{{( - 1)}^k}} \fra
 
 我们尝试将$ I_{n} $化为单变量积分,做变量替换
 
-$$\begin{align}
+$$\begin{aligned}
 \displaystyle u_{1} & = x_{1} \\
 u_{2} & = x_{1}x_{2} \\
 & \vdots \\
 u \, & = x_{1}x_{2} \cdots x_{n} .
-\end{align}$$
+\end{aligned}$$
 
-变换后积分限变为$ \displaystyle 0&lt;u&lt; \cdots &lt;u_{2}&lt; u_{1}&lt;1 $ ,此时:
+变换后积分限变为$ \displaystyle 0<u< \cdots <u_{2}< u_{1}<1 $ ,此时:
 
 $$\begin{aligned}
 I_{n} &= \displaystyle \int_{0}^{1} \! \int_{u}^{1} \cdots \! \int_{u_{2}}^{1}

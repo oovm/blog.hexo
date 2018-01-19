@@ -12,7 +12,7 @@ tags:
 
 比方说这个,为啥明明有a,b,k三个参数但是叫I(a,b)呢,就是因为k在这里就是个打酱油的.
 
-$$I(a,b) = \int_0^\infty  {\ln } \left( {\frac{{{x^2} + 2kx\cos b + {k^2}}}{{{x^2} + 2kx\cos a + {k^2}}}} \right)\;\frac{{\mathrm{d}x}}{x}\quad 0 \leqslant a,b \leqslant \pi ,k &gt; 0$$
+$$I(a,b) = \int_0^\infty  {\ln } \left( {\frac{{{x^2} + 2kx\cos b + {k^2}}}{{{x^2} + 2kx\cos a + {k^2}}}} \right)\;\frac{{\mathrm{d}x}}{x}\quad 0 \leqslant a,b \leqslant \pi ,k > 0$$
 
 直接换元$x \mapsto kx$这娃就没了...
 
@@ -34,11 +34,11 @@ I(a,b) &= \int_0^\infty {\log } \left( {\frac{{{u^2} + 2u\cos (b) + 1}}{{{u^2} +
 
 用到了一个傅里叶变换:
 
-$$\sum\limits_{k = 1}^\infty  {{{( - 1)}^k}} \frac{{\cos (ka)}}{{{k^2}}} = \frac{{{a^2}}}{4} - \frac{{{\pi ^2}}}{{12}}\quad |a| &lt; \pi $$
+$$\sum\limits_{k = 1}^\infty  {{{( - 1)}^k}} \frac{{\cos (ka)}}{{{k^2}}} = \frac{{{a^2}}}{4} - \frac{{{\pi ^2}}}{{12}}\quad |a| < \pi $$
 
 <!--more-->
 
-* * *
+---
 
 比较常见的就是一堆涉及年份的积分,反正里面的年份就是个萌萌哒,并没有什么卵用...
 
@@ -48,20 +48,20 @@ $$\int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\
 
 考虑参积分:
 
-$$I = \int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx$$
+$$I = \int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx$$
 
 $$\begin{aligned}
-I &= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx + \int_{ - \pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx\\
-&= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx - \int_{\pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx\\
-&= 2{\mkern 1mu} \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx\\
-I &= 2{\mkern 1mu} \int_{ - \pi /2}^0 {\frac{{{{\cos }^{2a}}t}}{{{{\sin }^{2a}}t + {{\cos }^{2a}}t}}} {\mkern 1mu} dt\quad x \to t - \pi /2\\
-I &= 2{\mkern 1mu} \int_0^{\pi /2} {\frac{{{{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx\quad t \to - x\\
-2I &= 2{\mkern 1mu} \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} {\mkern 1mu} dx = 2{\mkern 1mu} \int_0^{\pi /2} d x = \pi
+I &= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx + \int_{ - \pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\\
+&= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx - \int_{\pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\\
+&= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\\
+I &= 2\int_{ - \pi /2}^0 {\frac{{{{\cos }^{2a}}t}}{{{{\sin }^{2a}}t + {{\cos }^{2a}}t}}} dt\quad x \to t - \pi /2\\
+I &= 2\int_0^{\pi /2} {\frac{{{{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\quad t \to - x\\
+2I &= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx = 2\int_0^{\pi /2} d x = \pi
 \end{aligned}$$
 
 可惜这里有个限定要求偶数.
 
-* * *
+---
 
 嗯,我觉得上面这个还不够强,还需要威力加强版:
 
@@ -76,7 +76,7 @@ I &= \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^x}}}} dx = \int_{ - a}^a {\frac{{
 \therefore I &= \frac{\pi }{2}\quad \square
 \end{aligned}$$
 
-* * *
+---
 
 话说我之前说过要有点想象力,以函数作为参数也不是不可以,于是我这里又找到了一个例子:
 
@@ -89,7 +89,7 @@ I(f(x)) &= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 
 &= \pi \int_{ - \infty }^\infty {f(t)\;{\text{dx}}}
 \end{aligned}$$
 
-* * *
+---
 
 又找到一个年份积分:
 
@@ -106,7 +106,7 @@ I(n) &= \int_0^\infty {\frac{{\sin ((2n - 1)x)}}{{x(\cos (x) + \cosh (x))}}} \ma
 &= \frac{{2\pi i}}{{4i}}\frac{1}{2} + 2\frac{{2\pi i}}{{4i}} \times 0 = \frac{\pi }{4}
 \end{aligned}$$
 
-* * *
+---
 
 $$\mathop \smallint \nolimits_0^\infty  \frac{{dx}}{{\sqrt x [{x^2} + 7x + 1][1 - x + {x^2} - {x^3} +  \cdots  + {x^{2016}}]}} = \frac{\pi }{3}$$
 
