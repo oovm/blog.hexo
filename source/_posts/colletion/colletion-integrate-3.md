@@ -47,7 +47,7 @@ $$\lim_{n \to \infty } {I_n}$$
 
 $$\begin{aligned}
 I &= \mathop {\lim }\limits_{n \to \infty } {I_n}\\
-{I_n} &= \int_{1/n}^1 {\left( {\left\lfloor {\frac{\alpha }{x}} \right\rfloor - \alpha \left\lfloor {\frac{1}{x}} \right\rfloor } \right)} dx\\
+{I_n} &= \int_{1/n}^1 {\left( {\left\lfloor {\frac{\alpha }{x}} \right\rfloor - \alpha \left\lfloor {\frac{1}{x}} \right\rfloor } \right)} \mathrm{d}x\\
 &= - \alpha \int_{n\alpha }^n {\frac{{\left\lfloor u \right\rfloor }}{u^2}} du \\
 &= - \alpha \int_{1}^{n} \frac{\left\lfloor u\right\rfloor}{u^2} \, du + \alpha \int_{1}^{\lfloor n \alpha \rfloor} \frac{\left\lfloor u\right\rfloor}{u^2} \, du + \alpha \int_{\lfloor n \alpha \rfloor}^{n \alpha} \frac{\left\lfloor u\right\rfloor}{u^2} \, du \\
 &= -\alpha \sum_{k=2}^{n} \frac{1}{k} + \alpha \sum_{k=2}^{\lfloor n \alpha \rfloor}\frac{1}{k} + \alpha \frac{n \alpha - \lfloor n \alpha \rfloor}{n \alpha}
@@ -87,9 +87,9 @@ $$\int_0^1 {{{\left\lfloor {{x^{ - 1}}} \right\rfloor }^{ - 1}}} dx = \frac{{{\p
 $${\left\lfloor {\frac{1}{x}} \right\rfloor ^{ - 1}} = \frac{1}{k}\quad \quad \forall x \in (\frac{1}{{k + 1}},\frac{1}{k}]$$
 
 $$\begin{aligned}
-{I_n} &= \int_{1/n}^1 {{{\left\lfloor {\frac{1}{x}} \right\rfloor }^{ - 1}}} dx\\
-&= \sum\limits_{k = 1}^{n - 1} {\int_{1/(k + 1)}^{1/k} {{{\left\lfloor {\frac{1}{x}} \right\rfloor }^{ - 1}}} } dx\\
-&= \sum\limits_{k = 1}^{n - 1} {\int_{1/(k + 1)}^{1/k} {\frac{1}{k}} } dx\\
+{I_n} &= \int_{1/n}^1 {{{\left\lfloor {\frac{1}{x}} \right\rfloor }^{ - 1}}} \mathrm{d}x\\
+&= \sum\limits_{k = 1}^{n - 1} {\int_{1/(k + 1)}^{1/k} {{{\left\lfloor {\frac{1}{x}} \right\rfloor }^{ - 1}}} } \mathrm{d}x\\
+&= \sum\limits_{k = 1}^{n - 1} {\int_{1/(k + 1)}^{1/k} {\frac{1}{k}} } \mathrm{d}x\\
 &= \sum\limits_{k = 1}^{n - 1} {\frac{1}{k}} \cdot \frac{1}{{k(k + 1)}}
 \end{aligned}$$
 
@@ -112,9 +112,9 @@ $$\begin{aligned}
 \int_{1}^\infty \lfloor t\rfloor^{-1} t^{-(s+2)}dt
 &= \sum_{k=1}^\infty \frac{1}k\int_{k}^{k+1}t^{-(s+2)}dt \\&= \frac{1}{s+1}\sum_{k=1}^\infty \frac{1}{k}\left(k^{-(s+1)}-(k+1)^{-(s+1)}\right)\\
 &= \frac{1}{s+1}\left(\sum_{k=1}^\infty \frac{1}{k^{s+2}}-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}}\right)\\
-\int_0^1 \lfloor x^{-1} \rfloor^{-1} (s+1)\:x^s \:\mathrm dx &= \zeta(s+2)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}} \quad s >1\\
-\int_0^1 \lfloor x^{-1} \rfloor^{-1} s\:x^{s-1} \:\mathrm dx &= \zeta(s+1)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}} \quad\quad s >2\\
+\int_0^1 \lfloor x^{-1} \rfloor^{-1} (s+1)\:x^s \:\mathrm \mathrm{d}x&= \zeta(s+2)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}} \quad s >1\\
+\int_0^1 \lfloor x^{-1} \rfloor^{-1} s\:x^{s-1} \:\mathrm \mathrm{d}x&= \zeta(s+1)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}} \quad\quad s >2\\
 \sum_{k=1}^\infty \frac{1}{k(k+1)^{s}}-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}}&=\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}}\left(1-\frac{1}{(k+1)}\right)=\zeta(s+1)-1\\
-\int_0^1 \lfloor x^{-1} \rfloor^{-1} ((s+1)x^s-sx^{s-1}) dx &= \zeta(s+2)-1 \quad s >0 \quad\square
+\int_0^1 \lfloor x^{-1} \rfloor^{-1} ((s+1)x^s-sx^{s-1}) \mathrm{d}x&= \zeta(s+2)-1 \quad s >0 \quad\square
 \end{aligned}$$
 <p>```

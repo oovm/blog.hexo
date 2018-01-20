@@ -91,9 +91,9 @@ $$H_x=\int _{0}^{1}{\frac {1-t^{x}}{1-t}}\text{d}t$$
 $$\begin{aligned}
 \gamma &=-\int _{0}^{\infty }e^{-x}\ln x\mathrm{d}x\\
 &=-4\int _{0}^{\infty }e^{-x^{2}}x\cdot \ln x\mathrm{d}x\\
-&=-\int _{0}^{1}\ln \left(\ln {\frac {1}{x}}\right)dx\\
-&=\int _{0}^{\infty }\left({\frac {1}{e^{x}-1}}-{\frac {1}{x\cdot e^{x}}}\right)dx\\
-&=\int _{0}^{1}\left({\frac {1}{\ln x}}+{\frac {1}{1-x}}\right)dx\\&=\int _{0}^{\infty }\left({\frac {1}{1+x^{k}}}-e^{-x}\right){\frac {dx}{x}}\;\quad k>0\\
+&=-\int _{0}^{1}\ln \left(\ln {\frac {1}{x}}\right)\mathrm{d}x\\
+&=\int _{0}^{\infty }\left({\frac {1}{e^{x}-1}}-{\frac {1}{x\cdot e^{x}}}\right)\mathrm{d}x\\
+&=\int _{0}^{1}\left({\frac {1}{\ln x}}+{\frac {1}{1-x}}\right)\mathrm{d}x\\&=\int _{0}^{\infty }\left({\frac {1}{1+x^{k}}}-e^{-x}\right){\frac \mathrm{d}x{x}}\;\quad k>0\\
 &=\int _{0}^{1}H_{x}\mathrm{d}x
 \end{aligned}$$
 

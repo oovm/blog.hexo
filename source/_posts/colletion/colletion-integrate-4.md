@@ -56,7 +56,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$\begin{aligned}
-I &= \int_0^1 {\frac{{dx}}{{{{\left( {1 - {x^n}} \right)}^{1/n}}}}} \\
+I &= \int_0^1 {\frac{\mathrm{d}x}{{{{\left( {1 - {x^n}} \right)}^{1/n}}}}} \\
 &= \int_0^\infty {{{\left( {1 + {z^n}} \right)}^{1/n}}\frac{{dz}}{{{{\left( {1 + {z^n}} \right)}^{1 + 1/n}}}}} \\
 &= \int_0^\infty {\frac{{dz}}{{1 + {z^n}}}} \\
 &= \frac{\pi }{{n\sin \left( {\pi /n} \right)}}\quad\square

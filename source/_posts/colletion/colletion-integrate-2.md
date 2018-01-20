@@ -23,7 +23,7 @@ $$I(n) = \int_0^n {{{\left\lfloor x \right\rfloor }^2} - {{\{ x\} }^2}} dx\quad 
 ```
 $$\begin{aligned}
 I(n)
-&= \sum\limits_{k = 0}^{n - 1} {\int_k^{k + 1} {{{ \lfloor x \rfloor }^2} - {{\{ x\} }^2}} } dx\\
+&= \sum\limits_{k = 0}^{n - 1} {\int_k^{k + 1} {{{ \lfloor x \rfloor }^2} - {{\{ x\} }^2}} } \mathrm{d}x\\
 &= n\int_0^1 {{x^2}} dx - \sum\limits_{k = 0}^{n - 1} {{k^2}}\\
 &= \frac{1}{3}n - \frac{1}{6}(n - 1)n(2n - 1)\\
 &= - \frac{1}{6}\left( {2{n^3} - 3{n^2} - n} \right)\quad\square
@@ -32,9 +32,9 @@ I(n)
 使用这个方法我们可以计算出:
 
 $$\begin{aligned}
-\int_0^n {{{\left\lceil x \right\rceil }^2}} dx &= \frac{1}{6}\left( {2{n^3} + 3{n^2} + n} \right)\\
-\int_0^n {{{\left\lfloor x \right\rfloor }^2}} dx &= \frac{1}{6}\left( {2{n^3} - 3{n^2} + n} \right)\\
-\int_0^n {{{\{ x\} }^2}} dx &= \frac{1}{3}n
+\int_0^n {{{\left\lceil x \right\rceil }^2}} \mathrm{d}x&= \frac{1}{6}\left( {2{n^3} + 3{n^2} + n} \right)\\
+\int_0^n {{{\left\lfloor x \right\rfloor }^2}} \mathrm{d}x&= \frac{1}{6}\left( {2{n^3} - 3{n^2} + n} \right)\\
+\int_0^n {{{\{ x\} }^2}} \mathrm{d}x&= \frac{1}{3}n
 \end{aligned}$$
 
 ---
@@ -44,7 +44,7 @@ $$\begin{aligned}
 $$\begin{aligned}
 {x^2} &= {\left( {\{ x\} + \left\lfloor x \right\rfloor } \right)^2}\\
 \{ x\} \left\lfloor x \right\rfloor &= \frac{1}{2}\left( {{x^2} - {{\{ x\} }^2} - {{\left\lfloor x \right\rfloor }^2}} \right)\\
-\int_0^n {\{ x\} } \left\lfloor x \right\rfloor dx &= \frac{1}{6}{n^3} - \frac{1}{2}\int_0^n {{{\{ x\} }^2}} + {\left\lfloor x \right\rfloor ^2}dx\\
+\int_0^n {\{ x\} } \left\lfloor x \right\rfloor \mathrm{d}x&= \frac{1}{6}{n^3} - \frac{1}{2}\int_0^n {{{\{ x\} }^2}} + {\left\lfloor x \right\rfloor ^2}\mathrm{d}x\\
 &= \frac{1}{4}(n - 1)n\quad\square
 \end{aligned}$$
 
@@ -56,7 +56,7 @@ $$\begin{aligned}
 1&{x\not \in \mathbb{Z}}
 \end{array}} \right.\\
 \left\lceil x \right\rceil \left\lfloor x \right\rfloor &= \frac{1}{2}\left( {{f^2}(x) - {{\left\lceil x \right\rceil }^2} - {{\left\lfloor x \right\rfloor }^2}} \right)\\
-\int_0^n {\left\lceil x \right\rceil \left\lfloor x \right\rfloor dx} &= {n^3} - \frac{1}{2}\int_0^n {{{\left\lceil x \right\rceil }^2}} + {\left\lfloor x \right\rfloor ^2}dx\\
+\int_0^n {\left\lceil x \right\rceil \left\lfloor x \right\rfloor dx} &= {n^3} - \frac{1}{2}\int_0^n {{{\left\lceil x \right\rceil }^2}} + {\left\lfloor x \right\rfloor ^2}\mathrm{d}x\\
 &= \frac{1}{3}({n^3} - n)\quad\square
 \end{aligned}$$
 
@@ -83,8 +83,8 @@ f(x)& = \lceil x \rceil - \lfloor x \rfloor = \left\{ {\begin{array}{*{20}{l}}
 所以
 
 $$\begin{aligned}
-I&=\int_0^1 x \left\lceil {\frac{1}{x}} \right\rceil \left\{ {\frac{1}{x}} \right\}dx\\
-&= \int_0^1 x (1 + \left\lfloor {\frac{1}{x}} \right\rfloor )(\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor )dx\\
+I&=\int_0^1 x \left\lceil {\frac{1}{x}} \right\rceil \left\{ {\frac{1}{x}} \right\}\mathrm{d}x\\
+&= \int_0^1 x (1 + \left\lfloor {\frac{1}{x}} \right\rfloor )(\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor )\mathrm{d}x\\
 &= \int_1^\infty {\frac{1}{y}} (1 + \left\lfloor y \right\rfloor )(y - \left\lfloor y \right\rfloor )\frac{{dy}}{{{y^2}}}\\
 &= \sum\limits_{n = 1}^\infty {\int_n^{n + 1} {\frac{1}{{{y^3}}}} } (1 + n)(y - n)dy\\
 &= \frac{1}{2}\sum\limits_{n = 1}^\infty {\frac{1}{{n(n + 1)}}} \\
@@ -100,10 +100,10 @@ $$\int { \lfloor x \rfloor } \mathrm{d}x = x \lfloor x \rfloor  - \frac{{ \lflo
 只有限定了整数到整数的定积分才能有比较看得下去的结论.
 
 $$\begin{aligned}
-\int_0^n {{{ \lceil x \rceil }^p}} dx &= {n^p} + \frac{{{B_{p + 1}}(n) - {B_{p + 1}}}}{{p + 1}}\\
-\int_0^n {{{ \lfloor x \rfloor }^p}} dx &= \frac{{{B_{p + 1}}(n) - {B_{p + 1}}}}{{p + 1}}\\
-\int_0^n {{{ \lfloor x \rceil }^p}} dx &= \frac{{{n^p}}}{2} + \frac{{{B_{p + 1}}(n) - {B_{p + 1}}}}{{p + 1}}\\
-\int_0^n {{{\{ x\} }^p}} dx &= \frac{n}{{p + 1}}
+\int_0^n {{{ \lceil x \rceil }^p}} \mathrm{d}x&= {n^p} + \frac{{{B_{p + 1}}(n) - {B_{p + 1}}}}{{p + 1}}\\
+\int_0^n {{{ \lfloor x \rfloor }^p}} \mathrm{d}x&= \frac{{{B_{p + 1}}(n) - {B_{p + 1}}}}{{p + 1}}\\
+\int_0^n {{{ \lfloor x \rceil }^p}} \mathrm{d}x&= \frac{{{n^p}}}{2} + \frac{{{B_{p + 1}}(n) - {B_{p + 1}}}}{{p + 1}}\\
+\int_0^n {{{\{ x\} }^p}} \mathrm{d}x&= \frac{n}{{p + 1}}
 \end{aligned}$$
 
 附上计算机验证:

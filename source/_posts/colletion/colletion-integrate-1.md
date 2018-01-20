@@ -115,8 +115,8 @@ $$\int_0^1 {\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor } dx = 1 - \g
 
 $$\begin{aligned}
 I &= \mathop {\lim }\limits_{k \to \infty } {I_k}\\
-{I_k} &= \int_{\frac{1}{k}}^1 {\left( {\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor } \right)} dx\\
-&= \sum\limits_{i = 1}^{k - 1} {\int_{\frac{1}{{i + 1}}}^{\frac{1}{i}} {\left( {\frac{1}{x} - i} \right)} } dx\\
+{I_k} &= \int_{\frac{1}{k}}^1 {\left( {\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor } \right)} \mathrm{d}x\\
+&= \sum\limits_{i = 1}^{k - 1} {\int_{\frac{1}{{i + 1}}}^{\frac{1}{i}} {\left( {\frac{1}{x} - i} \right)} } \mathrm{d}x\\
 &= \sum\limits_{i = 1}^{k - 1} {\left[ {\ln (x) - ix} \right]_{\frac{1}{{i + 1}}}^{\frac{1}{i}}} \\
 I &= \mathop {\lim }\limits_{k \to \infty } \left( {\ln (k) - \sum\limits_{i = 2}^k {\frac{1}{i}} } \right) = 1 - \gamma
 \end{aligned}$$```

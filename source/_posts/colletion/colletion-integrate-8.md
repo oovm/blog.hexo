@@ -51,9 +51,9 @@ $$\int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\
 $$I = \int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx$$
 
 $$\begin{aligned}
-I &= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx + \int_{ - \pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\\
-&= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx - \int_{\pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\\
-&= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\\
+I &= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx + \int_{ - \pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
+&= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx - \int_{\pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
+&= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
 I &= 2\int_{ - \pi /2}^0 {\frac{{{{\cos }^{2a}}t}}{{{{\sin }^{2a}}t + {{\cos }^{2a}}t}}} dt\quad x \to t - \pi /2\\
 I &= 2\int_0^{\pi /2} {\frac{{{{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\quad t \to - x\\
 2I &= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx = 2\int_0^{\pi /2} d x = \pi
@@ -72,7 +72,7 @@ $$I = \int_{ - \pi /2}^{\pi /2} {\frac{1}{{{{2016}^x} + 1}}\left( {\frac{{{{\sin
 $$\begin{aligned}
 f(x) &= \frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\cos }^{2016}}x}} \Rightarrow f(x) = f( - x)\\
 I &= \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^x}}}} dx = \int_{ - a}^a {\frac{{f( - x)}}{{1 + {{2016}^{ - x}}}}} dx = \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^{ - x}}}}} \\
-\Rightarrow 2I &= \int_{ - a}^a f (x)\left( {\frac{1}{{1 + {{2016}^x}}} + \frac{1}{{1 + {{2016}^{ - x}}}}} \right)dx = \int_{ - a}^a f (x)dx\\
+\Rightarrow 2I &= \int_{ - a}^a f (x)\left( {\frac{1}{{1 + {{2016}^x}}} + \frac{1}{{1 + {{2016}^{ - x}}}}} \right)dx = \int_{ - a}^a f (x)\mathrm{d}x\\
 \therefore I &= \frac{\pi }{2}\quad \square
 \end{aligned}$$
 
@@ -80,13 +80,13 @@ I &= \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^x}}}} dx = \int_{ - a}^a {\frac{{
 
 话说我之前说过要有点想象力,以函数作为参数也不是不可以,于是我这里又找到了一个例子:
 
-$$I(f(x)) = \iint_R {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dt}}\;{\text{dx}}}$$
+$$I(f(x)) = \iint_R {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dt}}\;\mathrm{d}x}$$
 
 $$\begin{aligned}
-I(f(x)) &= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dt}}} \;{\text{dx}}} \\
-&= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dx}}} \;{\text{dt}}} \\
+I(f(x)) &= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dt}}} \;\mathrm{d}x} \\
+&= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}\mathrm{d}x} \;{\text{dt}}} \\
 &= \int_{ - \infty }^\infty {\left[ {f(t){{\tan }^{ - 1}}(x + g(t))} \right]_{ - \infty }^\infty {\text{dt}}} \;\\
-&= \pi \int_{ - \infty }^\infty {f(t)\;{\text{dx}}}
+&= \pi \int_{ - \infty }^\infty {f(t)\;\mathrm{d}x}
 \end{aligned}$$
 
 ---
@@ -108,7 +108,7 @@ I(n) &= \int_0^\infty {\frac{{\sin ((2n - 1)x)}}{{x(\cos (x) + \cosh (x))}}} \ma
 
 ---
 
-$$\mathop \smallint \nolimits_0^\infty  \frac{{dx}}{{\sqrt x [{x^2} + 7x + 1][1 - x + {x^2} - {x^3} +  \cdots  + {x^{2016}}]}} = \frac{\pi }{3}$$
+$$\mathop \smallint \nolimits_0^\infty  \frac{\mathrm{d}x}{{\sqrt x [{x^2} + 7x + 1][1 - x + {x^2} - {x^3} +  \cdots  + {x^{2016}}]}} = \frac{\pi }{3}$$
 
 后面的2016肯定没用.所以有用的参数就是7了.
 

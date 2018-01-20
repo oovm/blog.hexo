@@ -20,9 +20,9 @@ $$\int_{0}^{\infty} \mathrm{e}^{-x^2}\, dx = \frac{\sqrt \pi}{2}$$
 <!--more-->
 
 $$\begin{aligned}
-I &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} {\text{dx}}\\
-{I^2} &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} {\text{dx}}\int_{ - \infty }^{ + \infty } {{e^{ - {y^2}}}} {\text{dy}}\\
-&= \int_{ - \infty }^{ + \infty } {\int_{ - \infty }^{ + \infty } {{e^{ - ({x^2} + {y^2})}}} } {\text{dx}}\;{\text{dy}}\\
+I &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} \mathrm{d}x\\
+{I^2} &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} \mathrm{d}x\int_{ - \infty }^{ + \infty } {{e^{ - {y^2}}}} {\text{dy}}\\
+&= \int_{ - \infty }^{ + \infty } {\int_{ - \infty }^{ + \infty } {{e^{ - ({x^2} + {y^2})}}} } \mathrm{d}x\;{\text{dy}}\\
 &= \int_0^{ + 2\pi } {\int_0^{ + \infty } {{e^{ - {r^2}}}} } r{\text{dr}}\;\mathrm{d}\theta \\
 &= 2\pi \int_0^{ + \infty } {{e^{ - u}}} {\text{du}}/2 = \pi \\
 \Rightarrow I &= \sqrt \pi
@@ -47,8 +47,8 @@ $$I = \int_0^1 {\frac{{{x^2} - 1}}{{\ln x}}} \mathrm{d}x$$
 定义一个函数:
 
 $$\begin{aligned}
-I(a) &= \int_0^1 {\frac{{{x^a} - 1}}{{\ln x}}} dx\\
-I'(a) &= \int_0^1 {\frac{{{x^a}\ln x}}{{\ln x}}} dx = \int_0^1 {{x^a}} dx\\
+I(a) &= \int_0^1 {\frac{{{x^a} - 1}}{{\ln x}}} \mathrm{d}x\\
+I'(a) &= \int_0^1 {\frac{{{x^a}\ln x}}{{\ln x}}} dx = \int_0^1 {{x^a}} \mathrm{d}x\\
 I(a) &= \int_0^x {\frac{1}{{1 + a}}da} = \ln (n + 1)
 \end{aligned}$$
 
@@ -61,7 +61,7 @@ $$I = \int_0^1 {\frac{{{x^2} - \sqrt x }}{{\ln x}}} dx$$
 一样定义一个函数,不过方法有点不一样:
 
 $$\begin{aligned}
-I(a,b) &= \int_0^1 {\frac{{{x^b} - {x^a}}}{{\ln x}}} dx\\
+I(a,b) &= \int_0^1 {\frac{{{x^b} - {x^a}}}{{\ln x}}} \mathrm{d}x\\
 &= \int_0^1 {\left[ {\int_a^b {{x^y}} dy} \right]dx} \\
 &= \int_a^b {\left[ {\int_0^1 {{x^y}} dx} \right]dy} \\
 &= \int_a^b {\frac{1}{{y + 1}}} dy\\
@@ -99,9 +99,9 @@ $$\int_0^\infty  {\frac{{{e^{ - {x^n}}} - {e^{ - {x^m}}}}}{{x\ln x}}} dx = \ln 
 这已经是参积分了怎么化呢?我觉得你很缺少想象力,不如以函数为参数:
 
 $$\begin{aligned}
-I(f(x)) &= \int_0^\infty {\frac{{f\left( {{x^n}} \right) - f\left( {{x^m}} \right)}}{{x\log \left( x \right)}}} dx\\
+I(f(x)) &= \int_0^\infty {\frac{{f\left( {{x^n}} \right) - f\left( {{x^m}} \right)}}{{x\log \left( x \right)}}} \mathrm{d}x\\
 &= \int_{ - \infty }^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}} dx\quad \log \left( x \right) \mapsto v\\
-&= \int_0^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}} dx - \int_0^\infty {\frac{{f\left( {{e^{ - vn}}} \right) - f\left( {{e^{ - vm}}} \right)}}{v}} dx\\
+&= \int_0^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}} dx - \int_0^\infty {\frac{{f\left( {{e^{ - vn}}} \right) - f\left( {{e^{ - vm}}} \right)}}{v}} \mathrm{d}x\\
 &= \left( {f(1) - f(\infty )} \right)\log \frac{m}{n} - \left( {f(1) - f(\infty )} \right)\log \frac{m}{n}\\
 &= \left. { - f(x)} \right|_0^\infty \ln \frac{m}{n}
 \end{aligned}$$
@@ -117,9 +117,9 @@ $$f(k) = \int_0^1 {{{\left( {{x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}} dx$$
 我们不出产这种烂参积分的,我们重新定义一个函数.
 
 $$\begin{aligned}
-{I_k}(a) &= \int_0^1 {{{\left( {a \cdot {x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}} dx\\
-{I_{k'}}(a) &= 2\int_0^1 {{x^k}} \left( {a \cdot {x^k} + \frac{{\ln x}}{{1 - x}}} \right)dx\\
-&= \frac{{2a}}{{2k + 1}} + 2\int_0^1 {\frac{{{x^k}\ln x}}{{1 - x}}} dx\\
+{I_k}(a) &= \int_0^1 {{{\left( {a \cdot {x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}} \mathrm{d}x\\
+{I_{k'}}(a) &= 2\int_0^1 {{x^k}} \left( {a \cdot {x^k} + \frac{{\ln x}}{{1 - x}}} \right)\mathrm{d}x\\
+&= \frac{{2a}}{{2k + 1}} + 2\int_0^1 {\frac{{{x^k}\ln x}}{{1 - x}}} \mathrm{d}x\\
 {I_k}(a) &= \frac{{{a^2}}}{{2k + 1}} + \left( {2\sum\limits_{j = 1}^k {\frac{1}{{{j^2}}}} - \frac{{{\pi ^2}}}{3}} \right)a + C
 \end{aligned}$$
 
@@ -130,7 +130,7 @@ $$C = \int_0^1 {{{\left( {\frac{{\ln x}}{{1 - x}}} \right)}^2}dx}  = \frac{{{\p
 综上所述:
 
 $$\begin{aligned}
-{I_k}(a) &= \int_0^1 {{{\left( {a \cdot {x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}} dx\\
+{I_k}(a) &= \int_0^1 {{{\left( {a \cdot {x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}} \mathrm{d}x\\
 &= \frac{{{a^2}}}{{2k + 1}} + \left( {2\sum\limits_{j = 1}^k {\frac{1}{{{j^2}}}} - \frac{{{\pi ^2}}}{3}} \right)a + \frac{{{\pi ^2}}}{3}\\
 &= \frac{{{a^2}}}{{2k + 1}} + a\left( {2H_k^{(2)} - \frac{{{\pi ^2}}}{3}} \right) + \frac{{{\pi ^2}}}{3}\\
 &= \frac{{{a^2}}}{{2k + 1}} - 2a{\psi ^{(1)}}(k + 1) + \frac{{{\pi ^2}}}{3}

@@ -127,7 +127,7 @@ $$\begin{aligned}
 然后一样的步骤后可以得到:
 
 $$\begin{aligned}
-I_{\cos } &= \int {\frac{{c + d\cos x}}{{a + b\cos x}}\mathrm{d}x} = \frac{{dx}}{b} + \frac{{2(ad - bc)}}{{b\sqrt {{b^2} - {a^2}} }}{\tanh ^{ - 1}}\left( {\frac{{(a - b)\tan (x/2)}}{{\sqrt {{b^2} - {a^2}} }}} \right)\\
+I_{\cos } &= \int {\frac{{c + d\cos x}}{{a + b\cos x}}\mathrm{d}x} = \frac{\mathrm{d}x}{b} + \frac{{2(ad - bc)}}{{b\sqrt {{b^2} - {a^2}} }}{\tanh ^{ - 1}}\left( {\frac{{(a - b)\tan (x/2)}}{{\sqrt {{b^2} - {a^2}} }}} \right)\\
 I_{\sec } &= \int {\frac{{c + d\sec x}}{{a + b\sec x}}\mathrm{d}x} = \frac{{cx}}{a} + \frac{{2(bc - ad)}}{{a\sqrt {{a^2} - {b^2}} }}{\tanh ^{ - 1}}\left( {\frac{{(b - a)\tan (x/2)}}{{\sqrt {{a^2} - {b^2}} }}} \right)
 \end{aligned}$$
 
@@ -170,9 +170,9 @@ $$\begin{aligned}
 还没完呢,是不是得考虑下$a = b$时的积分?此时下面的系数可以直接提出来,所以就是:
 
 $$\begin{aligned}
-{I_{\sin }} &= \int {\frac{{c + d\sin x}}{{1 + \sin x}}\mathrm{d}x} = \frac{{2(c - d)}}{{\cot (x/2) + 1}} + dx\\
+{I_{\sin }} &= \int {\frac{{c + d\sin x}}{{1 + \sin x}}\mathrm{d}x} = \frac{{2(c - d)}}{{\cot (x/2) + 1}} + \mathrm{d}x\\
 {I_{\csc }} &= \int {\frac{{c + d\csc x}}{{1 + \csc x}}\mathrm{d}x} = \frac{{2(d - c)}}{{\cot (x/2) + 1}} + cx\\
-{I_{\cos }} &= \int {\frac{{c + d\cos x}}{{1 + \cos x}}\mathrm{d}x} = (c - d)\tan \left( {\frac{x}{2}} \right) + dx\\
+{I_{\cos }} &= \int {\frac{{c + d\cos x}}{{1 + \cos x}}\mathrm{d}x} = (c - d)\tan \left( {\frac{x}{2}} \right) + \mathrm{d}x\\
 {I_{\sec }} &= \int {\frac{{c + d\sec x}}{{1 + \sec x}}\mathrm{d}x} = (d - c)\tan \left( {\frac{x}{2}} \right) + cx\\
 {I_{\tan }} &= \int {\frac{{c + d\tan x}}{{1 + \tan x}}\mathrm{d}x} = \frac{{c - d}}{2}\log (\sin x + \cos x) + \frac{{c + d}}{2}x\\
 {I_{\cot }} &= \int {\frac{{c + d\cot x}}{{1 + \cot x}}\mathrm{d}x} = \frac{{d - c}}{2}\log (\sin x + \cos x) + \frac{{c + d}}{2}x

@@ -12,7 +12,7 @@ date: 2017-01-09 20:31:15
 ```
 格拉瑟主定理(Glasser's Master Theorem)的标准表述如下:
 
-恒等式$PV\int_{ - \infty }^{ + \infty } {F(\phi (x)){\rm{dx}}}  = PV\int_{ - \infty }^{ + \infty } {F(x){\rm{dx}}} $对任意可积函数$F(x)$和$\phi (x) = |a|x - \sum\limits_{n = 1}^N {\frac{{|{\alpha _n}|}}{{x - {\beta _n}}}} $成立.
+恒等式$PV\int_{ - \infty }^{ + \infty } {F(\phi (x)){\mathrm{d}x}}  = PV\int_{ - \infty }^{ + \infty } {F(x){\mathrm{d}x}} $对任意可积函数$F(x)$和$\phi (x) = |a|x - \sum\limits_{n = 1}^N {\frac{{|{\alpha _n}|}}{{x - {\beta _n}}}} $成立.
 
 其中$a,\left\{ {{\alpha _n}} \right\}_{n = 1}^N,\left\{ {{\beta _n}} \right\}_{n = 1}^N$可以是任意常数,PV是柯西主值(Cauchy Principal Value)不可以两边约掉的啊魂淡可我怎么总是有种两边划掉的强烈冲动怎么办才好啊好烦啊要控制不住了的说....
 
@@ -32,13 +32,13 @@ $$\begin{aligned}
 
 不过你看下上面格拉瑟主定理的形式就知道其实就是这么个玩意儿而已:
 
-$$\bigstar \int_{ - \infty }^\infty {{{\left[ {{{\left( {x - \sum\limits_{i = 0}^b {\frac{1}{{i + x}}} } \right)}^{2a}} + 1} \right]}^{ - 1}}{\rm{dx}}} = \int_{ - \infty }^\infty {\frac{1}{{{x^{2a}} + 1}}{\rm{dx}}} = \frac{\pi }{{a}}\csc \left( {\frac{\pi }{{2a}}} \right)\quad a,b \in + $$
+$$\bigstar \int_{ - \infty }^\infty {{{\left[ {{{\left( {x - \sum\limits_{i = 0}^b {\frac{1}{{i + x}}} } \right)}^{2a}} + 1} \right]}^{ - 1}}{\mathrm{d}x}} = \int_{ - \infty }^\infty {\frac{1}{{{x^{2a}} + 1}}{\mathrm{d}x}} = \frac{\pi }{{a}}\csc \left( {\frac{\pi }{{2a}}} \right)\quad a,b \in + $$
 
 ---
 
 求证:
 
-$$\int_{ - \infty }^{ + \infty } {{e^{ - \pi {x^2}{{\left( {\frac{{\alpha  + x}}{{\beta  + x}}} \right)}^2}}}{\rm{dx}}}  = 1$$
+$$\int_{ - \infty }^{ + \infty } {{e^{ - \pi {x^2}{{\left( {\frac{{\alpha  + x}}{{\beta  + x}}} \right)}^2}}}{\mathrm{d}x}}  = 1$$
 
 格拉瑟主定理多取一阶就有:
 
@@ -47,16 +47,16 @@ $$\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \i
 来,凑配一下秒了...
 
 $$\begin{aligned}
-\int_{ - \infty }^\infty {{e^{ - \pi {x^2}{{\left( {\frac{{\alpha + x}}{{\beta + x}}} \right)}^2}}}{\rm{dx}}}
-&= \int_{ - \infty }^\infty {{e^{ - \pi {{\left( {x - \frac{{(\alpha - \beta )\beta }}{{x + \beta }} + \alpha - \beta } \right)}^2}}}{\rm{dx}}} \\
-&= \int_{ - \infty }^\infty {{e^{ - \pi {{\left( {x + \alpha - \beta } \right)}^2}}}{\rm{dx}}} \\
-&= \int_{ - \infty }^\infty {{e^{ - \pi {x^2}}}{\rm{dx}}} \\
+\int_{ - \infty }^\infty {{e^{ - \pi {x^2}{{\left( {\frac{{\alpha + x}}{{\beta + x}}} \right)}^2}}}{\mathrm{d}x}}
+&= \int_{ - \infty }^\infty {{e^{ - \pi {{\left( {x - \frac{{(\alpha - \beta )\beta }}{{x + \beta }} + \alpha - \beta } \right)}^2}}}{\mathrm{d}x}} \\
+&= \int_{ - \infty }^\infty {{e^{ - \pi {{\left( {x + \alpha - \beta } \right)}^2}}}{\mathrm{d}x}} \\
+&= \int_{ - \infty }^\infty {{e^{ - \pi {x^2}}}{\mathrm{d}x}} \\
 &= 1
 \end{aligned}$$
 
 引论:
 
-$$\bigstar I(a,b) = \int_{ - \infty }^{ + \infty } {xf\left( {x - \frac{a}{{x - b}}} \right){\rm{dx}}}  = \int_{ - \infty }^{ + \infty } {xf\left( x \right){\rm{dx}}}$$
+$$\bigstar I(a,b) = \int_{ - \infty }^{ + \infty } {xf\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}}  = \int_{ - \infty }^{ + \infty } {xf\left( x \right){\mathrm{d}x}}$$
 
 引证:
 
@@ -76,10 +76,10 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 \frac{{\partial I}}{{\partial a}}
-&= - \int_{ - \infty }^{ + \infty } {\frac{x}{{x - b}}f'\left( {x - \frac{a}{{x - b}}} \right){\rm{dx}}} - \int_{ - \infty }^{ + \infty } {\left( {1 + \frac{b}{{x - b}}} \right)f'\left( {x - \frac{a}{{x - b}}} \right){\rm{dx}}} \\
-&= - \int_{ - \infty }^{ + \infty } {\frac{{2x}}{{x - b}}f'\left( {x - \frac{a}{{x - b}}} \right){\rm{dx}}} = 0\\
+&= - \int_{ - \infty }^{ + \infty } {\frac{x}{{x - b}}f'\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}} - \int_{ - \infty }^{ + \infty } {\left( {1 + \frac{b}{{x - b}}} \right)f'\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}} \\
+&= - \int_{ - \infty }^{ + \infty } {\frac{{2x}}{{x - b}}f'\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}} = 0\\
 \frac{{\partial I}}{{\partial b}}
-&= - \int_{ - \infty }^{ + \infty } {\frac{x}{{{{(x - b)}^2}}}f'\left( {x - \frac{a}{{x - b}}} \right)} {\rm{dx}} - \int_{ - \infty }^{ + \infty } {\left( {\frac{1}{{x - b}} + \frac{b}{{{{(x - b)}^2}}}} \right)f'\left( {x - \frac{a}{{x - b}}} \right){\rm{dx}}} \\
+&= - \int_{ - \infty }^{ + \infty } {\frac{x}{{{{(x - b)}^2}}}f'\left( {x - \frac{a}{{x - b}}} \right)} {\mathrm{d}x} - \int_{ - \infty }^{ + \infty } {\left( {\frac{1}{{x - b}} + \frac{b}{{{{(x - b)}^2}}}} \right)f'\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}} \\
 &= - \int_{ - \infty }^{ + \infty } {\frac{{2x}}{{{{(x - b)}^2}}}f'\left( {x - \frac{a}{{x - b}}} \right)} {\rm{dx = 0}}
 \end{aligned}$$
 
@@ -87,21 +87,21 @@ $$\begin{aligned}
 
 用来解题,求证上一题的威力加强版:
 
-$$\int_{ - \infty }^\infty  {x{e^{ - \pi {x^2}{{\left( {\frac{{a + x}}{{b + x}}} \right)}^2}}}{\rm{dx}}}  = b - a$$
+$$\int_{ - \infty }^\infty  {x{e^{ - \pi {x^2}{{\left( {\frac{{a + x}}{{b + x}}} \right)}^2}}}{\mathrm{d}x}}  = b - a$$
 
 对于$\alpha>\beta$继续强化武器:
 
 $$\begin{aligned}
-\int_{-\infty}^{+\infty}xf\left(x\frac{\alpha +x}{\beta +x}\right){d}x&=\int_{-\infty}^{+\infty}xf\left(x-\frac{(\alpha-\beta)\beta}{x+\beta}+\alpha-\beta\right)dx\\
-&=\int_{-\infty}^{+\infty}(x+\beta-\alpha)f\left(x-\frac{(\alpha-\beta)\beta}{x+2\beta-\alpha}\right)dx\\
+\int_{-\infty}^{+\infty}xf\left(x\frac{\alpha +x}{\beta +x}\right){d}x&=\int_{-\infty}^{+\infty}xf\left(x-\frac{(\alpha-\beta)\beta}{x+\beta}+\alpha-\beta\right)\mathrm{d}x\\
+&=\int_{-\infty}^{+\infty}(x+\beta-\alpha)f\left(x-\frac{(\alpha-\beta)\beta}{x+2\beta-\alpha}\right)\mathrm{d}x\\
 &=I((\alpha-\beta)\beta,\alpha-2\beta)+(\beta-\alpha)\cdot \int_{-\infty}^{+\infty} f(x)dx
 \end{aligned}$$
 
 取$f(x) = {e^{ - \pi {x^2}}}$秒了:
 
 $$\begin{aligned}
-\int_{ - \infty }^\infty {x{e^{ - \pi {x^2}{{\left( {\frac{{a + x}}{{b + x}}} \right)}^2}}}{\rm{dx}}}
-&= \int_{ - \infty }^\infty {x{e^{ - \pi {x^2}}}{\rm{dx}}} + (b - a)\int_{ - \infty }^\infty {{e^{ - \pi {x^2}}}{\rm{dx}}} \\
+\int_{ - \infty }^\infty {x{e^{ - \pi {x^2}{{\left( {\frac{{a + x}}{{b + x}}} \right)}^2}}}{\mathrm{d}x}}
+&= \int_{ - \infty }^\infty {x{e^{ - \pi {x^2}}}{\mathrm{d}x}} + (b - a)\int_{ - \infty }^\infty {{e^{ - \pi {x^2}}}{\mathrm{d}x}} \\
 &= 0 + (b - a) \times 1\\
 &= b - a
 \end{aligned}$$
