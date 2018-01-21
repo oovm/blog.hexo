@@ -41,7 +41,7 @@ $$I{\text{(n)}} = \int_0^1 {\int_t^1  \cdots  } \int_t^1  \mathrm{d}{x_n} \cd
 
 同理可证:
 
-$$I(n) = \int_{{{[0,s]}^n}} {\mathop {\min }\limits_{i \in 1\sim n} [{x_i}]\mathrm{d}{x_i}}  = \int_0^s {{{(s - x)}^n}} dx = \frac{{{s^{n + 1}}}}{{n + 1}}$$
+$$I(n) = \int_{{{[0,s]}^n}} {\mathop {\min }\limits_{i \in 1\sim n} [{x_i}]\mathrm{d}{x_i}}  = \int_0^s {{{(s - x)}^n}}\;\mathrm{d}x = \frac{{{s^{n + 1}}}}{{n + 1}}$$
 
 ---
 

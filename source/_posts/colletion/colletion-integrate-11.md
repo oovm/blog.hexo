@@ -8,7 +8,7 @@ categories:
   - 数学题集
 date: 2017-01-15 21:20:06
 ---
-```
+
 所谓孪生积分就是一种积分技巧,就是一次性算两个积分.唔,这是很常用的积分技巧啦....教科书上基本都有.
 
 一般用于三角函数积分.....就是用的多了会养成习惯....然后连简单的积分都用这个.....然后就没有然后了,因为简单的考试题用基本的积分技巧就能秒了,用这个不是找事情么....
@@ -17,10 +17,10 @@ date: 2017-01-15 21:20:06
 
 我们来研究这样一个积分:
 
-$$F(x) = \int {\frac{{c + d\;{\text{Tri}}(x)}}{{a + b\;{\text{Tri}}(x)}}\mathrm{d}x}$$
+$$F(x) = \int\frac{c + d\;{\text{Tri}}(x)}{a + b\;{\text{Tri}}(x)}\;\mathrm{d}x$$
 
 <!--more-->
-
+```
 其中$\text{Tri}(x)$表示三角函数,三角函数一共有8个,但是其中有俩没啥存在感,正矢和余矢能直接化归到正弦余弦,没啥好研究的.
 
 所以我们发现这个其实就等价于求以下六个函数积分:
@@ -119,7 +119,7 @@ $$\begin{aligned}
 $$\begin{aligned}
 {g_2}(a,b) &= {P_2}(a,b) - {Q_2}(a,b)\\
 &= \int {\frac{{\cos x}}{{a + b\cos x}}\mathrm{d}x} - \int {\frac{{\cos x}}{{a - b\cos x}}\mathrm{d}x} \\
-&= -2 b \int \frac{\cos ^2(x) \text{d}x}{a^2-b^2 \cos ^2(x)} \\
+&= -2 b \int \frac{\cos ^2(x) \mathrm{d}x}{a^2-b^2 \cos ^2(x)} \\
 &= - 2\int {\frac{{\mathrm{d}(b\sin x)}}{{{a^2} - {b^2} + {b^2}{{\sin }^2}x}}} \\
 &= - \frac{2}{{\sqrt {{a^2} - {b^2}} }}\arctan \frac{{b\sin x}}{{\sqrt {{a^2} - {b^2}} }}
 \end{aligned}$$

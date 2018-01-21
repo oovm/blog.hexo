@@ -44,19 +44,19 @@ $$\sum\limits_{k = 1}^\infty  {{{( - 1)}^k}} \frac{{\cos (ka)}}{{{k^2}}} = \fra
 
 比如说在2016年计算这个东西:
 
-$$\int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\cos }^{2016}}x}}} dx$$
+$$\int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\cos }^{2016}}x}}}\;\mathrm{d}x$$
 
 考虑参积分:
 
-$$I = \int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx$$
+$$I = \int_{ - \pi /2}^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}}\;\mathrm{d}x$$
 
 $$\begin{aligned}
-I &= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx + \int_{ - \pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
-&= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx - \int_{\pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
+I &= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}}\;\mathrm{d}x + \int_{ - \pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
+&= \int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}}\;\mathrm{d}x - \int_{\pi /2}^0 {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
 &= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} \mathrm{d}x\\
-I &= 2\int_{ - \pi /2}^0 {\frac{{{{\cos }^{2a}}t}}{{{{\sin }^{2a}}t + {{\cos }^{2a}}t}}} dt\quad x \to t - \pi /2\\
-I &= 2\int_0^{\pi /2} {\frac{{{{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx\quad t \to - x\\
-2I &= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}} dx = 2\int_0^{\pi /2} d x = \pi
+I &= 2\int_{ - \pi /2}^0 {\frac{{{{\cos }^{2a}}t}}{{{{\sin }^{2a}}t + {{\cos }^{2a}}t}}} \;\mathrm{d}t\quad x \to t - \pi /2\\
+I &= 2\int_0^{\pi /2} {\frac{{{{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}}\;\mathrm{d}x\quad t \to - x\\
+2I &= 2\int_0^{\pi /2} {\frac{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}}x}}}\;\mathrm{d}x = 2\int_0^{\pi /2} d x = \pi
 \end{aligned}$$
 
 可惜这里有个限定要求偶数.
@@ -65,14 +65,14 @@ I &= 2\int_0^{\pi /2} {\frac{{{{\cos }^{2a}}x}}{{{{\sin }^{2a}}x + {{\cos }^{2a}
 
 嗯,我觉得上面这个还不够强,还需要威力加强版:
 
-$$I = \int_{ - \pi /2}^{\pi /2} {\frac{1}{{{{2016}^x} + 1}}\left( {\frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\cos }^{2016}}x}}} \right)dx}$$
+$$I = \int_{ - \pi /2}^{\pi /2} {\frac{1}{{{{2016}^x} + 1}}\left( {\frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\cos }^{2016}}x}}} \right)\;\mathrm{d}x}$$
 
 好吧,这只是个常用积分技巧:
 
 $$\begin{aligned}
 f(x) &= \frac{{{{\sin }^{2016}}x}}{{{{\sin }^{2016}}x + {{\cos }^{2016}}x}} \Rightarrow f(x) = f( - x)\\
-I &= \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^x}}}} dx = \int_{ - a}^a {\frac{{f( - x)}}{{1 + {{2016}^{ - x}}}}} dx = \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^{ - x}}}}} \\
-\Rightarrow 2I &= \int_{ - a}^a f (x)\left( {\frac{1}{{1 + {{2016}^x}}} + \frac{1}{{1 + {{2016}^{ - x}}}}} \right)dx = \int_{ - a}^a f (x)\mathrm{d}x\\
+I &= \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^x}}}}\;\mathrm{d}x = \int_{ - a}^a {\frac{{f( - x)}}{{1 + {{2016}^{ - x}}}}}\;\mathrm{d}x = \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^{ - x}}}}} \\
+\Rightarrow 2I &= \int_{ - a}^a f (x)\left( {\frac{1}{{1 + {{2016}^x}}} + \frac{1}{{1 + {{2016}^{ - x}}}}} \right)\;\mathrm{d}x = \int_{ - a}^a f (x)\mathrm{d}x\\
 \therefore I &= \frac{\pi }{2}\quad \square
 \end{aligned}$$
 
@@ -80,12 +80,12 @@ I &= \int_{ - a}^a {\frac{{f(x)}}{{1 + {{2016}^x}}}} dx = \int_{ - a}^a {\frac{{
 
 话说我之前说过要有点想象力,以函数作为参数也不是不可以,于是我这里又找到了一个例子:
 
-$$I(f(x)) = \iint_R {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dt}}\;\mathrm{d}x}$$
+$$I(f(x)) = \iint_R {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{\;\mathrm{d}t}}\;\mathrm{d}x}$$
 
 $$\begin{aligned}
-I(f(x)) &= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{dt}}} \;\mathrm{d}x} \\
-&= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}\mathrm{d}x} \;{\text{dt}}} \\
-&= \int_{ - \infty }^\infty {\left[ {f(t){{\tan }^{ - 1}}(x + g(t))} \right]_{ - \infty }^\infty {\text{dt}}} \;\\
+I(f(x)) &= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}{\text{\;\mathrm{d}t}}} \;\mathrm{d}x} \\
+&= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 + {{(x + g(t))}^2}}}\mathrm{d}x} \;{\text{\;\mathrm{d}t}}} \\
+&= \int_{ - \infty }^\infty {\left[ {f(t){{\tan }^{ - 1}}(x + g(t))} \right]_{ - \infty }^\infty {\text{\;\mathrm{d}t}}} \;\\
 &= \pi \int_{ - \infty }^\infty {f(t)\;\mathrm{d}x}
 \end{aligned}$$
 
@@ -93,11 +93,11 @@ I(f(x)) &= \int_{ - \infty }^\infty {\int_{ - \infty }^\infty {\frac{{f(t)}}{{1 
 
 又找到一个年份积分:
 
-$$\int_0^\infty  {\frac{{\sin (2017x)}}{{x(\cos x + \cosh x)}}} dx = \frac{\pi }{4}$$
+$$\int_0^\infty  {\frac{{\sin (2017x)}}{{x(\cos x + \cosh x)}}}\;\mathrm{d}x = \frac{\pi }{4}$$
 
 怎么着就猜想:
 
-$$I(n) = \int_0^\infty  {\frac{{\sin ((2n - 1)x)}}{{x(\cos x + \cosh x)}}} dx = \frac{\pi }{4}$$
+$$I(n) = \int_0^\infty  {\frac{{\sin ((2n - 1)x)}}{{x(\cos x + \cosh x)}}}\;\mathrm{d}x = \frac{\pi }{4}$$
 
 $$\begin{aligned}
 I(n) &= \int_0^\infty {\frac{{\sin ((2n - 1)x)}}{{x(\cos (x) + \cosh (x))}}} \mathrm{d}x\\

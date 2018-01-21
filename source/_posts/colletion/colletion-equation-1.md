@@ -18,7 +18,7 @@ $$F=\left( {\begin{array}{cccc}
 1&1&1&1 \\
 1&-i&-1&i\\
 1&-1&1&1 \\
-1&i&-1&-i\\
+1&i&-1&-i
 \end{array}} \right)$$
 
 那么存在$\displaystyle \frac{f}{4}F = ({f_1},{f_i},{f_{ - 1}},{f_{ - i}})$ 使得 $\mathfrak{F}({f_1},{f_i},{f_{ - 1}},{f_{ - i}}) = ({f_1},i{f_i}, - {f_{ - 1}}, - i{f_{ - i}})$, 所以对于任意函数 $g(x)$, 有
@@ -40,11 +40,7 @@ g3=FourierTransform[g2,x,t1];
 
 取 $\displaystyle g(x) = {e^{ - x^2}} \Rightarrow f(x) = \frac{\sqrt 2 }{4}(\sqrt 2 {e^{-x^2}} + {e^{-\frac{x^2}{4}}})$
 
-其他常见的解有:
-
-```$$\left\{
-{{e^{ - \frac{{x^2}}{2}}},\frac{1}{{\sqrt[4]{x^2}}},{\text{sech}}\left( {\sqrt {\frac{\pi }{2}} x} \right)}
-\right.$$
+其他常见的解有: $\displaystyle e^{ - \frac{x^2}{2}},\frac{1}{\sqrt[4]{x^2}},\mathrm{sech}\left({\sqrt {\frac{\pi }{2}} x} \right)$ 等等...
 
 ---
 
@@ -55,7 +51,7 @@ g3=FourierTransform[g2,x,t1];
 $$\left\{ \begin{aligned}
 f(x) & = kx{e^{rx}},&g(x) & = {e^{rx}}\\
 f(x) & = k{e^{rx}}\sin (sx),&g(x) & = {e^{rx}}\cos (sx)\\
-f(x) & = k{e^{rx}}\sinh (sx),&g(x) & = {e^{rx}}\cosh (sx)\\
+f(x) & = k{e^{rx}}\sinh (sx),&g(x) & = {e^{rx}}\cosh (sx)
 \end{aligned} \right.$$
 
 证明见 [StackExange-Mathematic](http://math.stackexchange.com/questions/444517/about-the-addition-formula-fxy-fxgyfygx/623551)
@@ -63,7 +59,7 @@ f(x) & = k{e^{rx}}\sinh (sx),&g(x) & = {e^{rx}}\cosh (sx)\\
 ---
 
 > 求解函数方程$f(x + y + z) = f(x)g(y) + f(y)g(z) + f(z)g(x)$
-
+```
 $$\begin{aligned}
 {f(x + y + z) - f(x)g(y) - f(y)g(z) - f(z)g(x)}& = 0 \\
 {f'(x + y + z) - f'(x)g(y) - f(z)g'(x)}& = 0 \\
@@ -74,23 +70,23 @@ $$\begin{aligned}
 {{c_1}}& = {({c_1}z + {c_2})g'(x)} \\
 0& = {{c_1}g'(x)}
 \end {aligned} $$
-
+```
 假如$g$不是个常函数
-
+```
 $$\begin{aligned}
-{c_1}& = 0 \\
-{f{''}( \cdot )}& = 0 \\
-{f(x)}& = {{c_2}x + {c_3}} \\
-{{c_2}}& = {{c_2}g(y) + ({c_2}z + {c_3})g'(x)} \\
-0& = {{c_2}g'(y)} \\
-{{c_2}}& = 0 \\
-{f(x)}& = {{c_3}}
+c_1& = 0 \\
+f''(\cdot)& = 0 \\
+f(x)& = {c_2}x + c_3 \\
+c_2& = {c_2}g(y) + ({c_2}z + {c_3})g'(x) \\
+0& = {c_2}g'(y) \\
+c_2& = 0 \\
+f(x)& = c_3
 \end{aligned} $$
+```
+那么$f$就是常函数, $f$是常函数$g$只能是常函数,矛盾
 
-那么f就是常函数,f是常函数g只能是常函数,矛盾
-
-所以设g是常函数,此时假设f不是常函数
-
+所以设$g$是常函数,此时假设$f$不是常函数
+```
 $$\begin{aligned}
 g'(x)& = 0 \\
 c_1& = 0 \\
@@ -117,29 +113,31 @@ f(x) &= k,&g(x) &= 1/3\\
 > 
 > $$\left\{ \begin{aligned}
 > 
-> &\text{d}y(x) = \sin (y(x)){\text{d}}x\\
+> &\mathrm{d}y(x) = \sin (y(x))\mathrm{d}x\\
 > 
 > &y(0) = 1\\
 > 
 > \end{aligned} \right.$$
-OK,我知道这是道水题
+OK, 看起来很奇怪, 实则这题水出了新高度.
 
 $$\begin{aligned}
-\frac{{{\text{d}}y\left( x \right)}}{{{\text{d}}x}} & = \sin \left( {y\left( x \right)} \right)\\
-\csc \left( {y\left( x \right)} \right)\frac{{{\text{d}}y\left( x \right)}}{{{\text{d}}x}} & = 1\\
-\int {\csc \left( {y\left( x \right)} \right){\text{d}}y\left( x \right)} & = \int {1{\text{d}}x}\\
+\frac{{\mathrm{d}y\left( x \right)}}{{\mathrm{d}x}} & = \sin \left( {y\left( x \right)} \right)\\
+\csc \left( {y\left( x \right)} \right)\frac{{\mathrm{d}y\left( x \right)}}{{\mathrm{d}x}} & = 1\\
+\int {\csc \left( {y\left( x \right)} \right)\mathrm{d}y\left( x \right)} & = \int {1\mathrm{d}x}\\
 - \log \left( {\cos \left( {\frac{{y\left( x \right)}}{2}} \right)} \right) + \log \left( {\sin \left( {\frac{{y\left( x \right)}}{2}} \right)} \right) & = x + {c_1}\\
 y\left( x \right) & = 2{\cot ^{ - 1}}\left( {{{\text{e}}^{ - x - {c_1}}}} \right)\\
 y(x) & = 2ArcCot\left[ {{{\text{e}}^{ - x}}\cot \frac{1}{2}} \right]\\
 \end{aligned}$$
+```
 
 写个代码顺便把其他情况全部解出来吧:
-<pre class="lang:mathematica decode:true ">tri={Sin,Cos,Tan,Cot,Sec,Csc};
-funs=(y^$$Prime])[x]==#[y[x]]&/@tri;
-Quiet@DSolve[#,{y[x]},x]&/@funs//TableForm</pre>
 
+```mathematica
+tri={Sin,Cos,Tan,Cot,Sec,Csc};
+funs=(y^$$Prime])[x]==#[y[x]]&/@tri;
+Quiet@DSolve[#,{y[x]},x]&/@funs//TableForm
 ```
-写成公式就是:
+解得:
 ```
 
 $$

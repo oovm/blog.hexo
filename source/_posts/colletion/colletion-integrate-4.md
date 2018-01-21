@@ -10,14 +10,14 @@ date: 2016-11-27 15:36:37
 ```
 最近碰到一些积分,都是有关开n次根的,那就整理一下好了.
 
-第一个Supercircles的面积积分涉及到的这个:$\int_0^1 {\sqrt[n]{{1 - {x^n}}}} dx$
+第一个Supercircles的面积积分涉及到的这个:$\int_0^1 {\sqrt[n]{{1 - {x^n}}}}\;\mathrm{d}x$
 
 复习一下欧拉Gamma函数和欧拉Beta函数.
 
 $$\begin{aligned}
-\Gamma \left( z \right) &= \int_0^\infty {{t^{z - 1}}{e^{ - t}}dt} \\
+\Gamma \left( z \right) &= \int_0^\infty {{t^{z - 1}}{e^{ - t}}\;\mathrm{d}t} \\
 {\rm B}\left( {a,b} \right) &= \frac{{\Gamma \left( a \right)\Gamma \left( b \right)}}{{\Gamma \left( {a + b} \right)}}\\
-&= \int_0^1 {{t^{a - 1}}{{\left( {1 - t} \right)}^{b - 1}}dt}
+&= \int_0^1 {{t^{a - 1}}{{\left( {1 - t} \right)}^{b - 1}}\;\mathrm{d}t}
 \end{aligned}$$
 
 <!--more-->
@@ -26,14 +26,14 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 t &= {x^n}\\
-dt &= n{x^{n - 1}}\mathrm{d}x\\
+\;\mathrm{d}t &= n{x^{n - 1}}\mathrm{d}x\\
 &= n{t^{1 - \frac{1}{n}}}\mathrm{d}x\\
 \end{aligned}$$
 
 然后就凑配一下:
 
 $$\begin{aligned}
-\int_0^1 \sqrt[n]{1-x^n}dx&=\frac{1}{n}\int_0^1t^{\frac{1}{n}-1}(1-t)^{\frac{1}{n}} \mathrm{d}t\\
+\int_0^1 \sqrt[n]{1-x^n}\;\mathrm{d}x&=\frac{1}{n}\int_0^1t^{\frac{1}{n}-1}(1-t)^{\frac{1}{n}} \mathrm{d}t\\
 &=\frac{1}{n}\int_0^1t^{\frac{1}{n}-1}(1-t)^{1 + \frac{1}{n} - 1} \mathrm{d}t\\
 &=\frac{1}{n}\beta\biggr(\frac{1}{n}, 1+\frac{1}{n}\biggr)\\
 &=\frac{1}{n}\frac{\Gamma(\frac{1}{n})\Gamma(1+\frac{1}{n})}{\Gamma(\frac{n+2}{n})}\\
@@ -44,7 +44,7 @@ $$\begin{aligned}
 
 然后看个类似的:
 
-$$\int_0^1 {\frac{1}{{\sqrt[n]{{1 - {x^n}}}}}} dx$$
+$$\int_0^1 {\frac{1}{{\sqrt[n]{{1 - {x^n}}}}}}\;\mathrm{d}x$$
 
 不过就算长得像,积出来可能就天壤之别了.
 
@@ -90,33 +90,33 @@ $$\begin{aligned}
 
 一个研究简单高次曲线时会碰到的积分:
 
-$$\int_0^\infty  {(\sqrt[n]{{{x^n} + 1}} - x)} dx = \frac{1}{2}C{\left( { - \frac{1}{n},\frac{1}{n}} \right)^{ - 1}}$$
+$$\int_0^\infty  {(\sqrt[n]{{{x^n} + 1}} - x)}\;\mathrm{d}x = \frac{1}{2}C{\left( { - \frac{1}{n},\frac{1}{n}} \right)^{ - 1}}$$
 
 C这里是组合数的意思.
 
 做代换$x^n \mapsto x$
 
 $$\begin{aligned}
-I &= \int_0^\infty {\left( {{{(1 + x)}^{1/n}} - {x^{1/n}}} \right)\frac{{{x^{1/n - 1}}}}{n}dx}\\
-&= \frac{1}{n}\int_0^\infty {{{\left( {1 + x} \right)}^{1/n}}{x^{1/n - 1}} - {x^{2/n - 1}}dx}
+I &= \int_0^\infty {\left( {{{(1 + x)}^{1/n}} - {x^{1/n}}} \right)\frac{{{x^{1/n - 1}}}}{n}\;\mathrm{d}x}\\
+&= \frac{1}{n}\int_0^\infty {{{\left( {1 + x} \right)}^{1/n}}{x^{1/n - 1}} - {x^{2/n - 1}}\;\mathrm{d}x}
 \end{aligned}$$
 
 接着做代换$t = \frac{1}{{1 + x}} \mapsto x = \frac{1}{t} - 1$
 
 $$\begin{aligned}
-I &= \frac{1}{n}\int_0^1 {\left[ {{t^{ - 1/n}}{{\left( {1/t - 1} \right)}^{1/n - 1}} - {{\left( {1/t - 1} \right)}^{2/n - 1}}} \right]\left( { - \frac{{dt}}{{{t^2}}}} \right)}\\
-&= \frac{1}{n}\int_0^1 {{t^{ - \frac{2}{n} - 1}}{{(1 - t)}^{\frac{1}{n} - 1}} - {t^{ - \frac{2}{n} - 1}}{{(1 - t)}^{\frac{2}{n} - 1}}dt}\\
-&= \frac{1}{n}\int_0^1 {\frac{{dt\left( {{t^{\frac{1}{n} - 1}} - 1} \right)}}{{{{(1 - t)}^{\frac{2}{n} + 1}}}}} - \frac{1}{n}\int_0^1 {\frac{{dt\left( {{t^{\frac{2}{n} - 1}} - 1} \right)}}{{{{(1 - t)}^{\frac{2}{n} + 1}}}}}
+I &= \frac{1}{n}\int_0^1 {\left[ {{t^{ - 1/n}}{{\left( {1/t - 1} \right)}^{1/n - 1}} - {{\left( {1/t - 1} \right)}^{2/n - 1}}} \right]\left( { - \frac{{\;\mathrm{d}t}}{{{t^2}}}} \right)}\\
+&= \frac{1}{n}\int_0^1 {{t^{ - \frac{2}{n} - 1}}{{(1 - t)}^{\frac{1}{n} - 1}} - {t^{ - \frac{2}{n} - 1}}{{(1 - t)}^{\frac{2}{n} - 1}}\;\mathrm{d}t}\\
+&= \frac{1}{n}\int_0^1 {\frac{{\;\mathrm{d}t\left( {{t^{\frac{1}{n} - 1}} - 1} \right)}}{{{{(1 - t)}^{\frac{2}{n} + 1}}}}} - \frac{1}{n}\int_0^1 {\frac{{\;\mathrm{d}t\left( {{t^{\frac{2}{n} - 1}} - 1} \right)}}{{{{(1 - t)}^{\frac{2}{n} + 1}}}}}
 \end{aligned}$$
 
 然后用这个引理:
 
-$$\int_0^1 {\frac{{{t^a} - 1}}{{{{(1 - t)}^{2/n + 1}}}}}  dt = \frac{n}{2} + \Gamma (a + 1)\Gamma ( - \frac{2}{n})/(a - \frac{2}{n})!\quad n > 2$$
+$$\int_0^1 {\frac{{{t^a} - 1}}{{{{(1 - t)}^{2/n + 1}}}}}  \;\mathrm{d}t = \frac{n}{2} + \Gamma (a + 1)\Gamma ( - \frac{2}{n})/(a - \frac{2}{n})!\quad n > 2$$
 
 合起来就是:
 
 $$\begin{aligned}
-\int_0^\infty {(\sqrt[n]{{{x^n} + 1}} - x)} dx
+\int_0^\infty {(\sqrt[n]{{{x^n} + 1}} - x)}\;\mathrm{d}x
 &= \frac{1}{n}\frac{{\left( {1/n - 1} \right)!\left( { - 2/n - 1} \right)!}}{{\left( { - 1/n - 1} \right)!}}\\
 &= \frac{1}{n}\frac{{n\left( {1/n} \right)!\left( { - n/2} \right)\left( { - 2/n} \right)!}}{{ - n\left( { - 1/n} \right)!}}\\
 &= \frac{1}{2}{\left[ {\frac{{\left( { - 1/n} \right)!}}{{\left( {1/n} \right)!\left( { - 2/n} \right)!}}} \right]^{ - 1}}\\
@@ -125,15 +125,15 @@ $$\begin{aligned}
 
 其实还可以推广下:
 
-$$\bigstar\int_0^\infty  ( \sqrt[m]{{1 + {x^n}}} - \sqrt[m]{{{x^n}}})dx = \frac{n}{{n + m}}C{\left( { - \frac{1}{m},\frac{1}{n}} \right)^{ - 1}}$$
+$$\bigstar\int_0^\infty  ( \sqrt[m]{{1 + {x^n}}} - \sqrt[m]{{{x^n}}})\;\mathrm{d}x = \frac{n}{{n + m}}C{\left( { - \frac{1}{m},\frac{1}{n}} \right)^{ - 1}}$$
 
 ---
 
 来道水题放松下:
 
 $$\begin{aligned}
-\int_0^\infty {\frac{{\sqrt[n]{x}}}{{1 + {x^2}}}dx} 
-&=\frac{1}{2}\int_0^\infty { \frac{{{t^{\frac{{1 - n}}{{2n}}}}}}{{1 + t}}dt}\\
+\int_0^\infty {\frac{{\sqrt[n]{x}}}{{1 + {x^2}}}\;\mathrm{d}x} 
+&=\frac{1}{2}\int_0^\infty { \frac{{{t^{\frac{{1 - n}}{{2n}}}}}}{{1 + t}}\;\mathrm{d}t}\\
 &= \frac{1}{2}\textstyle B\left(\frac{1}{2} + \frac{1}{2n}, \frac{1}{2} - \frac{1}{2n}\right) \\
 &= \frac{1}{2} \textstyle\Gamma\left(\frac{1}{2} + \frac{1}{2n}\right)\Gamma\left(\frac{1}{2} - \frac{1}{2n}\right) \\
 &= \frac{\pi}{2 \sin\left(\frac{\pi}{2} + \frac{\pi}{2n}\right)} \\
@@ -145,8 +145,8 @@ $$\begin{aligned}
 $$S(a) = a \cdot {2^{a - 1}}\left[ {\frac{1}{2}\;\beta \left( {\frac{a}{2},\;\frac{a}{2}} \right)\; + \beta \left( {\frac{{a + 1}}{2},\;\frac{{a + 1}}{2}} \right)} \right]$$
 
 $$\begin{aligned}
-\bigstar \int_0^1 {\sqrt {\frac{{1 + {x^n}}}{{1 - {x^n}}}} } \;dx\; &= S(\frac{1}{n})\\
-\bigstar \int_0^1 {\sqrt[n]{{\frac{{1 + {x^2}}}{{1 - {x^2}}}}}} \;dx\; &= S( - \frac{1}{n})
+\bigstar \int_0^1 {\sqrt {\frac{{1 + {x^n}}}{{1 - {x^n}}}} } \;\;\mathrm{d}x\; &= S(\frac{1}{n})\\
+\bigstar \int_0^1 {\sqrt[n]{{\frac{{1 + {x^2}}}{{1 - {x^2}}}}}} \;\;\mathrm{d}x\; &= S( - \frac{1}{n})
 \end{aligned}$$
 
 试着用Mathematica验证了一下,待证明.```

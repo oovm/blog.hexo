@@ -23,7 +23,7 @@ So....这玩意儿有什么用呢?
 $$\begin{aligned}
 {I_1} &= \int_{ - \infty }^{ + \infty } {\frac{{{x^8} + 12{x^7} + 58{x^6} + 144{x^5} + 193{x^4} + 132{x^3} + 36{x^2}}}{{{x^{10}} + 12{x^9} + 51{x^8} + 72{x^7} - 81{x^6} - 300{x^5} - 43{x^4} + 576{x^3} + 664{x^2} + 264x + 36}}{\rm{d}}x} = \pi \\
 {I_2} &= \int_{ - \infty }^{ + \infty } {\frac{{{x^8} + 4{x^7} + 6{x^6} + 4{x^5} + {x^4}}}{{{x^{12}} + 4{x^{11}} - 2{x^{10}} - 24{x^9} - 10{x^8} + 56{x^7} + 48{x^6} - 40{x^5} - 49{x^4} + 4{x^3} + 20{x^2} + 8x + 1}}{\rm{d}}x = \frac{\pi }{{\sqrt 2 }}} \\
-{I_3} &=\int_0^\infty \frac{x^{14}-15x^{12}+82x^{10}-190x^8+184x^6-60x^4+16x^2}{x^{16}-20x^{14}+156x^{12}-616x^{10}+1388x^8-1792x^6+1152x^4-224x^2+16}\; dx = \frac{\pi}{2}
+{I_3} &=\int_0^\infty \frac{x^{14}-15x^{12}+82x^{10}-190x^8+184x^6-60x^4+16x^2}{x^{16}-20x^{14}+156x^{12}-616x^{10}+1388x^8-1792x^6+1152x^4-224x^2+16}\;\;\mathrm{d}x = \frac{\pi}{2}
 \end{aligned}$$
 
 <!--more-->
@@ -42,7 +42,7 @@ $$\int_{ - \infty }^{ + \infty } {{e^{ - \pi {x^2}{{\left( {\frac{{\alpha  + x}
 
 格拉瑟主定理多取一阶就有:
 
-$$\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \int_{ - \infty }^{ + \infty } f (x)dx\quad a > 0$$
+$$\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)\;\mathrm{d}x = \int_{ - \infty }^{ + \infty } f (x)\;\mathrm{d}x\quad a > 0$$
 
 来,凑配一下秒了...
 
@@ -62,14 +62,14 @@ $$\bigstar I(a,b) = \int_{ - \infty }^{ + \infty } {xf\left( {x - \frac{a}{{x - 
 
 还是取这个:
 
-$$S=\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)dx = \int_{ - \infty }^{ + \infty } f (x)dx\quad a > 0$$
+$$S=\int_{ - \infty }^{ + \infty } f \left( {x - \frac{a}{{x - b}}} \right)\;\mathrm{d}x = \int_{ - \infty }^{ + \infty } f (x)\;\mathrm{d}x\quad a > 0$$
 
 求偏导:
 
 $$\begin{aligned}
-\frac{{\partial S}}{{\partial a}} &= \int_{ - \infty }^{ + \infty } {\frac{1}{{x - b}}} f'\left( {x - \frac{a}{{x - b}}} \right)dx = 0\\
-\frac{{\partial S}}{{\partial b}} &= \int_{ - \infty }^{ + \infty } {\frac{{ - a}}{{{{(x - b)}^2}}}} f'\left( {x - \frac{a}{{x - b}}} \right)dx = 0\\
-\frac{{\partial S}}{{\partial x}} &= \int_{ - \infty }^{ + \infty } {f'} \left( {x - \frac{a}{{x - b}}} \right)dx = 0
+\frac{{\partial S}}{{\partial a}} &= \int_{ - \infty }^{ + \infty } {\frac{1}{{x - b}}} f'\left( {x - \frac{a}{{x - b}}} \right)\;\mathrm{d}x = 0\\
+\frac{{\partial S}}{{\partial b}} &= \int_{ - \infty }^{ + \infty } {\frac{{ - a}}{{{{(x - b)}^2}}}} f'\left( {x - \frac{a}{{x - b}}} \right)\;\mathrm{d}x = 0\\
+\frac{{\partial S}}{{\partial x}} &= \int_{ - \infty }^{ + \infty } {f'} \left( {x - \frac{a}{{x - b}}} \right)\;\mathrm{d}x = 0
 \end{aligned}$$
 
 另一边也求偏导,然后把结果代进去.
@@ -80,7 +80,7 @@ $$\begin{aligned}
 &= - \int_{ - \infty }^{ + \infty } {\frac{{2x}}{{x - b}}f'\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}} = 0\\
 \frac{{\partial I}}{{\partial b}}
 &= - \int_{ - \infty }^{ + \infty } {\frac{x}{{{{(x - b)}^2}}}f'\left( {x - \frac{a}{{x - b}}} \right)} {\mathrm{d}x} - \int_{ - \infty }^{ + \infty } {\left( {\frac{1}{{x - b}} + \frac{b}{{{{(x - b)}^2}}}} \right)f'\left( {x - \frac{a}{{x - b}}} \right){\mathrm{d}x}} \\
-&= - \int_{ - \infty }^{ + \infty } {\frac{{2x}}{{{{(x - b)}^2}}}f'\left( {x - \frac{a}{{x - b}}} \right)} {\rm{dx = 0}}
+&= - \int_{ - \infty }^{ + \infty } {\frac{{2x}}{{{{(x - b)}^2}}}f'\left( {x - \frac{a}{{x - b}}} \right)} {\rm{\;\mathrm{d}x = 0}}
 \end{aligned}$$
 
 证毕,得到强力武器一个:
@@ -94,7 +94,7 @@ $$\int_{ - \infty }^\infty  {x{e^{ - \pi {x^2}{{\left( {\frac{{a + x}}{{b + x}}
 $$\begin{aligned}
 \int_{-\infty}^{+\infty}xf\left(x\frac{\alpha +x}{\beta +x}\right){d}x&=\int_{-\infty}^{+\infty}xf\left(x-\frac{(\alpha-\beta)\beta}{x+\beta}+\alpha-\beta\right)\mathrm{d}x\\
 &=\int_{-\infty}^{+\infty}(x+\beta-\alpha)f\left(x-\frac{(\alpha-\beta)\beta}{x+2\beta-\alpha}\right)\mathrm{d}x\\
-&=I((\alpha-\beta)\beta,\alpha-2\beta)+(\beta-\alpha)\cdot \int_{-\infty}^{+\infty} f(x)dx
+&=I((\alpha-\beta)\beta,\alpha-2\beta)+(\beta-\alpha)\cdot \int_{-\infty}^{+\infty} f(x)\;\mathrm{d}x
 \end{aligned}$$
 
 取$f(x) = {e^{ - \pi {x^2}}}$秒了:

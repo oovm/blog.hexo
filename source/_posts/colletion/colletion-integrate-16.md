@@ -45,7 +45,7 @@ $$\boxed{\bigstar \int_{{{[0,1]}^n}} {f\left( {\frac{1}{n}\sum {{x_{1,n}}} } \r
 
 这就表示:
 
-$$\int_0^1 \cdots \int_0^1 f(\frac{x_1 + \ldots + x_n}{n})dx_1\ldots dx_n = E[f(\frac{X_1 + \ldots + X_n}{n})]$$
+$$\int_0^1 \cdots \int_0^1 f(\frac{x_1 + \ldots + x_n}{n})\;\mathrm{d}x_1\ldots\;\mathrm{d}x_n = E[f(\frac{X_1 + \ldots + X_n}{n})]$$
 
 Well,其实就是Mathematica语法来着,下标表示初始值,终点值,步长,步长省略就是1
 
@@ -123,16 +123,16 @@ P(z) &= \int_{{{[0,1]}^n}} {\delta \left( {\sum {{x_{1,n}} - z} } \right)\mathrm
 当然还有其他什么差分布,积分布
 
 $$\begin{aligned}
-{P_{\varphi ({X_1},{X_2})}}(z) &= \iint_{{{[0,1]}^2}} {\delta (\varphi (x,y) - z)\mathrm{d}x\;{\text{dy}}}\\
-{P_{{X_1} + {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x + y - z)\mathrm{d}x} \;{\text{dy}}} \\
-&= \int_0^1 {\theta (z - y)\;{\text{dy}}} = z\theta (z)\\
-{P_{{X_1} - {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x - y - z)\mathrm{d}x} \;{\text{dy}}} \\
-&= \int_0^1 {\theta ( - y - z + 1)\theta (y + z)\;{\text{dy}}} = z\theta ( - z) - z\theta (z) + 1\\
-{P_{{X_1} \times {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x \times y - z)\mathrm{d}x} \;{\text{dy}}} \\
-&= \int_0^1 {\frac{{\theta (z)\theta (y - z)}}{y}\;{\text{dy}}} = - \theta (z)\log (z)\\
-{P_{{X_1} \div {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x \div y - z)\mathrm{d}x} \;{\text{dy}}} \\
-&= \int_0^1 {y\theta (z)\;{\text{dy}}} = \frac{1}{2}\\
-{P_{{X_1}^{{X_2}}}}(z) &= \int_0^1 {\int_0^1 {\delta ({x^y} - z)\mathrm{d}x} \;{\text{dy}}} = - \frac{{{\text{li}}(z)}}{z}\\
+{P_{\varphi ({X_1},{X_2})}}(z) &= \iint_{{{[0,1]}^2}} {\delta (\varphi (x,y) - z)\mathrm{d}x\;{\text{\;\mathrm{d}y}}}\\
+{P_{{X_1} + {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x + y - z)\mathrm{d}x} \;{\text{\;\mathrm{d}y}}} \\
+&= \int_0^1 {\theta (z - y)\;{\text{\;\mathrm{d}y}}} = z\theta (z)\\
+{P_{{X_1} - {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x - y - z)\mathrm{d}x} \;{\text{\;\mathrm{d}y}}} \\
+&= \int_0^1 {\theta ( - y - z + 1)\theta (y + z)\;{\text{\;\mathrm{d}y}}} = z\theta ( - z) - z\theta (z) + 1\\
+{P_{{X_1} \times {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x \times y - z)\mathrm{d}x} \;{\text{\;\mathrm{d}y}}} \\
+&= \int_0^1 {\frac{{\theta (z)\theta (y - z)}}{y}\;{\text{\;\mathrm{d}y}}} = - \theta (z)\log (z)\\
+{P_{{X_1} \div {X_2}}}(z) &= \int_0^1 {\int_0^1 {\delta (x \div y - z)\mathrm{d}x} \;{\text{\;\mathrm{d}y}}} \\
+&= \int_0^1 {y\theta (z)\;{\text{\;\mathrm{d}y}}} = \frac{1}{2}\\
+{P_{{X_1}^{{X_2}}}}(z) &= \int_0^1 {\int_0^1 {\delta ({x^y} - z)\mathrm{d}x} \;{\text{\;\mathrm{d}y}}} = - \frac{{{\text{li}}(z)}}{z}\\
 \end{aligned}$$
 
 然后我示范一下错误的代码写法,唔,其实是复制粘贴的,调试的时候Ctrl+C/V大法那是极好的,但是如果发布出去还这么搞要被吐fen槽ci的:

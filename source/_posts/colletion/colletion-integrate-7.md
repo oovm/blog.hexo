@@ -14,19 +14,19 @@ tags:
 
 比如这个本来不算太难的题:
 
-$$I = \int_0^1 {\frac{{\ln x\ln y}}{{1 - xy}}} dx = \frac{{{\pi ^4}}}{{90}}$$
+$$I = \int_0^1 {\frac{{\ln x\ln y}}{{1 - xy}}}\;\mathrm{d}x = \frac{{{\pi ^4}}}{{90}}$$
 
 搞事情,求证:
 
-$$\bigstar I(s) = \int_0^1 {\int_0^1 {\frac{{{{\left( {\ln x\ln y} \right)}^s}}}{{1 - xy}}} } dxdy = {\Gamma ^2}(1 + s)\:\zeta (2 + 2s)$$
+$$\bigstar I(s) = \int_0^1 {\int_0^1 {\frac{{{{\left( {\ln x\ln y} \right)}^s}}}{{1 - xy}}} }\;\mathrm{d}x\;\mathrm{d}y = {\Gamma ^2}(1 + s)\:\zeta (2 + 2s)$$
 
 来啊,谁啪谁啊,正面上
 
 $$\begin{aligned}
-I(s) &= \int_0^1 {\int_0^1 {\frac{{{{\left( {\ln x\ln y} \right)}^s}}}{{1 - xy}}} } dxdy\\
-&= \int_0^1 {\int_0^1 {\sum\limits_{n = 0}^\infty {{{(xy)}^n}} } } {\left( {\ln x\ln y} \right)^s}dxdy\\
-&= \sum\limits_{n = 0}^\infty {\left( {\int_0^1 {{x^n}} {{\left( { - \ln x} \right)}^s}dx} \right)} \left( {\int_0^1 {{y^n}} {{\left( { - \ln y} \right)}^s}dy} \right)\\
-&= \sum\limits_{n = 0}^\infty {{{\left( {\int_0^1 {{x^n}} {{\left( { - \ln x} \right)}^s}dx} \right)}^2}} \\
+I(s) &= \int_0^1 {\int_0^1 {\frac{{{{\left( {\ln x\ln y} \right)}^s}}}{{1 - xy}}} }\;\mathrm{d}x\;\mathrm{d}y\\
+&= \int_0^1 {\int_0^1 {\sum\limits_{n = 0}^\infty {{{(xy)}^n}} } } {\left( {\ln x\ln y} \right)^s}\;\mathrm{d}x\;\mathrm{d}y\\
+&= \sum\limits_{n = 0}^\infty {\left( {\int_0^1 {{x^n}} {{\left( { - \ln x} \right)}^s}\;\mathrm{d}x} \right)} \left( {\int_0^1 {{y^n}} {{\left( { - \ln y} \right)}^s}\;\mathrm{d}y} \right)\\
+&= \sum\limits_{n = 0}^\infty {{{\left( {\int_0^1 {{x^n}} {{\left( { - \ln x} \right)}^s}\;\mathrm{d}x} \right)}^2}} \\
 &= \sum\limits_{n = 0}^\infty {{{\left( {\frac{{\Gamma (s + 1)}}{{{{(n + 1)}^{s + 1}}}}} \right)}^2}} \\
 &= {\Gamma ^2}(s + 1)\:\sum\limits_{n = 1}^\infty {\frac{1}{{{n^{2s + 2}}}}} \\
 &= {\Gamma ^2}(1 + s)\:\zeta (2 + 2s)

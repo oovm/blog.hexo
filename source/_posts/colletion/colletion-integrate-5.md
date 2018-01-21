@@ -11,9 +11,9 @@ tags:
 双曲积分:
 
 $$\begin{aligned}
-\bigstar C(s,n) &= \int_0^\infty {\frac{{{x^{2n}}}}{{\cosh (\pi x/s)}}} dx\quad(n,s)\geqslant1\\
+\bigstar C(s,n) &= \int_0^\infty {\frac{{{x^{2n}}}}{{\cosh (\pi x/s)}}}\;\mathrm{d}x\quad(n,s)\geqslant1\\
 &= {16^{ - n}}n{\pi ^{ - 2n - 1}}{s^{2n + 1}}\left( {\zeta \left( {2n + 1,\frac{1}{4}} \right) - \zeta \left( {2n + 1,\frac{3}{4}} \right)} \right)\Gamma (2n)\\
-\bigstar S(s,n) &=\int_0^\infty {\frac{{{x^{2n - 1}}}}{{\sinh (\pi x/s)}}} dx\quad(n,s)\geqslant1\\
+\bigstar S(s,n) &=\int_0^\infty {\frac{{{x^{2n - 1}}}}{{\sinh (\pi x/s)}}}\;\mathrm{d}x\quad(n,s)\geqslant1\\
 &= \frac{{{4^n} - 1}}{n}{(2\pi )^{ - 2n}}{s^{2n}}\zeta (2n)\Gamma (2n + 1)
 \end{aligned}$$
 
@@ -26,9 +26,9 @@ Integrate[x^(2n-1)/Sinh[(Pi*x)/s], {x, 0, Infinity},Assumptions->n>s>1]
 
 $$\begin{aligned}
 \frac {I(m)}2:
-=\int_0^\infty \frac{t^m}{2\,\cosh(t)}dt
-&=\int_0^\infty \frac{t^m\;e^{-t}}{1+e^{-2t}}dt\\
-&=\int_0^\infty \sum_{k=0}^\infty (-1)^k\;t^m\;e^{-(2k+1)t}\;dt\\
+=\int_0^\infty \frac{t^m}{2\,\cosh(t)}\;\mathrm{d}t
+&=\int_0^\infty \frac{t^m\;e^{-t}}{1+e^{-2t}}\;\mathrm{d}t\\
+&=\int_0^\infty \sum_{k=0}^\infty (-1)^k\;t^m\;e^{-(2k+1)t}\;\;\mathrm{d}t\\
 &=\sum_{k=0}^\infty\frac {(-1)^k}{(2k+1)^m}\int_0^\infty u^m\;e^{-u}\frac{du}{2k+1}\;\\
 &=\Gamma(m+1)\sum_{k=0}^\infty\frac {(-1)^k}{(2k+1)^{m+1}}\\
 &=\Gamma(m+1)\,\beta(m+1)

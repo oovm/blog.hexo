@@ -13,7 +13,7 @@ date: 2016-12-22 23:23:22
 
 一个经典的例子就是:
 
-$$\int_{0}^{\infty} \mathrm{e}^{-x^2}\, dx = \frac{\sqrt \pi}{2}$$
+$$\int_{0}^{\infty} \mathrm{e}^{-x^2}\,\;\mathrm{d}x = \frac{\sqrt \pi}{2}$$
 
 别告诉我你不知道这玩意儿怎么积出来的....
 
@@ -21,8 +21,8 @@ $$\int_{0}^{\infty} \mathrm{e}^{-x^2}\, dx = \frac{\sqrt \pi}{2}$$
 
 $$\begin{aligned}
 I &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} \mathrm{d}x\\
-{I^2} &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} \mathrm{d}x\int_{ - \infty }^{ + \infty } {{e^{ - {y^2}}}} {\text{dy}}\\
-&= \int_{ - \infty }^{ + \infty } {\int_{ - \infty }^{ + \infty } {{e^{ - ({x^2} + {y^2})}}} } \mathrm{d}x\;{\text{dy}}\\
+{I^2} &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} \mathrm{d}x\int_{ - \infty }^{ + \infty } {{e^{ - {y^2}}}} {\text{\;\mathrm{d}y}}\\
+&= \int_{ - \infty }^{ + \infty } {\int_{ - \infty }^{ + \infty } {{e^{ - ({x^2} + {y^2})}}} } \mathrm{d}x\;{\text{\;\mathrm{d}y}}\\
 &= \int_0^{ + 2\pi } {\int_0^{ + \infty } {{e^{ - {r^2}}}} } r{\text{dr}}\;\mathrm{d}\theta \\
 &= 2\pi \int_0^{ + \infty } {{e^{ - u}}} {\text{du}}/2 = \pi \\
 \Rightarrow I &= \sqrt \pi
@@ -33,8 +33,8 @@ I &= \int_{ - \infty }^{ + \infty } {{e^{ - {x^2}}}} \mathrm{d}x\\
 $$I(n) = \int_0^\infty  {{e^{ - {x^n}}}} \; \mathrm{d}x$$
 
 $$\begin{aligned}
-{I_n} &= \int_0^{ + \infty } {{e^{ - {x^n}}}} dx\quad {\color{Blue}{ t \mapsto {x^n}}}\\
-&= \int_0^{ + \infty } {{e^{ - t}}} {t^{\frac{1}{n} - 1}}\frac{1}{n}dt\\
+{I_n} &= \int_0^{ + \infty } {{e^{ - {x^n}}}}\;\mathrm{d}x\quad {\color{Blue}{ t \mapsto {x^n}}}\\
+&= \int_0^{ + \infty } {{e^{ - t}}} {t^{\frac{1}{n} - 1}}\frac{1}{n}\;\mathrm{d}t\\
 &= \frac{1}{n}\Gamma \left( {\frac{1}{n}} \right)
 \end{aligned}$$
 
@@ -48,7 +48,7 @@ $$I = \int_0^1 {\frac{{{x^2} - 1}}{{\ln x}}} \mathrm{d}x$$
 
 $$\begin{aligned}
 I(a) &= \int_0^1 {\frac{{{x^a} - 1}}{{\ln x}}} \mathrm{d}x\\
-I'(a) &= \int_0^1 {\frac{{{x^a}\ln x}}{{\ln x}}} dx = \int_0^1 {{x^a}} \mathrm{d}x\\
+I'(a) &= \int_0^1 {\frac{{{x^a}\ln x}}{{\ln x}}}\;\mathrm{d}x = \int_0^1 {{x^a}} \mathrm{d}x\\
 I(a) &= \int_0^x {\frac{1}{{1 + a}}da} = \ln (n + 1)
 \end{aligned}$$
 
@@ -56,15 +56,15 @@ ok令$a=2$搞定.
 
 那么推广一下,求这个:
 
-$$I = \int_0^1 {\frac{{{x^2} - \sqrt x }}{{\ln x}}} dx$$
+$$I = \int_0^1 {\frac{{{x^2} - \sqrt x }}{{\ln x}}}\;\mathrm{d}x$$
 
 一样定义一个函数,不过方法有点不一样:
 
 $$\begin{aligned}
 I(a,b) &= \int_0^1 {\frac{{{x^b} - {x^a}}}{{\ln x}}} \mathrm{d}x\\
-&= \int_0^1 {\left[ {\int_a^b {{x^y}} dy} \right]dx} \\
-&= \int_a^b {\left[ {\int_0^1 {{x^y}} dx} \right]dy} \\
-&= \int_a^b {\frac{1}{{y + 1}}} dy\\
+&= \int_0^1 {\left[ {\int_a^b {{x^y}} \;\mathrm{d}y} \right]\;\mathrm{d}x} \\
+&= \int_a^b {\left[ {\int_0^1 {{x^y}}\;\mathrm{d}x} \right]\;\mathrm{d}y} \\
+&= \int_a^b {\frac{1}{{y + 1}}} \;\mathrm{d}y\\
 &= \ln \left( {\frac{{b + 1}}{{a + 1}}} \right)
 \end{aligned}$$
 
@@ -94,14 +94,14 @@ $$\begin{aligned}
 
 再进一步,求证:
 
-$$\int_0^\infty  {\frac{{{e^{ - {x^n}}} - {e^{ - {x^m}}}}}{{x\ln x}}} dx = \ln \frac{m}{n}$$
+$$\int_0^\infty  {\frac{{{e^{ - {x^n}}} - {e^{ - {x^m}}}}}{{x\ln x}}}\;\mathrm{d}x = \ln \frac{m}{n}$$
 
 这已经是参积分了怎么化呢?我觉得你很缺少想象力,不如以函数为参数:
 
 $$\begin{aligned}
 I(f(x)) &= \int_0^\infty {\frac{{f\left( {{x^n}} \right) - f\left( {{x^m}} \right)}}{{x\log \left( x \right)}}} \mathrm{d}x\\
-&= \int_{ - \infty }^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}} dx\quad \log \left( x \right) \mapsto v\\
-&= \int_0^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}} dx - \int_0^\infty {\frac{{f\left( {{e^{ - vn}}} \right) - f\left( {{e^{ - vm}}} \right)}}{v}} \mathrm{d}x\\
+&= \int_{ - \infty }^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}}\;\mathrm{d}x\quad \log \left( x \right) \mapsto v\\
+&= \int_0^\infty {\frac{{f\left( {{e^{vn}}} \right) - f\left( {{e^{vm}}} \right)}}{v}}\;\mathrm{d}x - \int_0^\infty {\frac{{f\left( {{e^{ - vn}}} \right) - f\left( {{e^{ - vm}}} \right)}}{v}} \mathrm{d}x\\
 &= \left( {f(1) - f(\infty )} \right)\log \frac{m}{n} - \left( {f(1) - f(\infty )} \right)\log \frac{m}{n}\\
 &= \left. { - f(x)} \right|_0^\infty \ln \frac{m}{n}
 \end{aligned}$$
@@ -112,7 +112,7 @@ I(f(x)) &= \int_0^\infty {\frac{{f\left( {{x^n}} \right) - f\left( {{x^m}} \righ
 
 计算参积分:
 
-$$f(k) = \int_0^1 {{{\left( {{x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}} dx$$
+$$f(k) = \int_0^1 {{{\left( {{x^k} + \frac{{\ln x}}{{1 - x}}} \right)}^2}}\;\mathrm{d}x$$
 
 我们不出产这种烂参积分的,我们重新定义一个函数.
 
@@ -125,7 +125,7 @@ $$\begin{aligned}
 
 Well.积分积出常数了,令a=0
 
-$$C = \int_0^1 {{{\left( {\frac{{\ln x}}{{1 - x}}} \right)}^2}dx}  = \frac{{{\pi ^2}}}{3}$$
+$$C = \int_0^1 {{{\left( {\frac{{\ln x}}{{1 - x}}} \right)}^2}\;\mathrm{d}x}  = \frac{{{\pi ^2}}}{3}$$
 
 综上所述:
 
@@ -142,7 +142,7 @@ $\psi $是双Gamma函数,在我这里见过很多次了应该.
 
 求证:
 
-$$\int_0^{\pi /2} x {\csc ^2}(x)\arctan \left( {\alpha \tan x} \right)\; dx = \frac{\pi }{2}\left[ {\ln \frac{{{{(1 + \alpha )}^{1 + \alpha }}}}{{{\alpha ^\alpha }}}} \right]$$
+$$\int_0^{\pi /2} x {\csc ^2}(x)\arctan \left( {\alpha \tan x} \right)\;\;\mathrm{d}x = \frac{\pi }{2}\left[ {\ln \frac{{{{(1 + \alpha )}^{1 + \alpha }}}}{{{\alpha ^\alpha }}}} \right]$$
 
 好吧我不是要你看这个挫到爆的等式,重点$\tan x = u$换元后:
 

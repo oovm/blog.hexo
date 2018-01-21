@@ -33,7 +33,7 @@ $$I = \int_0^1 {(x^2 + 1){\mathrm{d}}\left\lfloor x \right\rfloor } $$
 $$\begin{aligned}
 I &= \int_0^1 {({x^2} + 1)\mathrm{d}\left\lfloor x \right\rfloor } \\
 &= \left. {({x^2} + 1) \lfloor x \rfloor } \right|_0^1 - \int_0^1 { \lfloor x \rfloor } d({x^2} + 1) \\
-&= 2 - 2\int_0^1 { \lfloor x \rfloor } xdx \\
+&= 2 - 2\int_0^1 { \lfloor x \rfloor } x\;\mathrm{d}x \\
 &= 2 - 0 = 2
 \end{aligned}$$
 
@@ -79,8 +79,8 @@ $$ \lceil x \rceil - \lfloor x \rfloor = \left\{ {\begin{array}{*{20}{l}}
 所以
 
 $$\begin{aligned}
-I &= \int_0^1 {\left\lceil {\frac{1}{x}} \right\rceil - \left\lfloor {\frac{1}{x}} \right\rfloor } dx \\
-&= \int_{1/2}^1 1 dx + \int_{1/3}^{1/2} 1 dx + \int_{1/3}^{1/4} 1 dx + \cdots \\
+I &= \int_0^1 {\left\lceil {\frac{1}{x}} \right\rceil - \left\lfloor {\frac{1}{x}} \right\rfloor }\;\mathrm{d}x \\
+&= \int_{1/2}^1 1\;\mathrm{d}x + \int_{1/3}^{1/2} 1\;\mathrm{d}x + \int_{1/3}^{1/4} 1\;\mathrm{d}x + \cdots \\
 &= (1 - \frac{1}{2}) + (\frac{1}{2} - \frac{1}{3}) + (\frac{1}{3} - \frac{1}{4}) + \cdots \\
 &= \mathop {\lim }\limits_{m \to \infty } 1 - \frac{1}{i} \\
 &= 1
@@ -95,8 +95,8 @@ $$\int_0^1 {{{\left( { - 1} \right)}^{^{\left\lfloor {\frac{1}{x}} \right\rfloor
 证:
 
 $$\begin{aligned}
-\int_0^1 \left(-1\right)^{^{\left\lfloor\frac{1}{x}\right\rfloor}} dx
-&=\int_\frac{1}{2}^1\left(-1\right)^1dx+\int_\frac{1}{3}^\frac{1}{2}\left(-1\right)^2dx+\int_\frac{1}{4}^\frac{1}{3}\left(-1\right)^3dx+\int_\frac{1}{5}^\frac{1}{4}\left(-1\right)^4dx+\ldots \\
+\int_0^1 \left(-1\right)^{^{\left\lfloor\frac{1}{x}\right\rfloor}}\;\mathrm{d}x
+&=\int_\frac{1}{2}^1\left(-1\right)^1\;\mathrm{d}x+\int_\frac{1}{3}^\frac{1}{2}\left(-1\right)^2\;\mathrm{d}x+\int_\frac{1}{4}^\frac{1}{3}\left(-1\right)^3\;\mathrm{d}x+\int_\frac{1}{5}^\frac{1}{4}\left(-1\right)^4\;\mathrm{d}x+\ldots \\
 &=\left(-1+\frac{1}{2}\right)+\left(\frac{1}{2}-\frac{1}{3}\right)+ \left(-\frac{1}{3}+\frac{1}{4}\right)+\left(\frac{1}{4}-\frac{1}{5}\right)+\ldots \\
 &=-1+2\left(\frac{1}{2}-\frac{1}{3}+\frac{1}{4}-\frac{1}{5}+\ldots\right)\\
 &=-1+2(1-\log2)\\
@@ -109,7 +109,7 @@ $$\begin{aligned}
 
 求证:
 
-$$\int_0^1 {\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor } dx = 1 - \gamma $$
+$$\int_0^1 {\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor }\;\mathrm{d}x = 1 - \gamma $$
 
 证:
 

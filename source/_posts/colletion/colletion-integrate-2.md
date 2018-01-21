@@ -13,7 +13,7 @@ date: 2016-07-09 14:36:02
 
 试计算:
 
-$$I(n) = \int_0^n {{{\left\lfloor x \right\rfloor }^2} - {{\{ x\} }^2}} dx\quad n \in {\mathbb{Z}_ + }$$
+$$I(n) = \int_0^n {{{\left\lfloor x \right\rfloor }^2} - {{\{ x\} }^2}}\;\mathrm{d}x\quad n \in {\mathbb{Z}_ + }$$
 ```
 <!--more-->
 
@@ -24,7 +24,7 @@ $$I(n) = \int_0^n {{{\left\lfloor x \right\rfloor }^2} - {{\{ x\} }^2}} dx\quad 
 $$\begin{aligned}
 I(n)
 &= \sum\limits_{k = 0}^{n - 1} {\int_k^{k + 1} {{{ \lfloor x \rfloor }^2} - {{\{ x\} }^2}} } \mathrm{d}x\\
-&= n\int_0^1 {{x^2}} dx - \sum\limits_{k = 0}^{n - 1} {{k^2}}\\
+&= n\int_0^1 {{x^2}}\;\mathrm{d}x - \sum\limits_{k = 0}^{n - 1} {{k^2}}\\
 &= \frac{1}{3}n - \frac{1}{6}(n - 1)n(2n - 1)\\
 &= - \frac{1}{6}\left( {2{n^3} - 3{n^2} - n} \right)\quad\square
 \end{aligned}$$
@@ -56,19 +56,19 @@ $$\begin{aligned}
 1&{x\not \in \mathbb{Z}}
 \end{array}} \right.\\
 \left\lceil x \right\rceil \left\lfloor x \right\rfloor &= \frac{1}{2}\left( {{f^2}(x) - {{\left\lceil x \right\rceil }^2} - {{\left\lfloor x \right\rfloor }^2}} \right)\\
-\int_0^n {\left\lceil x \right\rceil \left\lfloor x \right\rfloor dx} &= {n^3} - \frac{1}{2}\int_0^n {{{\left\lceil x \right\rceil }^2}} + {\left\lfloor x \right\rfloor ^2}\mathrm{d}x\\
+\int_0^n {\left\lceil x \right\rceil \left\lfloor x \right\rfloor\;\mathrm{d}x} &= {n^3} - \frac{1}{2}\int_0^n {{{\left\lceil x \right\rceil }^2}} + {\left\lfloor x \right\rfloor ^2}\mathrm{d}x\\
 &= \frac{1}{3}({n^3} - n)\quad\square
 \end{aligned}$$
 
 来道习题吧,求证:
 
-$$\bigstar \quad\int_0^n {\left\{ x \right\}\left\lceil x \right\rceil \left\lfloor x \right\rfloor dx}  = \frac{1}{6}({n^3} - n)$$
+$$\bigstar \quad\int_0^n {\left\{ x \right\}\left\lceil x \right\rceil \left\lfloor x \right\rfloor\;\mathrm{d}x}  = \frac{1}{6}({n^3} - n)$$
 
 ---
 
 Ok,我们来算点其他的
 
-$$\int_0^1 x \left\lceil {\frac{1}{x}} \right\rceil \left\{ {\frac{1}{x}} \right\}dx$$
+$$\int_0^1 x \left\lceil {\frac{1}{x}} \right\rceil \left\{ {\frac{1}{x}} \right\}\;\mathrm{d}x$$
 
 我们已经知道这两个恒等式了:
 
@@ -85,8 +85,8 @@ f(x)& = \lceil x \rceil - \lfloor x \rfloor = \left\{ {\begin{array}{*{20}{l}}
 $$\begin{aligned}
 I&=\int_0^1 x \left\lceil {\frac{1}{x}} \right\rceil \left\{ {\frac{1}{x}} \right\}\mathrm{d}x\\
 &= \int_0^1 x (1 + \left\lfloor {\frac{1}{x}} \right\rfloor )(\frac{1}{x} - \left\lfloor {\frac{1}{x}} \right\rfloor )\mathrm{d}x\\
-&= \int_1^\infty {\frac{1}{y}} (1 + \left\lfloor y \right\rfloor )(y - \left\lfloor y \right\rfloor )\frac{{dy}}{{{y^2}}}\\
-&= \sum\limits_{n = 1}^\infty {\int_n^{n + 1} {\frac{1}{{{y^3}}}} } (1 + n)(y - n)dy\\
+&= \int_1^\infty {\frac{1}{y}} (1 + \left\lfloor y \right\rfloor )(y - \left\lfloor y \right\rfloor )\frac{{\;\mathrm{d}y}}{{{y^2}}}\\
+&= \sum\limits_{n = 1}^\infty {\int_n^{n + 1} {\frac{1}{{{y^3}}}} } (1 + n)(y - n)\;\mathrm{d}y\\
 &= \frac{1}{2}\sum\limits_{n = 1}^\infty {\frac{1}{{n(n + 1)}}} \\
 &= \frac{1}{2}\quad\square
 \end{aligned}$$
@@ -122,9 +122,9 @@ FullSimplify@Table[{p,n/(p+1)},{p,1,10}]//TableForm</pre>
 不限定整数的话,那就麻烦了.Floor是能求的,然后剩下的应该也能求了.
 
 $$\begin{aligned}
-\int {\left\lfloor x \right\rfloor dx} &= \left\lfloor x \right\rfloor \left( {x - \frac{{\left\lfloor x \right\rfloor + 1}}{2}} \right)\\
-\int {\left\lfloor x \right\rfloor dx} &= \int { \lfloor x - \frac{1}{2} \rceil dx} = \int {\left\lceil {x - 1} \right\rceil dx} \\
-\int {\left\{ x \right\}dx} &= \int {x - \left\lfloor x \right\rfloor dx} = \frac{1}{2}{x^2} + \int {\left\lfloor x \right\rfloor dx}
+\int {\left\lfloor x \right\rfloor\;\mathrm{d}x} &= \left\lfloor x \right\rfloor \left( {x - \frac{{\left\lfloor x \right\rfloor + 1}}{2}} \right)\\
+\int {\left\lfloor x \right\rfloor\;\mathrm{d}x} &= \int { \lfloor x - \frac{1}{2} \rceil\;\mathrm{d}x} = \int {\left\lceil {x - 1} \right\rceil\;\mathrm{d}x} \\
+\int {\left\{ x \right\}\;\mathrm{d}x} &= \int {x - \left\lfloor x \right\rfloor\;\mathrm{d}x} = \frac{1}{2}{x^2} + \int {\left\lfloor x \right\rfloor\;\mathrm{d}x}
 \end{aligned}$$
 
 极值点有点不对,不过无所谓了,这积分太难搞了,我不想推了.

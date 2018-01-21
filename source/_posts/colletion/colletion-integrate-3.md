@@ -24,7 +24,7 @@ $$\int_0^1 {\left\lfloor {\frac{\alpha }{x}} \right\rfloor  - \alpha \left\lflo
 
 
 $$\begin{aligned}
-\int_{1/n}^1 \left\lfloor\frac{\alpha}{x}\right\rfloor dx
+\int_{1/n}^1 \left\lfloor\frac{\alpha}{x}\right\rfloor\;\mathrm{d}x
 &= \alpha \int_{\alpha}^{n \alpha} \frac{\left\lfloor u\right\rfloor}{u^2} \, du \\
 &= \alpha \int_{\alpha}^{n} \frac{\left\lfloor u\right\rfloor}{u^2} \, du - \alpha \int_{n \alpha}^{n} \frac{\left\lfloor u\right\rfloor}{u^2} \, du \\
 &= \alpha \int_{1}^{n} \frac{\left\lfloor u\right\rfloor}{u^2} \, du - \alpha \int_{n \alpha}^{n } \frac{\left\lfloor u\right\rfloor}{u^2} \, du
@@ -33,7 +33,7 @@ $$\begin{aligned}
 同样的做代换$u = 1/x$
 
 $$\begin{aligned}
-\alpha\int_{1/n}^1 \left\lfloor\frac{1}{x}\right\rfloor dx
+\alpha\int_{1/n}^1 \left\lfloor\frac{1}{x}\right\rfloor\;\mathrm{d}x
 &= \alpha\int_{1}^{n } \frac{\left\lfloor u\right\rfloor}{u^2} \, du \\
 &= \alpha \sum_{k=1}^{n-1}\int_{k}^{k+1 } \frac{\left\lfloor u\right\rfloor}{u^2} \, du \\
 &= \alpha \sum_{k=1}^{n-1}\int_{k}^{k+1 } \frac{k}{u^2} \, du \\
@@ -80,7 +80,7 @@ I &= - a\int_{1/a}^1 d q\left( {\frac{1}{{2{q^2}}} - \frac{1}{q}} \right) + \fra
 
 一道经典题,求证:
 
-$$\int_0^1 {{{\left\lfloor {{x^{ - 1}}} \right\rfloor }^{ - 1}}} dx = \frac{{{\pi ^2}}}{6} - 1$$
+$$\int_0^1 {{{\left\lfloor {{x^{ - 1}}} \right\rfloor }^{ - 1}}}\;\mathrm{d}x = \frac{{{\pi ^2}}}{6} - 1$$
 
 证:
 
@@ -94,7 +94,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 $$\begin{aligned}
-\int_0^1 {{{\left\lfloor {\frac{1}{x}} \right\rfloor }^{ - 1}}} dx& = \mathop {\lim }\limits_{n \to \infty } {I_n}\\
+\int_0^1 {{{\left\lfloor {\frac{1}{x}} \right\rfloor }^{ - 1}}}\;\mathrm{d}x& = \mathop {\lim }\limits_{n \to \infty } {I_n}\\
 &= \sum\limits_{n = 1}^\infty {\frac{1}{{{n^2}(n + 1)}}} \\
 &= \zeta (2) - 1 \\
 &= \frac{{{\pi ^2}}}{6} - 1
@@ -104,13 +104,13 @@ $$\begin{aligned}
 
 这是这个积分的特例.
 
-$$\int_0^1 {{{ \lfloor {x^{ - 1}} \rfloor }^{ - 1}}} ((s + 1){x^s} - s{x^{s - 1}})dx = \zeta (s + 2) - 1\quad s > 0$$
+$$\int_0^1 {{{ \lfloor {x^{ - 1}} \rfloor }^{ - 1}}} ((s + 1){x^s} - s{x^{s - 1}})\;\mathrm{d}x = \zeta (s + 2) - 1\quad s > 0$$
 
-证,设$t = {x^{ - 1}},dx =  - {t^{ - 2}}dt$
+证,设$t = {x^{ - 1}},\;\mathrm{d}x =  - {t^{ - 2}}\;\mathrm{d}t$
 
 $$\begin{aligned}
-\int_{1}^\infty \lfloor t\rfloor^{-1} t^{-(s+2)}dt
-&= \sum_{k=1}^\infty \frac{1}k\int_{k}^{k+1}t^{-(s+2)}dt \\&= \frac{1}{s+1}\sum_{k=1}^\infty \frac{1}{k}\left(k^{-(s+1)}-(k+1)^{-(s+1)}\right)\\
+\int_{1}^\infty \lfloor t\rfloor^{-1} t^{-(s+2)}\;\mathrm{d}t
+&= \sum_{k=1}^\infty \frac{1}k\int_{k}^{k+1}t^{-(s+2)}\;\mathrm{d}t \\&= \frac{1}{s+1}\sum_{k=1}^\infty \frac{1}{k}\left(k^{-(s+1)}-(k+1)^{-(s+1)}\right)\\
 &= \frac{1}{s+1}\left(\sum_{k=1}^\infty \frac{1}{k^{s+2}}-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}}\right)\\
 \int_0^1 \lfloor x^{-1} \rfloor^{-1} (s+1)\:x^s \:\mathrm \mathrm{d}x&= \zeta(s+2)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s+1}} \quad s >1\\
 \int_0^1 \lfloor x^{-1} \rfloor^{-1} s\:x^{s-1} \:\mathrm \mathrm{d}x&= \zeta(s+1)-\sum_{k=1}^\infty \frac{1}{k(k+1)^{s}} \quad\quad s >2\\
