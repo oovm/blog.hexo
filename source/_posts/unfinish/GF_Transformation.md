@@ -6,7 +6,9 @@ date: 2018-1-17 12:35:42
 
 ## 数列变换
 
-### 加和
+### 加和原理
+
+$$F(z)+G(z)=\sum_{n\geq0}(f_n+g_n)x^n$$
 
 ### Hadamard 积 
  
@@ -30,6 +32,10 @@ $$\sum_{n\geq 0}n^{k}f_{n}z^{n}=\sum_{j=0}^{k}\left\{\begin{matrix}k\\j\end{matr
 ---
 
 ## 函数变换
+
+### 加和原理
+
+$$\sum_{n\geq0}(f_n+g_n)x^n=F(z)+G(z)$$
 
 ### Cauchy 积 
 
