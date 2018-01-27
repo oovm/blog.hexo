@@ -3,9 +3,470 @@
     font-family: "Microsoft Yahei";
     cursor: pointer;
 }
-.close:after{
+.close:before{
     content: "▼";
 }
-.open:after{
+.open:before{
     content: "▲";
+}
+
+// 评论区
+.comments {
+    margin: 0px;
+    background: white;
+    padding: $content-desktop-padding;
+    box-shadow: $box-shadow-inner;
+    border-radius: $border-radius-inner;
+}
+
+// fancybox图片
+.posts-expand .post-body .fancybox img {
+    display: block !important;
+    margin-left: 0px;
+    cursor: pointer;
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+}
+// 图片底下的描述性文字
+.post-body .image-caption, .post-body .figure .caption {
+    text-align: left;
+}
+// label块
+.post-body .label {
+    font-weight: bold;
+}
+
+// 分页导航（上/下一篇文章的超链接）
+.post-nav-item a {
+  color: #0593d3;
+  border-bottom: none;
+  &:hover {
+    color: #FF4500;
+  }
+}
+
+
+
+
+
+
+
+
+/*
+// 主页标题(无效??)
+.posts-expand article:only-of-type h1 {
+//    font-size: 33px;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 0.04em;
+}*/
+// 主页文章添加阴影效果
+.post {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+  -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
+// 文章标题
+.page-post-detail .post-title {
+//  font-size: 36px;
+  text-align: center;
+  word-break: break-word;
+  font-weight: $posts-expand-title-font-weight
+  background-color: #b9d3ee;
+  border-radius:.3em;
+  line-height:1em;
+  padding-bottom:.12em;
+  padding-top:.12em;
+  box-shadow:2px 2px 7px #9fb6cd;
+  +mobile() {
+    font-size: 22px;
+  }
+}
+// 二级标题（加上底部的分割线
+.posts-expand h2 {
+//    font-size: 30px;
+    color: #2674BA;
+    padding-bottom: 0.3em;
+    line-height: 33px;
+    border-bottom: 1px solid #eaecef;
+}
+.posts-expand h2:before{
+    content: "#";
+    color: #42b983;
+    margin-left: -1em;
+}
+h3 {
+  color: #0099CC;
+}
+.posts-expand h4:before{
+    content: ">";
+    color: #42b983;
+}
+h4 {
+  color: #F77A0B;
+}
+h5 {
+  color: #662D91;
+}
+
+
+
+
+
+/* 目录的超链接 */
+// 普通状态下的超链接状态
+.post-toc ol a {
+    border-bottom-color: white;
+    &:hover {
+        border-bottom-color: #666;
+    }
+}
+// active状态下的超链接样式
+.post-toc .nav li[class$="active"]>.nav-link {
+    border-bottom-color: white;
+    &:hover {
+        border-bottom-color: #fc6423;
+    }
+}
+// 当前正在访问的超链接样式
+.post-toc .nav li[class$="active-current"]>.nav-link {
+    color: white;
+    background: #337ab7;
+    border-radius: 3px;
+    display: block;
+    padding: 5px 7px;
+    border-bottom-color: white;
+    &:hover {
+        background: orange;
+        color: black;
+    }
+}
+
+//修改文章内链接文本样式
+.post-body a {
+    color: #0593d3;
+    border-bottom: none;
+    &:hover {
+        color: #FF4500;
+    }
+}
+//修改不在文章内的链接文本样式
+.link-blue{
+	color: #f36;
+	&:hover {
+		color: #f00;
+	}
+}
+
+//修改文章中图片样式，改为居中
+.posts-expand .post-body img {
+	margin: 0 auto;
+}
+
+// 下载样式
+a#download {
+	display: inline-block;
+	padding: 0 10px;
+	color: #000;
+	background: transparent;
+	border: 2px solid #000;
+	border-radius: 2px;
+	transition: all .5s ease;
+	font-weight: bold;
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
+
+//Read more
+.post-button {
+  margin-top: 20px;
+  text-align: center;
+  a {
+    padding: 2px 20px;
+    font-size: $font-size-base;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 3px;
+    transition: all .2s ease
+    +mobile() { font-size: $font-size-small; }
+    +desktop-large() { font-size: $font-size-large; }
+    &:hover {background-color: #000;color: #fff}
+  }
+}
+
+//留言页面-[最近访客]-的样式
+span#yu-2 {
+	display:inline;
+	position:relative;
+	border-top:1px solid #222;
+	border-bottom:1px solid #222;
+	font-size:130%;
+}
+
+
+
+
+
+
+// 侧边栏头部
+.site-meta {
+     background: #0072E3;
+}
+/* 侧边栏宽度 */
+.sidebar-inner {
+    width: 280px;
+}
+.container .header-inner {
+    width: 280px;
+}
+//各级目录的显示宽度
+/* 主要是为了不让边框超出侧边栏 */
+.post-toc .nav .active-current.nav-level-2 a {
+    width: 250.6px;
+}
+.post-toc .nav .active-current.nav-level-3 a {
+    width: 246.6px;
+}
+.post-toc .nav .active-current.nav-level-4 a {
+    width: 236.6px;
+}
+.post-toc .nav .active-current.nav-level-5 a {
+    width: 226.6px;
+}
+.post-toc .nav .active-current.nav-level-6 a {
+    width: 216.6px;
+}
+
+
+
+
+
+
+
+// 颜色块-黄
+span#inline-yellow {
+	display:inline;
+	padding:.2em .6em .3em;
+	font-size:80%;
+	font-weight:bold;
+	line-height:1;
+	color:#fff;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:0;
+	background-color: #f0ad4e;
+}
+// 颜色块-绿
+span#inline-green {
+	display:inline;
+	padding:.2em .6em .3em;
+	font-size:80%;
+	font-weight:bold;
+	line-height:1;
+	color:#fff;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:0;
+	background-color: #5cb85c;
+}
+// 颜色块-蓝
+span#inline-blue {
+	display:inline;
+	padding:.2em .6em .3em;
+	font-size:80%;
+	font-weight:bold;
+	line-height:1;
+	color:#fff;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:0;
+	background-color: #2780e3;
+}
+// 颜色块-紫
+span#inline-purple {
+	display:inline;
+	padding:.2em .6em .3em;
+	font-size:80%;
+	font-weight:bold;
+	line-height:1;
+	color:#fff;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:0;
+	background-color: #9954bb;
+}
+// 颜色块-红
+span#inline-red {
+	display:inline;
+	padding:.2em .6em .3em;
+	font-size:80%;
+	font-weight:bold;
+	line-height:1;
+	color:#fff;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:baseline;
+	border-radius:0;
+	background-color: #df3e3e;
+}
+
+// 左侧边框红色块级
+p#div-border-left-red {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-left-width: 5px;
+	border-radius: 3px;
+	border-left-color: #df3e3e;
+}
+// 左侧边框黄色块级
+p#div-border-left-yellow {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-left-width: 5px;
+	border-radius: 3px;
+	border-left-color: #f0ad4e;
+}
+// 左侧边框绿色块级
+p#div-border-left-green {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-left-width: 5px;
+	border-radius: 3px;
+	border-left-color: #5cb85c;
+}
+// 左侧边框蓝色块级
+p#div-border-left-blue {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-left-width: 5px;
+	border-radius: 3px;
+	border-left-color: #2780e3;
+}
+// 左侧边框紫色块级
+p#div-border-left-purple {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-left-width: 5px;
+	border-radius: 3px;
+	border-left-color: #9954bb;
+}
+// 右侧边框红色块级
+p#div-border-right-red {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-right-width: 5px;
+	border-radius: 3px;
+	border-right-color: #df3e3e;
+}
+// 右侧边框黄色块级
+p#div-border-right-yellow {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-right-width: 5px;
+	border-radius: 3px;
+	border-right-color: #f0ad4e;
+}
+// 右侧边框绿色块级
+p#div-border-right-green {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-right-width: 5px;
+	border-radius: 3px;
+	border-right-color: #5cb85c;
+}
+// 右侧边框蓝色块级
+p#div-border-right-blue {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-right-width: 5px;
+	border-radius: 3px;
+	border-right-color: #2780e3;
+}
+// 右侧边框紫色块级
+p#div-border-right-purple {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-right-width: 5px;
+	border-radius: 3px;
+	border-right-color: #9954bb;
+}
+// 上侧边框红色
+p#div-border-top-red {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-top-width: 5px;
+	border-radius: 3px;
+	border-radius: 3px;
+	border-top-color: #df3e3e;
+}
+// 上侧边框黄色
+p#div-border-top-yellow {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-top-width: 5px;
+	border-radius: 3px;
+	border-top-color: #f0ad4e;
+}
+// 上侧边框绿色
+p#div-border-top-green {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-top-width: 5px;
+	border-radius: 3px;
+	border-top-color: #5cb85c;
+}
+// 上侧边框蓝色
+p#div-border-top-blue {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-top-width: 5px;
+	border-radius: 3px;
+	border-top-color: #2780e3;
+}
+// 上侧边框紫色
+p#div-border-top-purple {
+	display: block;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-top-width: 5px;
+	border-radius: 3px;
+	border-top-color: #9954bb;
 }

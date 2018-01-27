@@ -3,31 +3,61 @@ title: Generating Function Transformation
 date: 2018-1-17 12:35:42
 ---
 
-
 ## 数列变换
 
 ### 加和原理
 
-$$F(z)+G(z)=\sum_{n\geq0}(f_n+g_n)x^n$$
+$$\sum_{n\geq0}(f_n+g_n)x^n=F(z)+G(z)$$
+
+数列和等于函数和, 收敛域依赖于小的那个函数.
+
+### 位移原理
 
 ### Hadamard 积 
- 
-$$(F\odot G)(z):=\sum_{n\geq 0}f_{n}g_{n}z^{n}={\frac {1}{2\pi }}\int_{0}^{2\pi }F\left({\sqrt {z}}e^{\imath t}\right)G\left({\sqrt {z}}e^{-\imath t}\right)\mathrm{d}t$$
+两个数列的乘积称为 Hadamard 积
+$$\sum_{n\geq 0}f_{n}g_{n}z^{n}:=(F\odot G)(z)={\frac {1}{2\pi }}\int_{0}^{2\pi }F\left({\sqrt {z}}e^{\imath t}\right)G\left({\sqrt {z}}e^{-\imath t}\right)\mathrm{d}t$$
+
+### 等比原理
+
+$$\sum_{n\geq 1}\frac{f_n}{k^n}z^{n}=\sum_{n\geq 1}f_n\frac{z^n}{k^n}=F\left(\frac{z}{k}\right)$$
 
 ### Zeta 变换
 
+#### Zeta 主变换
+定义 $\displaystyle\left\{\begin{matrix}k+2\\j\end{matrix}\right\}_\ast:={\frac {1}{j!}}\times \sum_{m=1}^{j}{\binom {j}{m}}{\frac {(-1)^{j-m}}{m^k}}$
 
-def:
-
-$$\left\{\begin{matrix}k+2\\j\end{matrix}\right\}_\ast:={\frac {1}{j!}}\times \sum_{m=1}^{j}{\binom {j}{m}}{\frac {(-1)^{j-m}}{m^k}}$$
+那么数列$f_n$的 Zeta 变换可以记为:
 
 $$\sum_{n\geq 1}{\frac {f_{n}}{n^{k}}}z^{n}=\sum_{j\geq 1}\left\{\begin{matrix}k+2\\j\end{matrix}\right\}_{\ast }z^{j}F^{(j)}(z)$$
 
 where Then for $k \in \mathbb{Z}^{+}$ and some prescribed OGF, ${\displaystyle F(z)\in C^{\infty }}$, i.e., so that the higher-order {\displaystyle j^{th}} j^{th} derivatives of {\displaystyle F(z)} {\displaystyle F(z)} exist for all {\displaystyle j\geq 0} j\geq 0, we have that
 
-### 负 Zeta 变换
+#### Zeta 逆变换
+
 
 $$\sum_{n\geq 0}n^{k}f_{n}z^{n}=\sum_{j=0}^{k}\left\{\begin{matrix}k\\j\end{matrix}\right\}z^{j}F^{(j)}(z)$$
+
+### 提取原理
+
+#### 奇偶提取
+
+$$\begin{aligned}
+&\sum _{n\geq 0}f_{2n}z^{2n}&={\frac {1}{2}}\left(F(z)+F(-z)\right)\\
+&\sum _{n\geq 0}f_{2n+1}z^{2n+1}&={\frac {1}{2}}\left(F(z)-F(-z)\right)
+\end{aligned}$$
+
+##### 五级标题
+
+###### 六级标题
+
+### Borel 变换
+
+Borel 变换描述了OGF与EGF间的转换关系.
+
+$$\begin{aligned}
+F(z)&=\sum _{n\geq 0}f_{n}z^{n}=\int _{0}^{\infty }{\hat {F}}(tz)e^{-t}dt\\
+\hat {F}(z)&=\sum _{n\geq 0}{\frac {f_{n}}{n!}}z^{n}={\frac {1}{2\pi }}\int _{-\pi }^{\pi }F\left(ze^{-\imath \vartheta }\right)e^{e^{\imath \vartheta }}d\vartheta
+\end{aligned}$$
 
 ---
 

@@ -12,6 +12,7 @@ npm install hexo-renderer-kramed --save &&
 npm install hexo-math --save &&
 # Live 2D
 npm install hexo-helper-live2d --save &&
-npm install live2d-widget-model-koharu &&
+npm install live2d-widget-model-koharu --save&&
 # 字数统计
-npm install hexo-wordcount --save
+npm install hexo-symbols-count-time --save
+# npm install hexo-wordcount --save
