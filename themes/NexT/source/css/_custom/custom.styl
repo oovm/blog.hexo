@@ -52,14 +52,6 @@
 
 
 
-/*
-// 主页标题(无效??)
-.posts-expand article:only-of-type h1 {
-//    font-size: 33px;
-    color: transparent;
-    -webkit-text-stroke: 1px black;
-    letter-spacing: 0.04em;
-}*/
 // 主页文章添加阴影效果
 .post {
   margin-top: 60px;
@@ -70,7 +62,6 @@
 }
 // 文章标题
 .page-post-detail .post-title {
-//  font-size: 36px;
   text-align: center;
   word-break: break-word;
   font-weight: $posts-expand-title-font-weight
@@ -84,9 +75,15 @@
     font-size: 22px;
   }
 }
-// 二级标题（加上底部的分割线
+// 一级标题.文章
+.posts-expand .post-body h1 {
+  padding-left: 10px;
+  margin: 20px -30px 20px -30px;
+  border-left: 4px solid #00a67c;
+  background-color: #f7f7f7;
+}
+// 二级标题+下划线
 .posts-expand h2 {
-//    font-size: 30px;
     color: #2674BA;
     padding-bottom: 0.3em;
     line-height: 33px;
@@ -97,17 +94,17 @@
     color: #42b983;
     margin-left: -1em;
 }
-h3 {
+.posts-expand h3 {
   color: #0099CC;
 }
 .posts-expand h4:before{
     content: ">";
     color: #42b983;
 }
-h4 {
+.posts-expand h4 {
   color: #F77A0B;
 }
-h5 {
+.posts-expand h5 {
   color: #662D91;
 }
 
@@ -224,24 +221,6 @@ span#yu-2 {
 .container .header-inner {
     width: 280px;
 }
-//各级目录的显示宽度
-/* 主要是为了不让边框超出侧边栏 */
-.post-toc .nav .active-current.nav-level-2 a {
-    width: 250.6px;
-}
-.post-toc .nav .active-current.nav-level-3 a {
-    width: 246.6px;
-}
-.post-toc .nav .active-current.nav-level-4 a {
-    width: 236.6px;
-}
-.post-toc .nav .active-current.nav-level-5 a {
-    width: 226.6px;
-}
-.post-toc .nav .active-current.nav-level-6 a {
-    width: 216.6px;
-}
-
 
 
 
