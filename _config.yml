@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://0x0.life
 root: /
-permalink: :category/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
 
 # Directory
@@ -105,4 +105,7 @@ live2d:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/GalAster/Galaster.github.io
+  branch: blog-deploy
+  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
