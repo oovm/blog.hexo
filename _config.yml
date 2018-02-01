@@ -107,5 +107,5 @@ live2d:
 deploy:
   type: git
   repo: https://github.com/GalAster/Galaster.github.io
-  branch: blog-deploy
-  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
+  branch: master
+  message: "Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
