@@ -14,9 +14,11 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://0x0.life
 root: /
-permalink: :year/:month/:title/
 permalink_defaults:
-
+permalink: archive/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
 # Directory
 source_dir: source
 public_dir: public
@@ -41,7 +43,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: 4
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')

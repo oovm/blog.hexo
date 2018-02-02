@@ -11,7 +11,7 @@ npm install hexo-renderer-stylus --save &&
 # 使用 KaTeX 方案
 # npm uninstall hexo-renderer-marked --save &&
 npm i hexo-renderer-markdown-it-plus --save &&
-npm install hexo-math --save &&
+# npm install hexo-math --save &&
 # Live 2D
 npm install hexo-helper-live2d --save &&
 npm install live2d-widget-model-koharu --save &&
