@@ -2,6 +2,7 @@
 title: '积分习题XV:超重积分'
 categories:
   - 数学题集
+abbrlink: af3e872d
 date: 2017-03-22 21:42:37
 tags:
 ---

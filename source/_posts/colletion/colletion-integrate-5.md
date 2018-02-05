@@ -2,6 +2,7 @@
 title: '积分习题V:整值积分'
 categories:
   - 未完成
+abbrlink: 4bbc3775
 date: 2016-12-02 19:34:03
 tags:
 ---

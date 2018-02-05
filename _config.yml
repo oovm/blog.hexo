@@ -104,6 +104,29 @@ live2d:
     height: 150
   mobile:
     show: false
+# 代码压缩
+html_minifier:
+  enable: true
+  ignore_error: false
+  exclude:
+css_minifier:
+  enable: true
+  exclude:
+    - '*.min.css'
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

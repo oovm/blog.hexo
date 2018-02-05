@@ -2,6 +2,7 @@
 title: '积分习题XII:孪生积分(2)'
 categories:
   - 未完成
+abbrlink: a22d89a2
 date: 2017-01-26 14:03:20
 tags:
 ---

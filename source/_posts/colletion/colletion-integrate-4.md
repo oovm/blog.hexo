@@ -5,6 +5,7 @@ tags:
   - 整理
 categories:
   - 数学题集
+abbrlink: 505c6229
 date: 2016-11-27 15:36:37
 ---
 ```

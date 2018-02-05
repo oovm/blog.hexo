@@ -6,6 +6,7 @@ tags:
   - 积分习题
 categories:
   - 数学题集
+abbrlink: 79c3610
 date: 2016-07-09 14:36:02
 ---
 ```

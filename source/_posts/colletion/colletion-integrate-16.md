@@ -2,6 +2,7 @@
 title: '积分习题XVI:超重积分(2)'
 categories:
   - 数学题集
+abbrlink: c605ba9e
 date: 2017-03-26 21:45:18
 tags:
 ---

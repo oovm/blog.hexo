@@ -1,6 +1,7 @@
 ---
 title: Generating Function Transformation
-date: 2018-1-17 12:35:42
+abbrlink: 44c231fb
+date: 2018-01-17 12:35:42
 ---
 
 # 一级标题

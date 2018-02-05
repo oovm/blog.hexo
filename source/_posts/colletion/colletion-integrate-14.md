@@ -7,6 +7,7 @@ tags:
 categories:
   - 数学题集
   - 理宅异闻录
+abbrlink: b88478b5
 date: 2017-01-31 19:08:43
 ---
 ```

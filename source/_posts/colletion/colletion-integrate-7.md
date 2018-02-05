@@ -2,6 +2,7 @@
 title: '积分习题VII:伪参积分'
 categories:
   - 未完成
+abbrlink: f6aa7c1d
 date: 2016-12-28 00:48:08
 tags:
 ---

@@ -1,5 +1,6 @@
 ---
 title: Hello Hexo (2)
+abbrlink: 8347a034
 date: 2018-01-11 21:43:48
 tags:
 ---

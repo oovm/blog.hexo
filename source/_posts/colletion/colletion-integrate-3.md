@@ -1,11 +1,12 @@
 ---
-title: 积分习题III:取整积分(下)
+title: '积分习题III:取整积分(下)'
 tags:
   - 取整函数
   - 收集
   - 积分习题
 categories:
   - 数学题集
+abbrlink: c86e380f
 date: 2016-07-10 13:12:58
 ---
 ```

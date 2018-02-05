@@ -2,6 +2,7 @@
 title: '积分习题VIII:真·伪参积分'
 categories:
   - 未完成
+abbrlink: ef993ebf
 date: 2017-01-03 20:25:31
 tags:
 ---
