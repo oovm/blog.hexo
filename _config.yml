@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 url: http://0x0.life
 root: /
 permalink_defaults:
-permalink: archive/:abbrlink.html
+permalink: archives/:abbrlink.html
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
@@ -105,6 +105,7 @@ live2d:
   mobile:
     show: false
 # 代码压缩
+all_minifier: false
 html_minifier:
   enable: true
   ignore_error: false
@@ -132,5 +133,5 @@ image_minifier:
 deploy:
   type: git
   repo: https://github.com/GalAster/Galaster.github.io
-  branch: master
+  branch: blog-deploy
   message: "Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."

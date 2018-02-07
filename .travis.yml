@@ -1,0 +1,27 @@
+﻿language: node_js
+node_js:
+  - "stable" # nodejs的版本
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - blog-deploy # 设置自动化部署的源码分支
+before_install:
+  - export TZ='Asia/Shanghai' # 设置时区
+  - npm install -g hexo-cli
+install:
+  - npm install  # 安装依赖组件
+before_script:
+  # 设置github账户信息
+  - git config --global user.name "Galaster@Hexobuilder" #设置github用户名
+  - git config --global user.email "galaster@foxmail.com" #设置github用户邮箱
+  # github仓库操作_替换hexo的_config.yml配置文件中的原github地址，使用https+token来提交
+  # git@github.com:userName/notes.git 为原地址
+  # https://${GITHUB_TOKEN}:x-oauth-basic@github.com/userName/notes.git为替换后的新地址
+  - sed -i'' "s~git@github.com:userName/notes.git~https://${GITHUB_TOKEN}:x-oauth-basic@github.com/userName/notes.git~" _config.yml
+  # $GITHUB_TOKEN 填在 travis-ci 的 settings 而不是这里!!!
+script:
+  - hexo clean && hexo generate # 执行的命令
+after_success:
+  - hexo deploy # 执行的成功后部署

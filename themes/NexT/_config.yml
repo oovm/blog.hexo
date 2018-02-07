@@ -388,8 +388,9 @@ math:
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
   # needed to full Katex support.
   katex:
-    js: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
-    css: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
+    # js: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
+    # css: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
+    css: //cdn.jsdelivr.net/katex/latest/katex.min.css
     # If you want to try the latest version of Katex, use one below instead
     # cdn: //cdn.jsdelivr.net/katex/latest/katex.min.css
 
