@@ -28,7 +28,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-
+  - README.md
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -133,5 +133,5 @@ image_minifier:
 deploy:
   type: git
   repo: https://github.com/GalAster/Galaster.github.io
-  branch: blog-deploy
-  message: "Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
+  branch: master
+  message: ":octocat: Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
