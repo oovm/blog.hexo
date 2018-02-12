@@ -6,11 +6,11 @@ abbrlink: af3e872d
 date: 2017-03-22 21:42:37
 tags:
 ---
-```
+
 超重积分就是那种看上去很重很重的积分......嗯?这个字读Chóng来着....那就是n重积分的意思了....
 
 发明一个约定:
-
+```
 $$I(n) = \int_{{{[0,1]}^n}} {\mathop f\limits_{i \in 1\sim n} [{x_i}]\mathrm{d}{x_i}}  = \int_0^1 {\int_0^1 . } ..\int_0^1 {f({x_1},{x_2},...,{x_n})\mathrm{d}{x_1}\mathrm{d}{x_2}...\mathrm{d}{x_n}}$$
 
 Well....你以为打一大堆积分号不累啊...
@@ -75,8 +75,10 @@ $$\begin{aligned}
 \end{aligned}$$
 
 接下来我们来作更多的推导.
-> **引理1:**> 
-> $$\int_{0}^{1} x^{s}\left\{1/x\right\}^{2}\:\mathrm{d}x = -\frac{2\zeta(s)}{s(1+s)}-\frac{\zeta(1+s)}{1+s}-\frac{1}{1-s}$$> 
+> **引理1:**
+> 
+> $$\int_{0}^{1} x^{s}\left\{1/x\right\}^{2}\:\mathrm{d}x = -\frac{2\zeta(s)}{s(1+s)}-\frac{\zeta(1+s)}{1+s}-\frac{1}{1-s}$$
+> 
 > 其中$-1<\Re{s}<1, s\neq 0$
 **引证:**
 
@@ -90,9 +92,12 @@ $$\begin{aligned}
 -\frac{k^{2}}{(s+1)(x+k)^{s+1}} \right) \right|_{0}^{1}\\
 & = -\frac{1}{1-s} -\frac{2\zeta(s)}{s(1+s)}-\frac{\zeta(1+s)}{1+s}.
 \end{aligned}$$
-> **引理2:**> 
-> $$\frac{(-1)^{n-1}}{(n-1)!} \int_{0}^{1} \left\{1/x\right\}^{2} \ln ^{n-1} x\: \mathrm{d}x = (-1)^{n}+1 -\sum_{k=0}^{n-1}\frac{\gamma_{k}}{k!}+2\sum_{k=0}^{n} \frac{(-1)^k}{k!}\zeta^{(k)}(0)$$> 
-> 其中$\gamma_{k}$是洛朗- 斯蒂尔杰斯常数(Laurent-Stieltjes Constants),其定义为:> 
+> **引理2:**
+> 
+> $$\frac{(-1)^{n-1}}{(n-1)!} \int_{0}^{1} \left\{1/x\right\}^{2} \ln ^{n-1} x\: \mathrm{d}x = (-1)^{n}+1 -\sum_{k=0}^{n-1}\frac{\gamma_{k}}{k!}+2\sum_{k=0}^{n} \frac{(-1)^k}{k!}\zeta^{(k)}(0)$$
+> 
+> 其中$\gamma_{k}$是洛朗- 斯蒂尔杰斯常数(Laurent-Stieltjes Constants),其定义为:
+> 
 > $$\gamma_{k} = \displaystyle \lim_{N \rightarrow \infty}\left(\sum_{m=1}^{N}\frac{\ln^{k}m}{m}-\frac{\ln^{k+1}N}{k+1} \right)$$
 **引证:**
 
@@ -103,11 +108,16 @@ $$\int_{0}^{1} x^{s}\left\{1/x\right\}^2 \:\mathrm{d}x = \sum_{n=0}^{\infty}\lef
 $$\zeta (1 + s) = \frac{1}{s} + \sum\limits_{k = 0}^\infty  {{{( - 1)}^k}} \frac{{{\gamma _k}}}{{k!}}{s^k}$$
 
 比较两边的系数即证:
-> **引理3:**> 
-> $$\begin{aligned}> 
-> {I_n} &= \int_0^1 \cdots \int_0^1 {{{\left\{ {\frac{1}{{{x_1}{x_2} \cdots {x_n}}}} \right\}}^2}} \:\mathrm{d}{x_1}\mathrm{d}{x_2} \cdots \mathrm{d}{x_n}\\> 
-> &= {( - 1)^n} + 1 - \sum\limits_{k = 0}^{n - 1} {\frac{{{\gamma _k}}}{{k!}}} + 2\sum\limits_{k = 0}^n {\frac{{{{( - 1)}^k}}}{{k!}}} {\zeta ^{(k)}}(0)\\> 
-> {\gamma _k} &= \mathop {\lim }\limits_{N \to \infty } \left( {\sum\limits_{m = 1}^N {\frac{{{{\ln }^k}m}}{m}} - \frac{{{{\ln }^{k + 1}}N}}{{k + 1}}} \right)> 
+> **引理3:**
+> 
+> $$\begin{aligned}
+> 
+> {I_n} &= \int_0^1 \cdots \int_0^1 {{{\left\{ {\frac{1}{{{x_1}{x_2} \cdots {x_n}}}} \right\}}^2}} \:\mathrm{d}{x_1}\mathrm{d}{x_2} \cdots \mathrm{d}{x_n}\\
+> 
+> &= {( - 1)^n} + 1 - \sum\limits_{k = 0}^{n - 1} {\frac{{{\gamma _k}}}{{k!}}} + 2\sum\limits_{k = 0}^n {\frac{{{{( - 1)}^k}}}{{k!}}} {\zeta ^{(k)}}(0)\\
+> 
+> {\gamma _k} &= \mathop {\lim }\limits_{N \to \infty } \left( {\sum\limits_{m = 1}^N {\frac{{{{\ln }^k}m}}{m}} - \frac{{{{\ln }^{k + 1}}N}}{{k + 1}}} \right)
+> 
 > \end{aligned}$$
 **引证:**
 
@@ -141,6 +151,6 @@ $$\boxed{\begin{aligned}
 
 特别的
 $${I_{n,1}} = \int_0^1   \cdots \int_0^1 {{{\left\{ {\frac{1}{{{x_1} \cdots {x_n}}}} \right\}}^p}} \:\mathrm{d}{x_1} \cdots \mathrm{d}{x_n} = 1 - \sum\limits_{k = 0}^{n - 1} {\frac{{{\gamma _k}}}{{k!}}} $$
-
+```
 **注1:这个问题来自这本书:[<span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;">Limits, Series, and Fractional Part Integrals</span></span>](http://www.springer.com/cn/book/9781461467618)**
-**注2:这个结论并不能用数学软件验证,因为震荡积分用数值软件算下场普遍都很惨,Well,我试了一下100位工作精度下去只有5位有效数字的样子...**```
+**注2:这个结论并不能用数学软件验证,因为震荡积分用数值软件算下场普遍都很惨,Well,我试了一下100位工作精度下去只有5位有效数字的样子...**

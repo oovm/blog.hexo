@@ -64,7 +64,10 @@ tag_generator:
 default_category: uncategorized
 category_map:
   数学题集: collection
+  未完成: draft
 tag_map:
+  积分: integrate
+
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

@@ -16,6 +16,7 @@ public/
 
 # Github 同步调整
 .github*/
+source/Readme.md
 
 # NexT 同步调整
 themes/next/docs/

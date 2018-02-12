@@ -26,6 +26,7 @@ before_script:
   # 设置github账户信息
   - git config --global user.name "GalAster@Builder" #设置github用户名
   - git config --global user.email "galaster@foxmail.com" #设置github用户邮箱
+  - cp Readme.md source/Readme.md
   # github仓库操作_替换hexo的_config.yml配置文件中的原github地址，使用https+token来提交
   # git@github.com:userName/notes.git 为原地址
   # https://${GITHUB_TOKEN}:x-oauth-basic@github.com/userName/notes.git为替换后的新地址
@@ -37,9 +38,8 @@ after_success:
   #- sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
   #- cat ./_config.yml
   #- hexo deploy # 执行的成功后部署
-  - cd ./public
-  - git init
+  - cd ./public && git init
   - git add --all .
-  - git commit -m ":+1: Travis CI Auto Builder"
+  - git commit -m "':+1:' Travis CI Auto Builder"
   # $GITHUB_TOKEN 填在 travis-ci 的 settings 而不是这里!!!
   - git push --quiet --force https://${GITHUB_TOKEN}@${GITHUB_PATH} master
