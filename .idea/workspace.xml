@@ -2,16 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033ebd62-a57b-41ab-bc1c-66e381712b3e" name="Default" comment="调试::Math">
-      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/unfinish/史上最贱数学题(番外).md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_boxes.styl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_timeline.styl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/ar.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/bg.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/bn.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/cs.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/da.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/el.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/es.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/et.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/fa.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/fi.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/he.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/hi.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/hr.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/hu.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/jv.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/lt.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/lv.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/ms.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/no.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/pa.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/pl.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/ro.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/sl.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/sr.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/sv.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/th.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/tr.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/languages/uk.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/layout/_macro/post-related.swig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/layout/_partials/breadcrumb.swig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/include-raw.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/pages/breadcrumb.styl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/third-party/related-posts.styl" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/Galaster.github.io.iml" afterPath="$PROJECT_DIR$/.idea/Galaster.github.io.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-15.md" afterPath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-15.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/unfinish/GF_Transformation.md" afterPath="$PROJECT_DIR$/source/_posts/unfinish/GF_Transformation.md" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.bowerrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.editorconfig" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.gitattributes" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.hound.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.javascript_ignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.jshintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.stylintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/_config.yml" afterPath="$PROJECT_DIR$/themes/NexT/_config.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/bower.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/crowdin.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/gulpfile.coffee" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/_en.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/_en.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/de.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/de.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/fr.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/fr.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/id.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/id.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/it.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/it.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/ja.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/ja.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/ko.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/ko.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/nl.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/nl.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/pt-BR.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/pt-BR.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/pt.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/pt.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/ru.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/ru.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/vi.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/vi.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/zh-CN.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/zh-CN.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/zh-hk.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/zh-hk.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/languages/zh-tw.yml" afterPath="$PROJECT_DIR$/themes/NexT/languages/zh-tw.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_macro/post.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_macro/post.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_macro/sidebar.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_macro/sidebar.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_partials/head/head.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_partials/head/head.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_partials/page-header.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_partials/page-header.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_third-party/analytics/busuanzi-counter.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_third-party/analytics/busuanzi-counter.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_third-party/analytics/firestore.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_third-party/analytics/firestore.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_third-party/bookmark.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_third-party/bookmark.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_third-party/comments/valine.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_third-party/comments/valine.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_third-party/github-banner.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_third-party/github-banner.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_third-party/math/katex.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_third-party/math/katex.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/page.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/page.swig" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/button.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/button.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/center-quote.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/center-quote.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/exturl.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/exturl.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/full-image.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/full-image.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/group-pictures.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/group-pictures.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/label.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/label.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/lazy-image.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/lazy-image.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/scripts/tags/note.js" afterPath="$PROJECT_DIR$/themes/NexT/scripts/tags/note.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/pages/pages.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/pages/pages.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/sidebar/sidebar-author-links.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/sidebar/sidebar-author-links.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/sidebar/sidebar-toc.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/sidebar/sidebar-toc.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/sidebar/sidebar.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/sidebar/sidebar.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/third-party/algolia-search.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/third-party/algolia-search.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/third-party/third-party.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_common/components/third-party/third-party.styl" />
       <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_mixins/Pisces.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_mixins/Pisces.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Gemini/index.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Gemini/index.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Pisces/_layout.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Pisces/_layout.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Pisces/_sidebar.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Pisces/_sidebar.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_variables/Gemini.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_variables/Gemini.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/css/_variables/base.styl" afterPath="$PROJECT_DIR$/themes/NexT/source/css/_variables/base.styl" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/js/src/motion.js" afterPath="$PROJECT_DIR$/themes/NexT/source/js/src/motion.js" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/source/js/src/utils.js" afterPath="$PROJECT_DIR$/themes/NexT/source/js/src/utils.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,22 +116,17 @@
     <favorites_list name="Configs">
       <favorite_root url="file://$PROJECT_DIR$/themes/NexT/_config.yml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       <favorite_root url="file://$PROJECT_DIR$/_config.yml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      <favorite_root url="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Custom_Css">
+      <favorite_root url="file://$PROJECT_DIR$/themes/NexT/source/css/_custom" module="Galaster.github.io" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_boxes.styl" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_timeline.styl" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="custom_timeline.styl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_timeline.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -115,15 +202,15 @@
         <option value="$PROJECT_DIR$/build-tools/plugins-install.sh" />
         <option value="$PROJECT_DIR$/themes/NexT/_config.yml" />
         <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl" />
         <option value="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_timeline.styl" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1283" />
@@ -144,9 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,41 +243,14 @@
               <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="NexT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="NexT" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="NexT" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="NexT" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="_custom" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,8 +393,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -348,24 +404,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32290503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32178771" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27345416" sideWeight="0.6947195" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27985075" sideWeight="0.6882682" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27345416" sideWeight="0.30528054" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27665246" sideWeight="0.31173185" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,83 +458,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-8.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-2469">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-14.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="378">
-            <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-16.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3045">
-            <caret line="145" column="26" lean-forward="true" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-11.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1386">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-15.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="84">
-            <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build-tools/plugins-update.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="61" lean-forward="false" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="525">
-            <caret line="107" column="12" lean-forward="false" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -707,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/js/tag_map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -731,19 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build-tools/plugins-install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,49 +715,8 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="63">
             <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/NexT/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="389" column="8" lean-forward="false" selection-start-line="389" selection-start-column="8" selection-end-line="389" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,14 +724,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="389" column="8" lean-forward="false" selection-start-line="389" selection-start-column="8" selection-end-line="389" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/crowdin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/gulpfile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hexo-symbols-count-time/appveyor.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/layout/page.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_timeline.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="-637">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding />
         </state>
       </provider>

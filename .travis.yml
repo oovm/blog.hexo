@@ -4,12 +4,6 @@ node_js:
 cache:
   directories:
     - node_modules
-notifications:
-  email:
-    recipients:
-      - galaster@foxmail.com
-    on_success: change
-    on_failure: always
 branches:
   only:
     - blog-raw # 设置自动化部署的源码分支
@@ -17,7 +11,7 @@ env:
  global:
    - GITHUB_PATH: github.com/GalAster/Galaster.github.io.git
 before_install:
-  - export TZ='Asia/Shanghai' # 设置时区
+  - export TZ='Asia/Shanghai' # 设置时区, 下面 commit 要用
   - npm install -g hexo-cli
 install:
   - npm install  # 安装依赖组件
@@ -26,25 +20,10 @@ before_script:
   # 设置github账户信息
   - git config --global user.name "GalAster@Builder" #设置github用户名
   - git config --global user.email "galaster@foxmail.com" #设置github用户邮箱
-  - cp Readme.md source/Readme.md
-  # github仓库操作_替换hexo的_config.yml配置文件中的原github地址，使用https+token来提交
-  # git@github.com:userName/notes.git 为原地址
-  # https://${GITHUB_TOKEN}:x-oauth-basic@github.com/userName/notes.git为替换后的新地址
-  # - sed -i'' "s~git@github.com:userName/notes.git~https://$GITHUB_TOKEN:x-oauth-basic@github.com/userName/notes.git~" _config.yml
-
+  - cp Readme.md source/Readme.md # 添加 github Readme 文件
 script:
-  - hexo clean && hexo generate # 执行的命令
+  - hexo clean && hexo generate --silent # 静默执行命令
 after_success:
-  #- sed -i "s/gh_token/${GITHUB_TOKEN}/g" ./_config.yml
-  #- cat ./_config.yml
-  #- hexo deploy # 执行的成功后部署
-
-  #- cd ./public && git init
-  #- git add --all .
-  #- git commit -m "Travis CI Auto Builder :+1:"
-
-  #- git push --quiet --force https://${GITHUB_TOKEN}@${GITHUB_PATH} blog-deploy
-
   - git clone https://${GITHUB_PATH} .deploy_git
   - cd .deploy_git && git checkout master
   # 保留master分支的提交记录，不然每次git init的话只有1条commit
@@ -53,3 +32,10 @@ after_success:
   - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"  # 提交记录包含时间 跟上面更改时区配合
   # $GITHUB_TOKEN 填在 travis-ci 的 settings 而不是这里!!!
   - git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_PATH}" master:master
+# 收工提醒
+notifications:
+  email:
+    recipients:
+      - galaster@foxmail.com
+    on_success: change
+    on_failure: always

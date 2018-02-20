@@ -15,9 +15,13 @@ public/
 .deploy*/
 
 # Github 同步调整
-.github*/
+# .github*/
 source/Readme.md
 
 # NexT 同步调整
 themes/next/docs/
-themes/next/README.md
+themes/next/.*
+themes/next/package.json
+themes/next/bower.json
+themes/next/crowdin.yml
+themes/next/gulpfile.coffee

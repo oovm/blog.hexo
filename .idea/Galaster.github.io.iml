@@ -6,8 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/node_modules" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/public" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/.deploy_git" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/source" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/themes" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

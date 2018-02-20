@@ -1,10 +1,15 @@
+# 缓存文件
 .DS_Store
-.idea/
+Thumbs.db
+db.json
 *.log
-*.iml
-yarn.lock
-package-lock.json
+
+# 临时目录
+.github/
+docs/
 node_modules/
+package-lock.json
+yarn.lock
 
 # Ignore optional external libraries
 source/lib/*
@@ -20,3 +25,4 @@ source/lib/ua-parser-js/*
 !source/lib/ua-parser-js/dist/
 
 !source/lib/velocity/
+*.md
