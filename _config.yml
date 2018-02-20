@@ -137,4 +137,4 @@ deploy:
   type: git
   repo: https://github.com/GalAster/Galaster.github.io
   branch: master
-  message: ":octocat: Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
+  message: "Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}:octocat:"
