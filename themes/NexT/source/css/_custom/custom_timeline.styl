@@ -7,16 +7,22 @@
         margin: 50px 20px;
     }
 }
+
 // 时间轴左边线条
 .posts-collapse::after {
     margin-left: -2px;
-    background-image: linear-gradient(180deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%);
+    background-image: linear-gradient( 180deg,
+      #f79533 0,
+      #f37055 15%,
+      #ef4e7b 30%,
+      #a166ab 44%,
+      #5073b8 58%,
+      #1098ad 72%,
+      #07b39b 86%,
+      #6dba82 100%
+    );
 }
 
-// 时间轴文章标题左边圆点颜色
-.posts-collapse .post-header:hover::before {
-    background-color: rgb(161, 102, 171);
-}
 // 时间轴左边线条圆点颜色
 .posts-collapse .collection-title::before {
     background-color: rgb(0, 0, 0);
@@ -50,5 +56,9 @@
 // 时间轴年份
 .posts-collapse .collection-title h1, .posts-collapse .collection-title h2 {
     color: rgb(255, 255, 255);
+}
+// 时间轴文章标题左边圆点颜色
+.posts-collapse .post-header:hover::before {
+    background-color: rgb(161, 102, 171);
 }
 */
