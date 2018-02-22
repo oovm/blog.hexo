@@ -150,3 +150,5 @@ deploy:
   repo: https://GITHUB_TOKEN@github.com/GalAster/Galaster.github.io
   branch: master
   message: ":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
+# 弃用 hexo deploy, 会导致 commit history 清空, 可能是由于 force push 的某种特性.
+# 参考
