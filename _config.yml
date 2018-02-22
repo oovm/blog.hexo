@@ -147,8 +147,6 @@ image_minifier:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/GalAster/Galaster.github.io
+  repo: https://GITHUB_TOKEN@github.com/GalAster/Galaster.github.io
   branch: master
-  message: "Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}:octocat:"
-# 在某些情况下可能导致 commit history 全部消失从来
-# 保险起见手动部署
+  message: ":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."

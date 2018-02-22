@@ -1,37 +1,28 @@
 ﻿language: node_js
 node_js:
-  - "stable" # nodejs的版本
+  - "stable"
 cache:
   directories:
     - node_modules
 branches:
   only:
     - blog-raw # 设置自动化部署的源码分支
-env:
- global:
-   - GITHUB_PATH: github.com/GalAster/Galaster.github.io.git
 before_install:
   - export TZ='Asia/Shanghai' # 设置时区, 下面 commit 要用
   - npm install -g hexo-cli
 install:
   - npm install  # 安装依赖组件
-  # - npm install hexo-deployer-git --save
 before_script:
   # 设置github账户信息
-  - git config --global user.name "GalAster@Builder" #设置github用户名
-  - git config --global user.email "galaster@foxmail.com" #设置github用户邮箱
+  - git config --global user.name "Gal@Builder" #设置github用户名
+  - git config --global user.email "galseraph@gmail.com" #设置github用户邮箱
   - cp Readme.md source/Readme.md # 添加 github Readme 文件
 script:
-  - hexo clean && hexo generate --silent # 静默执行命令
+  - hexo generate --silent # 静默执行命令
 after_success:
-  - git clone https://${GITHUB_PATH} .deploy_git
-  - cd .deploy_git && git checkout master
-  # 保留master分支的提交记录，不然每次git init的话只有1条commit
-  - cd ../ && mv .deploy_git/.git/ ./public/
-  - cd ./public && git add .
-  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"  # 提交记录包含时间 跟上面更改时区配合
-  # $GITHUB_TOKEN 填在 travis-ci 的 settings 而不是这里!!!
-  - git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_PATH}" master:master
+  - sed -i "s/GITHUB_TOKEN/${GITHUB_TOKEN}/" _config.yml
+  - sed -i "s/\":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}.\"/\":beginner:Travis CI Auto Builder at `date +\"%Y-%m-%d %H:%M\"`.\"/" _config.yml
+  - hexo deploy
 # 收工提醒
 notifications:
   email:
