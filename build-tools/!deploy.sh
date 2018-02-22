@@ -6,5 +6,5 @@ git clone https://github.com/GalAster/Galaster.github.io .deploy_git &&
 cd .deploy_git && git checkout master &&
 cd ../ && mv .deploy_git/.git/ ./public/ &&
 cd ./public && git add . &&
-git commit -m "Site updated at  `date +"%Y-%m-%d %H:%M"` :octocat:" &&
+git commit -m "Site updated at `date +"%Y-%m-%d %H:%M"` :octocat:" &&
 git push --force https://github.com/GalAster/Galaster.github.io master:master

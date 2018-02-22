@@ -1,14 +1,34 @@
+<div class="post-copyright">
+  style="text-align:center;color: #ccc;font-size:14px;">
+------ 本文结束 ------
+</div>
+
 <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>{{ __('post.copyright.author') + __('symbol.colon') }} </strong>{#
-  #}{{ post.author | default(config.author) }}{#
-#}</li>
+  <span style="font-weight:blod">版权声明</span>
+  <img src="http://7xqmjb.com1.z0.glb.clouddn.com/2017020242973cc.png" >
+
+  <!--li class="post-copyright-link">
+    <strong>本文作者：</strong>
+    <a href="/" title="欢迎访问 {{ theme.author }} 的个人博客">{{ theme.author }}</a>
+  </li-->
+
+  <!--li class="post-copyright-link">
+    <strong>本文标题：</strong>
+    <a href="{{ url_for(post.permalink) }}" title="{{ post.title }}">{{ post.title }}</a>
+  </li-->
+
   <li class="post-copyright-link">
-    <strong>{{ __('post.copyright.link') + __('symbol.colon') }}</strong>
-    <a href="{{ post.url | default(post.permalink) }}" title="{{ post.title }}">{{ post.url | default(post.permalink) }}</a>
+    <strong>本文链接：</strong><a href="{{url_for(post.permalink) }}" title="{{ post.title }}">{{ post.permalink }}</a>
+    <br>
+    <strong>发布时间：</strong>{{ post.date.format("YYYY年M月D日 - HH时MM分") }}
   </li>
-  <li class="post-copyright-license">
-    <strong>{{ __('post.copyright.license_title') + __('symbol.colon') }} </strong>{#
-  #}{{ __('post.copyright.license_content', theme.post_copyright.license) }}{#
-#}</li>
+
+  <strong>版权声明： </strong>
+  <li class="post-copyright-license"><p>
+    本文由 <a href="/" title="欢迎访问 {{ theme.author }} 的个人博客">{{ theme.author }}</a> 创作，采用 
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="license" target="_blank">Creative Commons BY-NC-ND 4.0 International License</a>
+    协议授权, 如需转载, 请使用页面左边分享功能. 
+    <br>
+    <strong>转载请保留以上声明信息, 谢谢合作!</strong>
+  </p></li>
 </ul>
