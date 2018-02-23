@@ -33,7 +33,7 @@ echo "Ctrl + C 退出" && sleep 86400
 
 双击运行即可, 若跳警告, 统统无视即可
 
-<--! more -->
+<!-- more -->
 
 Win 不手操 `%Path%` 是没有 `pip` 的, 只有 `python -m pip`, 当初我学 python 被这个坑死了...
 

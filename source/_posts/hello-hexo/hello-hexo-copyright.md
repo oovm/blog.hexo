@@ -1,5 +1,5 @@
 ---
-title: Hello Hexo (版权声明)
+title: Hello Hexo — 版权声明
 abbrlink: 5a8a6c8d
 date: 2018-02-22 16:55:18
 tags:
