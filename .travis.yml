@@ -24,18 +24,10 @@ before_script:
 script:
   - hexo clean && hexo generate --silent # 静默执行命令
 after_success:
-  # - git clone https://${GITHUB_PATH} .deploy_git
-  # - cd .deploy_git && git checkout master
-  # 保留master分支的提交记录，不然每次git init的话只有1条commit
-  # - cd ../ && mv .deploy_git/.git/ ./public/
-  # - cd ./public && git add .
-  # - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"  # 提交记录包含时间 跟上面更改时区配合
-  # $GITHUB_TOKEN 填在 travis-ci 的 settings 而不是这里!!!
-  # - git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_PATH}" master:master
   - mkdir .deploy && cd .deploy
   - git clone --depth 1 --branch master --single-branch "https://${GITHUB_TOKEN}@${GITHUB_PATH}" .
   - rm -rf ./* && cp -r ../public/* .
-  - git add -A . && git commit -m ":beginner:Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
+  - git add -A . && git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`:beginner:"
   - git branch -m master && git push -q -u origin master
 # 收工提醒
 notifications:
