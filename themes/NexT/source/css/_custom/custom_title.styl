@@ -1,64 +1,50 @@
-// 时间轴样式
-.posts-collapse {
-    margin: 0px 0px;
+// 一级标题.文章
+.posts-expand .post-body h1 {
+  padding-left: 10px;
+  margin: 20px -30px 20px -30px;
+  border-left: 4px solid #00a67c;
+  background-color: #f7f7f7;
 }
-@media (max-width: 1023px) {
-    .posts-collapse {
-        margin: 50px 20px;
-    }
+// 二级标题+下划线
+.posts-expand .post-body h2 {
+    color: #2674BA;
+    padding-bottom: 0.3em;
+    line-height: 33px;
+    border-bottom: 1px solid #eaecef;
 }
-
-// 时间轴左边线条
-.posts-collapse::after {
-    margin-left: -2px;
-    background-image: linear-gradient( 180deg,
-      #f79533 0,
-      #f37055 15%,
-      #ef4e7b 30%,
-      #a166ab 44%,
-      #5073b8 58%,
-      #1098ad 72%,
-      #07b39b 86%,
-      #6dba82 100%
-    );
+.posts-expand .post-body h2:before{
+    content: "#";
+    color: #42b983;
+    margin-left: -1em;
 }
-
-// 时间轴左边线条圆点颜色
-.posts-collapse .collection-title::before {
-    background-color: rgb(0, 0, 0);
+.posts-expand h3 {
+  color: #0099CC;
 }
-// 时间轴文章标题
-.posts-collapse .post-title a {
-    color: rgb(80, 115, 184);
+.posts-expand h4:before{
+    content: ">";
+    color: #42b983;
 }
-.posts-collapse .post-title a:hover {
-    color: rgb(161, 102, 171);
+.posts-expand h4 {
+  color: #F77A0B;
 }
-// 时间轴文章标题底部虚线
-.posts-collapse .post-header:hover {
-    border-bottom-color: rgb(161, 102, 171);
+.posts-expand h5 {
+  color: #662D91;
 }
 
-// archives页面时间轴左边线条第一个圆点颜色
-.page-archive .posts-collapse .archive-move-on {
-    top: 10px;
-    opacity: 1;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-
-/* 颜色不符
-// archives页面顶部文字
-.page-archive .archive-page-counter {
-    color: rgb(255, 255, 255);
-}
-// 时间轴年份
-.posts-collapse .collection-title h1, .posts-collapse .collection-title h2 {
-    color: rgb(255, 255, 255);
-}
-// 时间轴文章标题左边圆点颜色
-.posts-collapse .post-header:hover::before {
-    background-color: rgb(161, 102, 171);
+/* 华而不实
+// 文章标题
+.page-post-detail .post-title {
+  text-align: center;
+  word-break: break-word;
+  font-weight: $posts-expand-title-font-weight
+  background-color: #b9d3ee;
+  border-radius:.3em;
+  line-height:1em;
+  padding-bottom:.12em;
+  padding-top:.12em;
+  box-shadow:2px 2px 7px #9fb6cd;
+  +mobile() {
+    font-size: 22px;
+  }
 }
 */

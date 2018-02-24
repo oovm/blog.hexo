@@ -1,6 +1,9 @@
-@import "custom_timeline.styl";  //时间轴样式
-@import "custom_boxes.styl";  //时间轴样式
-@import "custom_copyright.styl";  //版权声明样式
+@import "custom_mobile.styl";     //移动设备样式表
+@import "custom_title.styl";      //标题样式表
+@import "custom_timeline.styl";   //时间轴样式表
+@import "custom_copyright.styl";  //版权声明样式表
+@import "custom_code.styl";       //代码样式表
+@import "custom_boxes.styl";
 
 // 折叠块样式
 .hider_title{
@@ -49,23 +52,6 @@
   }
 }
 
-/* 华而不实
-// 文章标题
-.page-post-detail .post-title {
-  text-align: center;
-  word-break: break-word;
-  font-weight: $posts-expand-title-font-weight
-  background-color: #b9d3ee;
-  border-radius:.3em;
-  line-height:1em;
-  padding-bottom:.12em;
-  padding-top:.12em;
-  box-shadow:2px 2px 7px #9fb6cd;
-  +mobile() {
-    font-size: 22px;
-  }
-}
-*/
 // 主页文章添加阴影效果
 .posts-expand .post-type-normal{
   margin-top: 60px;
@@ -83,43 +69,6 @@
     background: $grey-light;
     text-align: center;
 }
-
-// 一级标题.文章
-.posts-expand .post-body h1 {
-  padding-left: 10px;
-  margin: 20px -30px 20px -30px;
-  border-left: 4px solid #00a67c;
-  background-color: #f7f7f7;
-}
-// 二级标题+下划线
-.posts-expand .post-body h2 {
-    color: #2674BA;
-    padding-bottom: 0.3em;
-    line-height: 33px;
-    border-bottom: 1px solid #eaecef;
-}
-.posts-expand .post-body h2:before{
-    content: "#";
-    color: #42b983;
-    margin-left: -1em;
-}
-.posts-expand h3 {
-  color: #0099CC;
-}
-.posts-expand h4:before{
-    content: ">";
-    color: #42b983;
-}
-.posts-expand h4 {
-  color: #F77A0B;
-}
-.posts-expand h5 {
-  color: #662D91;
-}
-
-
-
-
 
 /* 目录的超链接 */
 // 普通状态下的超链接状态
