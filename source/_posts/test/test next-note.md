@@ -1,7 +1,7 @@
 ---
 title: NexT-note 测试
 abbrlink: 5d25237
-date: 2018-02-26 18:58:20
+date: 2018-01-15 18:58:20
 tags:
   - test
 categories:
@@ -11,11 +11,11 @@ copyright: false
 
 # 测试准备
 
-### 功能描述
+## 功能描述
 
 https://github.com/iissnan/hexo-theme-next/pull/1697
 
-### 设置
+## 设置
 
 `next/_config.yml`中寻找并修改以下关键词
 
