@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033ebd62-a57b-41ab-bc1c-66e381712b3e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change beforePath="$PROJECT_DIR$/scaffolds/post.md" afterPath="$PROJECT_DIR$/scaffolds/post.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md" afterPath="$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md" afterPath="$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/unfinish/install conda.md" afterPath="$PROJECT_DIR$/source/_posts/unfinish/install conda.md" />
       <change beforePath="$PROJECT_DIR$/themes/NexT/_config.yml" afterPath="$PROJECT_DIR$/themes/NexT/_config.yml" />
+      <change beforePath="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" afterPath="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +35,7 @@
           <favorite_root url="file://$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
         </favorite_root>
         <favorite_root url="file://$PROJECT_DIR$/source/_posts/new.sh" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/source/_posts/unfinish" module="Galaster.github.io" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/source/_posts/test" module="Galaster.github.io" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
           <favorite_root url="file://$PROJECT_DIR$/source/_posts/unfinish/post.md" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
           <favorite_root url="file://$PROJECT_DIR$/source/_posts/unfinish/史上最贱数学题.md" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
           <favorite_root url="file://$PROJECT_DIR$/source/_posts/unfinish/史上最贱数学题(番外).md" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
@@ -79,24 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test next-note&amp;label.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="21">
-                <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/NexT/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="704" column="15" lean-forward="true" selection-start-line="704" selection-start-column="15" selection-end-line="704" selection-end-column="15" />
+            <state relative-caret-position="271">
+              <caret line="704" column="0" lean-forward="false" selection-start-line="704" selection-start-column="0" selection-end-line="704" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -190,7 +180,6 @@
         <option value="$PROJECT_DIR$/themes/NexT/layout/_partials/footer.swig" />
         <option value="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_timeline.styl" />
         <option value="$PROJECT_DIR$/source/_posts/unfinish/史上最贱数学题(番外).md" />
-        <option value="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" />
         <option value="$PROJECT_DIR$/new.sh" />
         <option value="$PROJECT_DIR$/themes/NexT/source/css/_common/components/post/post-eof.styl" />
         <option value="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-15.md" />
@@ -210,9 +199,11 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_mobile.styl" />
         <option value="$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_code.styl" />
-        <option value="$PROJECT_DIR$/themes/NexT/_config.yml" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md" />
+        <option value="$PROJECT_DIR$/scaffolds/post.md" />
+        <option value="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" />
+        <option value="$PROJECT_DIR$/themes/NexT/_config.yml" />
       </list>
     </option>
   </component>
@@ -251,6 +242,36 @@
               <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="scaffolds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="unfinish" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -260,16 +281,18 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="E:/Galaster.github.io-NexT" />
     <property name="settings.editor.selected.configurable" value="vcs.Subversion.SSH" />
+    <property name="SearchEverywhereHistoryKey" value="copy&#9;FILE&#9;file://E:/Galaster.github.io/themes/NexT/layout/_macro/post-copyright.swig" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Galaster.github.io\source\_posts\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Galaster.github.io\source\_posts\test" />
+      <recent name="E:\Galaster.github.io\source\_posts\unfinish" />
       <recent name="E:\Galaster.github.io" />
       <recent name="E:\Galaster.github.io\build-tools" />
       <recent name="E:\Galaster.github.io\source\404" />
-      <recent name="E:\Galaster.github.io\themes\NexT\scripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -451,12 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519450508176</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="文章::NexT-note and label 测试">
+      <created>1519461346007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1519461346007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -471,13 +500,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29584223" sideWeight="0.63442624" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29584223" sideWeight="0.7344262" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29584223" sideWeight="0.36557376" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29584223" sideWeight="0.26557377" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -526,30 +555,14 @@
     <MESSAGE value="更新::gitignore规则&#10;更新::标题样式表" />
     <MESSAGE value="文章::Anaconda 安装&#10;文章::mdit+ 测试" />
     <MESSAGE value="微调::样式表更新&#10;微调::变动到hexo分支" />
-    <option name="LAST_COMMIT_MESSAGE" value="微调::样式表更新&#10;微调::变动到hexo分支" />
+    <MESSAGE value="文章::NexT-note and label 测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="文章::NexT-note and label 测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-equation-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_boxes.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/NexT/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -640,31 +653,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scaffolds/draft.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           </first_editor>
           <second_editor />
         </state>
@@ -678,13 +671,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new.sh" />
-    <entry file="file://$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/NexT/source/css/_custom/custom_copyright.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -925,6 +911,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/layout/_third-party/math/katex.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/layout/post.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="42">
+            <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -935,20 +978,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/NexT/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="704" column="15" lean-forward="true" selection-start-line="704" selection-start-column="15" selection-end-line="704" selection-end-column="15" />
+        <state relative-caret-position="271">
+          <caret line="704" column="0" lean-forward="false" selection-start-line="704" selection-start-column="0" selection-end-line="704" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="21">
-            <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>

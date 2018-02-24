@@ -1,4 +1,4 @@
-{% if not post.nocopyright %}
+{% if post.copyright %}
 
 <!--div class="post-copyright">
   style="text-align:center;color: #ccc;font-size:14px;">

@@ -30,6 +30,8 @@ conda create -n py3 python=3.6
 
 打开 spyder 开干!
 
+<!--more-->
+
 ## 应用
 
 ### conda
