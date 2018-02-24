@@ -84,6 +84,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: NexT
 ## Plugins: https://hexo.io/plugins/
+# https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus
 markdown_it_plus:
     highlight: true
     html: true

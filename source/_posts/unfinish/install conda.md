@@ -1,9 +1,10 @@
 ---
 title: Anaconda 安装
-date: 2018-02-23 15:07:32
 tags:
   - Install
   - Python
+abbrlink: 178b903e
+date: 2018-02-23 15:07:32
 categories:
 ---
 
