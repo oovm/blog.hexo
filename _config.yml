@@ -95,7 +95,13 @@ markdown_it_plus:
     typographer:
     quotes: “”‘’
     pre_class: highlight
-
+    plugins:
+      - plugin:
+          name: markdown-it-katex-external
+          enable: true
+          options:
+            throwOnError: false
+            errorColor: "#cc0000"
 # Live2D
 ## https://github.com/xiazeyu/live2d-widget.js
 ## https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
