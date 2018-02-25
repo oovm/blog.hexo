@@ -128,3 +128,34 @@
   }
 }
 
+// 宽度增加, 占页面宽度的65%
+header{ width: 65% !important; }
+header.post-header {
+  width: auto !important;
+}
+.container .main-inner { width: 65%; }
+.content-wrap { width: calc(100% - 260px); }
+.header {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+.container .main-inner {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+.content-wrap {
+  +tablet() {
+    width: 100% !important;
+  }
+  +mobile() {
+    width: 100% !important;
+  }
+}

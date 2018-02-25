@@ -1,16 +1,17 @@
 ---
-title: read
+title: Hello Hexo (2)
 date: 2018-01-11 21:43:48
 tags:
 ---
 /next/_config.yml
 
+# 选项级定制
 
 scheme: Pisces
 
 creative_commons: by-nc-sa
 
-# 关闭愚蠢的淡入动画
+## 关闭愚蠢的淡入动画
 
 motion:
   enable: false
@@ -21,7 +22,7 @@ lazyload: true
 
 pace: true
 
-# 文章tag样式
+## 文章tag样式
 
 修改模板 
 /themes/next/layout/_macro/post.swig，搜索 `rel="tag">#`，将 `#` 换成 `<i class="fa fa-tag"></i>`
@@ -31,7 +32,7 @@ pace: true
 
 
 
-# 来个背景
+## 来个背景
 canvas_lines: true
 
 
@@ -40,15 +41,84 @@ git commit --date="Dec 15 14:13:17 2017 +0800" -am "架构::修复配置错误"
 
 
 
-# Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+## 阅读进度与书签
 
+进入next目录, 原地起个 bash 下载脚本
 
-## 书签
+```bash
+git clone https://github.com/theme-next/theme-next-bookmark.git source/lib/bookmark
+```
+
+`NexT _config.yml` 中搜索一下三个关键词, 全都改为true即可.
+
+```ymal
+b2t: true
+scrollpercent: true
+bookmark: true
+```
+
+有个`reading_progress`关键词, 感觉没啥用...和加载条`pace`效果差不多...
+
+还有个 `save_scroll` 关键词, 看起来和书签差不多, 应该都是基于cookies的...
+
+书签是有个小标记的, 比较好看, 其他不懂...
 
 ---
 
 # 脚本级定制
+
+## 页面宽度
+
+Next 默认情况下对内容的宽度的设定如下：
+
+> 700px，当屏幕宽度 < 1600px
+> 900px，当屏幕宽度 >= 1600px
+> 移动设备下，宽度自适应
+
+如果需要修改内容的宽度, 编辑`source\css_variables\custom.styl` 文件，新增变量：
+
+```css
+$content-desktop = 700px  // 修改成你期望的宽度
+$content-desktop-large = 900px // 当视窗超过 1600px 后的宽度
+```
+
+**Pisces Scheme** 有所不同, 打开 `themes\next\source\css\_schemes\Picses\_layout.styl`
+
+在最后增加这样一段
+
+```css
+// 宽度增加, 占页面宽度的65%比较合适
+header{ width: 65% !important; }
+header.post-header {
+  width: auto !important;
+}
+.container .main-inner { width: 65%; }
+.content-wrap { width: calc(100% - 260px); }
+.header {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+.container .main-inner {
+  +tablet() {
+    width: auto !important;
+  }
+  +mobile() {
+    width: auto !important;
+  }
+}
+.content-wrap {
+  +tablet() {
+    width: 100% !important;
+  }
+  +mobile() {
+    width: 100% !important;
+  }
+}
+```
 
 ## 折叠块
 
