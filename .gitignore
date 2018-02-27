@@ -9,7 +9,7 @@ source/_posts/post.md
 source/_posts/*/post.md
 
 # Idea 工程文件
-.idea/
+.idea/workspace.xml
 
 # build 工程
 node_modules/

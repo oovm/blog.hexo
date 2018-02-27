@@ -12,7 +12,7 @@ copyright: false
 1. H~2~0
 2. x^2^
 3. ++inserted++, ~~Delete~~
-4. $\KaTex$, example $ x_i + y_i = z_i$ and $y_i + z_i = 10$
+4. $\KaTex$, example $x_i + y_i = z_i$ and $y_i + z_i = 10$
 5. :smile: :joy: :stuck_out_tongue:
 6. toc&anchor(do not explain this)
 7. deflist

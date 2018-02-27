@@ -86,22 +86,24 @@ theme: NexT
 ## Plugins: https://hexo.io/plugins/
 # https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus
 markdown_it_plus:
-    highlight: true
-    html: true
-    xhtmlOut: true
-    breaks: true
-    langPrefix:
-    linkify: true
-    typographer:
-    quotes: “”‘’
-    pre_class: highlight
-    plugins:
-      - plugin:
-          name: markdown-it-katex-external
-          enable: true
-          options:
-            throwOnError: false
-            errorColor: "#cc0000"
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight
+  plugins:
+    - plugin:
+        name: markdown-it-katex
+        enable: true
+        options:
+          throwOnError: false
+          errorColor: "#cc0000"
+          unicodeTextInMathMode: true
+
 # Live2D
 ## https://github.com/xiazeyu/live2d-widget.js
 ## https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init

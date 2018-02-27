@@ -55,7 +55,8 @@ conda install tensorflow word2vec numpy --yes
 
 当分享代码的时候，同时也需要将运行环境分享给大家，执行如下命令可以将当前环境下的 package 信息存入名为 environment 的 YAML 文件中。
 
-conda env export > environment.yaml
+`conda env export > environment.yaml`
+
 同样，当执行他人的代码时，也需要配置相应的环境。这时你可以用对方分享的 YAML 文件来创建一摸一样的运行环境。
 
-conda env create -f environment.yaml
+`conda env create -f environment.yaml`

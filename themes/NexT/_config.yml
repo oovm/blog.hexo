@@ -414,8 +414,8 @@ math:
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
   # needed to full Katex support.
   katex:
-    css: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css
-    js: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js
+    css: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.0/katex.min.css
+    js: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
     # 可选择的 CDN
     # jsdelivr as default CDN, works everywhere even in China
     # cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css

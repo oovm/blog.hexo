@@ -1,2 +1,2 @@
-<link rel="stylesheet" href="{{ theme.math.katex.css }}" type="text/css">
-<script src="{{ theme.math.katex.js }}"></script>
+<!--script src="{{ theme.math.katex.js }}"></script-->
+<link rel="stylesheet" href="{{ theme.math.katex.css }}">
