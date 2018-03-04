@@ -1,12 +1,12 @@
 ---
 title: gayhub 加V认证
 copyright: true
-abbrlink: 5a8a6c8d
-date: 2017-11-11 19:02:35
 tags:
   - github
 categories:
   - 教程
+abbrlink: c15fbc2
+date: 2017-11-11 19:02:35
 ---
 
 ![](/github verified/20180227122411173.png)
