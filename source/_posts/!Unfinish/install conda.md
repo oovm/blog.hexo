@@ -3,6 +3,7 @@ title: Anaconda 安装
 tags:
   - Install
   - Python
+  - Anaconda
 abbrlink: 178b903e
 date: 2018-02-23 15:07:32
 categories:

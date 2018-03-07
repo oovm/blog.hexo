@@ -1,11 +1,14 @@
 ---
-title: 在Mathematica中运行py与js
+title: 让Mathematica与py&js快乐的玩耍
 tags:
   - Mathematica
+  - tutorial
+  - ZeroMQ
 abbrlink: 8fffae25
 date: 2018-02-23 10:35:35
 categories:
-  - 教程
+  - GALASTER’S DIMENSION
+  - CODE➤GEASS
 ---
 
 ## 安装 ZeroMQ

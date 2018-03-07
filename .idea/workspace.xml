@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="033ebd62-a57b-41ab-bc1c-66e381712b3e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/install nodejs.md" />
+    <list default="true" id="033ebd62-a57b-41ab-bc1c-66e381712b3e" name="Default" comment="微调::目录结构调整">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/28059.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/!Unfinish/github verified.md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/github verified.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/21道犹太棺材题(上).md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(上).md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/!Completed/Mathematica ExternalSession.md" afterPath="$PROJECT_DIR$/source/_posts/!Completed/Mathematica/让Mathematica与py&amp;js快乐的玩耍.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/!Unfinish/github verified.md" afterPath="$PROJECT_DIR$/source/_posts/!Completed/Github/Gayhub-加V认证.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/!Unfinish/install conda.md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/install conda.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/20180304150240.md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/常见同分异构计数.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/20180304150612.md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/Mathematica级数高级教程.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/20180304154444.md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/使用Travis-CI自动Release.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/20180304160129.md" afterPath="$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(中).md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-equation-1.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-equation-1.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-1.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-1.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-10.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-10.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-11.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-11.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-12.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-12.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-13.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-13.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-14.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-14.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-15.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-15.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-16.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-16.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-2.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-2.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-3.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-3.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-4.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-4.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-5.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-5.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-6.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-6.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-7.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-7.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-8.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-8.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-9.md" afterPath="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-9.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/hello-hexo/hello-hexo-2.md" afterPath="$PROJECT_DIR$/source/_posts/Series/hello-hexo/hello-hexo-2.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/hello-hexo/hello-hexo-copyright.md" afterPath="$PROJECT_DIR$/source/_posts/Series/hello-hexo/hello-hexo-copyright.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/hello-hexo/hello-hexo.md" afterPath="$PROJECT_DIR$/source/_posts/Series/hello-hexo/hello-hexo.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md" afterPath="$PROJECT_DIR$/source/_posts/Series/test/test markdown-it-plus.md" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/test/test next-note.md" afterPath="$PROJECT_DIR$/source/_posts/Series/test/test next-note.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,12 +96,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="20180304150240.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/20180304150240.md">
+      <file leaf-file-name="install conda.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/install conda.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="3213">
-                <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+              <first_editor relative-caret-position="798">
+                <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -82,12 +109,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="install conda.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/install conda.md">
+      <file leaf-file-name="colletion-equation-1.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Series/colletion/colletion-equation-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="224">
+                <caret line="136" column="30" lean-forward="true" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+                <folding>
+                  <marker date="1520416927762" expanded="true" signature="3408:3433" ph="{ &lt;&lt;6&gt;&gt; }" />
+                  <marker date="1520416927762" expanded="true" signature="3477:3483" ph="{ &lt;&lt;1&gt;&gt; }" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="28059.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/dictionaries/28059.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mathematica级数高级教程.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/Mathematica级数高级教程.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="21">
+                <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="25" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="21道犹太棺材题(中).md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(中).md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="168">
+                <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -99,8 +165,8 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/install nodejs.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+              <first_editor relative-caret-position="273">
+                <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -108,12 +174,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="github verified.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/github verified.md">
+      <file leaf-file-name="21道犹太棺材题(上).md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(上).md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="21">
-                <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <first_editor relative-caret-position="147">
+                <caret line="7" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -176,13 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_posts/colletion/colletion-equation-1.md" />
-        <option value="$PROJECT_DIR$/build-tools/plugins-update.sh" />
-        <option value="$PROJECT_DIR$/themes/NexT/layout/_macro/post.swig" />
-        <option value="$PROJECT_DIR$/themes/NexT/source/js/src/post-details.js" />
-        <option value="$PROJECT_DIR$/themes/NexT/source/js/src/schemes/tag.js" />
-        <option value="$PROJECT_DIR$/themes/NexT/source/js/src/schemes/fold.js" />
-        <option value="$PROJECT_DIR$/source/_posts/hello-hexo/read.md" />
         <option value="$PROJECT_DIR$/source/_posts/hello-hexo/hello-hexo-2.md" />
         <option value="$PROJECT_DIR$/themes/NexT/layout/_layout.swig" />
         <option value="$PROJECT_DIR$/themes/NexT/source/css/_schemes/Pisces/_layout.styl" />
@@ -215,18 +274,25 @@
         <option value="$PROJECT_DIR$/scaffolds/post.md" />
         <option value="$PROJECT_DIR$/themes/NexT/layout/_macro/post-copyright.swig" />
         <option value="$PROJECT_DIR$/source/_posts/test/test next-note&amp;label.md" />
-        <option value="$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md" />
-        <option value="$PROJECT_DIR$/source/_posts/test/test next-note.md" />
         <option value="$PROJECT_DIR$/build-tools/deploy.sh" />
         <option value="$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-3.md" />
         <option value="$PROJECT_DIR$/themes/NexT/README.md" />
         <option value="$PROJECT_DIR$/themes/NexT/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/20180304154444.md" />
-        <option value="$PROJECT_DIR$/source/_posts/20180304150240.md" />
         <option value="$PROJECT_DIR$/source/_posts/Normal/Mathematica ExternalSession.md" />
-        <option value="$PROJECT_DIR$/source/_posts/20180304150612.md" />
         <option value="$PROJECT_DIR$/source/_posts/!Unfinish/Gayhub-加V认证.md" />
         <option value="$PROJECT_DIR$/source/_posts/!Unfinish/github verified.md" />
+        <option value="$PROJECT_DIR$/source/_posts/20180304160129.md" />
+        <option value="$PROJECT_DIR$/source/_posts/!Completed/Mathematica ExternalSession.md" />
+        <option value="$PROJECT_DIR$/source/_posts/20180304150240.md" />
+        <option value="$PROJECT_DIR$/source/_posts/20180304150612.md" />
+        <option value="$PROJECT_DIR$/source/_posts/!Completed/让Mathematica与py&amp;js快乐的玩耍.md" />
+        <option value="$PROJECT_DIR$/source/_posts/!Completed/Gayhub-加V认证.md" />
+        <option value="$PROJECT_DIR$/source/_posts/test/test next-note.md" />
+        <option value="$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md" />
+        <option value="$PROJECT_DIR$/.idea/dictionaries/28059.xml" />
+        <option value="$PROJECT_DIR$/source/_posts/!Unfinish/install conda.md" />
+        <option value="$PROJECT_DIR$/source/_posts/Series/colletion/colletion-equation-1.md" />
       </list>
     </option>
   </component>
@@ -285,7 +351,38 @@
               <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="!Completed" type="462c0819:PsiDirectoryNode" />
+              <item name="Github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="!Completed" type="462c0819:PsiDirectoryNode" />
+              <item name="Mathematica" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
               <item name="!Unfinish" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="Series" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Galaster.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Galaster.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="Series" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,18 +396,18 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="E:/soramimi.hexo" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="SearchEverywhereHistoryKey" value="copy&#9;FILE&#9;file://E:/Galaster.github.io/themes/NexT/layout/_macro/post-copyright.swig" />
+    <property name="SearchEverywhereHistoryKey" value="20180304160129&#9;FILE&#9;file://E:/Galaster.github.io/source/_posts/20180304160129.md&#10;copy&#9;FILE&#9;file://E:/Galaster.github.io/themes/NexT/layout/_macro/post-copyright.swig" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Galaster.github.io\source\_posts\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Galaster.github.io\source\_posts\!Completed\Mathematica" />
+      <recent name="E:\Galaster.github.io\source\_posts\!Completed\Github" />
+      <recent name="E:\Galaster.github.io\source\_posts\Series" />
       <recent name="E:\Galaster.github.io\source\_posts\!Unfinish" />
-      <recent name="E:\Galaster.github.io\source\_posts\Normal" />
-      <recent name="E:\Galaster.github.io\source\_posts\test" />
-      <recent name="E:\Galaster.github.io\source\_posts\unfinish" />
-      <recent name="E:\Galaster.github.io" />
+      <recent name="E:\Galaster.github.io\source\_posts\!Completed" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -527,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520401492121</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="文章::Gayhub 加V认证">
+      <created>1520414448108</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1520414448108</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -546,14 +650,14 @@
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32290503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.4968017" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.4968017" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31843576" sideWeight="0.50479746" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31173185" sideWeight="0.49520257" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31173185" sideWeight="0.49520257" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -616,27 +720,15 @@
     <MESSAGE value="文章::同分异构计数(草稿)" />
     <MESSAGE value="修复::Tab会被渲染成4, 使用空格替换&#10;主题::代码配色更改为 normal" />
     <MESSAGE value="文章::21道犹太棺材题(上)" />
-    <option name="LAST_COMMIT_MESSAGE" value="文章::21道犹太棺材题(上)" />
+    <MESSAGE value="文章::Gayhub 加V认证" />
+    <MESSAGE value="微调::目录结构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="微调::目录结构调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -873,7 +965,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/colletion/colletion-integrate-3.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Series/colletion/colletion-integrate-3.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="42">
@@ -900,29 +992,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/test/test markdown-it-plus.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="21">
-            <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/test/test next-note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1197">
-            <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="15" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(上).md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Completed/Github/Gayhub-加V认证.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -933,29 +1003,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/20180304160129.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="189">
-            <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/20180304154444.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/常见同分异构计数.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="21">
-            <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="24" />
+            <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="15" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/20180304150612.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/使用Travis-CI自动Release.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="21">
+            <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="24" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Completed/Github/Gayhub-加V认证.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="84">
+            <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Completed/Mathematica/让Mathematica与py&amp;js快乐的玩耍.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Series/test/test next-note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="147">
+            <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Series/test/test markdown-it-plus.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/28059.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/Mathematica级数高级教程.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="21">
+            <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(上).md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="147">
+            <caret line="7" column="3" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/21道犹太棺材题(中).md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="168">
@@ -966,11 +1110,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/20180304150240.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/install nodejs.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="3213">
-            <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <first_editor relative-caret-position="273">
+            <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
@@ -980,53 +1124,23 @@
     <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/install conda.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="798">
+            <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/!Completed/Mathematica ExternalSession.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Series/colletion/colletion-equation-1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2205">
-            <caret line="105" column="52" lean-forward="true" selection-start-line="105" selection-start-column="52" selection-end-line="105" selection-end-column="52" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/install nodejs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/Gayhub-加V认证.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/!Unfinish/github verified.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="21">
-            <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-            <folding />
+          <first_editor relative-caret-position="224">
+            <caret line="136" column="30" lean-forward="true" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+            <folding>
+              <marker date="1520416927762" expanded="true" signature="3408:3433" ph="{ &lt;&lt;6&gt;&gt; }" />
+              <marker date="1520416927762" expanded="true" signature="3477:3483" ph="{ &lt;&lt;1&gt;&gt; }" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>

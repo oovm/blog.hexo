@@ -1,5 +1,5 @@
 ---
-title: Mathematica 中的级数操作
+title: Mathematica 级数高级教程
 copyright: true
 abbrlink: 5f51bc9f
 date: 2018-03-04 15:06:12

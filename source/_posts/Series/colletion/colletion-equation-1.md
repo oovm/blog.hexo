@@ -135,10 +135,12 @@ y(x) & = 2ArcCot\left[ {{{\text{e}}^{ - x}}\cot \frac{1}{2}} \right]\\
 
 ```mathematica
 tri={Sin,Cos,Tan,Cot,Sec,Csc};
-funs=(y^$$Prime])[x]==#[y[x]]&/@tri;
+funs=y'[x]==#[y[x]]&/@tri;
 Quiet@DSolve[#,{y[x]},x]&/@funs//TableForm
 ```
+
 解得:
+
 ```
 
 $$

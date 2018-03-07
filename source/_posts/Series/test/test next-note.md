@@ -3,9 +3,11 @@ title: NexT-note 测试
 abbrlink: 5d25237
 date: 2018-01-15 18:58:20
 tags:
-  - test
+  - Test
+  - Hexo
+  - Hexo-NexT
 categories:
-  - test
+  - CODE➤GEASS
 copyright: false
 ---
 

@@ -3,7 +3,8 @@ title: Gayhub 加V认证
 copyright: true
 tags:
   - github
-  - 教程
+  - tutorial
+  - BiGrid
 categories:
   - GALASTER’S DIMENSION
 abbrlink: c15fbc2
@@ -34,7 +35,7 @@ Rebase 之后还丢失认证, 除非使用专用的变基技巧...
 
 使用这个东西的原因就是 github 并不强制验证提交
 
-你可以非法获取关注, 填上大佬的邮箱, 然后commit就会被计入大佬的动态(feed流)里, 大佬莫名奇妙就被提交了
+你可以非法获取关注, 填上大佬的邮箱, 然后commit就会被计入大佬的动态里(feed流), 大佬莫名奇妙就被提交了
 
 还有, 如果你以贵司CTO身份提交一段bug代码那就好玩了...
 
@@ -98,7 +99,7 @@ From 2018-2-22-18:24
 
 **以后每次commit都要输入这个密码!**
 
-### 启动key
+### 启用key
 
 到这里就完成了, 接下来查看你的key列表:
 
@@ -121,7 +122,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-把以上部分输入github即可 , https://github.com/settings/gpg/new
+把以上部分输入github即可: [Github-GPG](https://github.com/settings/gpg/new)
 
 接下来强制启用commit签名
 
@@ -149,7 +150,7 @@ Well, 如果你使用IDE就超麻烦了, 如果你使用 Win 那就 $$\small{麻
 
 我把这个问题里的一大串过程看了一遍
 
-https://stackoverflow.com/questions/46863981/how-to-sign-git-commits-from-within-an-ide-like-intellij
+[Stackoverflow: GPG in Intellij](https://stackoverflow.com/questions/46863981/how-to-sign-git-commits-from-within-an-ide-like-intellij)
 
 首先需要把 `tty` 关掉, 输入`echo 'no-tty' >> ~/.gnupg/gpg.conf`.
 
@@ -183,7 +184,7 @@ git config --global gpg.program "C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe"
 
 虽然 Linux 动手能力很强, 但是这个还是不太好找的
 
-解决方案: https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FIDEA-127802
+解决方案: [Jetbrains: GPG in Linux](https://youtrack.jetbrains.com/oauth?state=%2Fissue%2FIDEA-127802)
 
 `git config --global gpg.program /usr/local/bin/gpg`
 
@@ -198,7 +199,7 @@ git config --global gpg.program "C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe"
 
 本来对 Mac 用户要收费的, 但我干掉了这个难题心情不错, 附赠的...
 
-解决方案: https://stackoverflow.com/questions/39494631/gpg-failed-to-sign-the-data-fatal-failed-to-write-commit-object-git-2-10-0
+解决方案: [Stackoverflow: GPG on Mac](https://stackoverflow.com/questions/39494631/gpg-failed-to-sign-the-data-fatal-failed-to-write-commit-object-git-2-10-0)
 
 ```sh
 brew install pinentry-mac
