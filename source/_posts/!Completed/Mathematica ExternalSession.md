@@ -24,10 +24,8 @@ GitGUI: https://git-scm.com/downloads
 
 ```bash
 #!/usr/bin/env bash
-conda install pyzmq ||
-python -m pip install zmq
-cd ~ && npm install zeromq &&
-mv node_modules .node_modules
+conda install pyzmq -yes || python -m pip install zmq
+cd ~ && npm install zeromq && mv node_modules .node_modules
 echo "Ctrl + C 退出" && sleep 86400
 ```
 
@@ -74,7 +72,7 @@ Bash["bash --version | head -1 | tr -d '\n'"]
 
 等会儿, 还是有点用的, 装个库什么的...
 
-装个 numpy 用用先
+装个 `numpy` 用用先
 
 ![](https://i.loli.net/2018/02/23/5a8f94da4d2b8.png)
 
