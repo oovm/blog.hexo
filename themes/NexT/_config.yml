@@ -523,7 +523,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
     enable: false
     options:
@@ -532,12 +532,12 @@ needmoreshare2:
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
-    enable: false
+    enable: true
     options:
       iconStyle: box
       boxForm: horizontal
-      position: middleRight
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      position: topRight
+      networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Reddit,Facebook,GooglePlus,Tumblr,Evernote
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -899,7 +899,7 @@ vendors:
 
   # Internal version: 3.3.0
   # https://github.com/vinta/pangu.js
-  pangu: https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js
+  pangu: //cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js
 
   # needMoreShare2
   # https://github.com/revir/need-more-share2

@@ -8,13 +8,14 @@ categories:
 ---
 travis setup releases --force
 
+```
 travis setup releases
 Username: galaster
 Password for galaster: ***********
-File to Upload: a
+File to Upload: asdfgh
 Deploy only from GalAster/Deus? |yes| yes
 Encrypt API key? |yes| yes
-
+```
 
 Username: galaster
 Password for galaster: ***********
