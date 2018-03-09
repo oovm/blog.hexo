@@ -20,4 +20,4 @@ npm install hexo-symbols-count-time --save &&
 npm install hexo-abbrlink --save && # 永久链接
 npm install hexo-all-minifier --save && # 代码压缩
 # git 部署
-npm install hexo-deployer-git --save # 已放弃
+npm install hexo-deployer-git --save

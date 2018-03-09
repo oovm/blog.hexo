@@ -9,33 +9,22 @@ branches:
     - hexo # 设置自动化部署的源码分支
 env:
  global:
-   - GITHUB_PATH: github.com/GalAster/Galaster.github.io.git
-   - GITHUB_NAME: Gal@Builder
-   - GITHUB_MAIL: galseraph@gmail.com
+   - GIT_NAME: Gal@Builder
+   - GIT_MAIL: galseraph@gmail.com
 before_install:
-  - export TZ='Asia/Shanghai' # 设置时区, 下面 commit 要用
+  - export TZ='Asia/Shanghai' # deploy commit 会用到
   - npm install -g hexo-cli
 install:
   - npm install  # 安装依赖组件
-  # - npm install hexo-deployer-git --save
-  # 已放弃, 因为可能删掉所有的 commit history
+  - cp Readme.md source/Readme.md # 添加 github Readme 文件
+  - sed -i "s~:octocat:~:beginning:~" _config.yml # 卖萌
 before_script:
   # 设置github账户信息
-  - git config --global user.name "${GITHUB_NAME}" #设置github用户名
-  - git config --global user.email "${GITHUB_MAIL}" #设置github用户邮箱
-  - cp Readme.md source/Readme.md # 添加 github Readme 文件
+  - git config --global user.name "${GIT_NAME}" #设置github用户名
+  - git config --global user.email "${GIT_MAIL}" #设置github用户邮箱
+  - cp build-tools/ssh.config ~/.ssh/config # 配置ssh秘钥
+  - echo ${GIT_RSA} > ~/.ssh/git_rsa
 script:
   - hexo generate --silent # 静默执行命令
 after_success:
-  - mkdir .deploy && cd .deploy
-  - git clone --depth 1 --branch master --single-branch "https://${GITHUB_TOKEN}@${GITHUB_PATH}" .
-  - rm -rf ./* && cp -r ../public/* .
-  - git add -A . && git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`:beginner:"
-  - git branch -m master && git push -q -u origin master
-# 收工提醒
-notifications:
-  email:
-    recipients:
-      - ${GITHUB_MAIL}
-    on_success: change
-    on_failure: always
+  - hexo deploy -g

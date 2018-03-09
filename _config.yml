@@ -136,10 +136,9 @@ all_minifier: false
 aplayer:
   meting: true
 
-#deploy:
-#  type: git
-#  repo: https://GITHUB_TOKEN@github.com/GalAster/Galaster.github.io
-#  branch: master
-#  message: ":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
-# 弃用 hexo deploy, 会导致 commit history 清空, 可能是由于 force push 的某种特性.
-# 参考 https://github.com/GalAster/Galaster.github.io/issues/2
+deploy:
+  type: git
+  repo:
+      github: git@github.com:GalAster/Galaster.github.io.git,master
+      coding: git@git.coding.net:GalAster/0x0.life.git,master
+  message: ":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
