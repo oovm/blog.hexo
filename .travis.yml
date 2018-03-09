@@ -14,7 +14,7 @@ env:
 before_install:
   # ssh 设定
   - cp build-tools/ssh.config ~/.ssh/config
-  - openssl aes-256-cbc -K $encrypted_c6f7d7451c25_key -iv $encrypted_c6f7d7451c25_iv
+  - openssl aes-256-cbc -K $encrypted_8e74c3062cc6_key -iv $encrypted_8e74c3062cc6_iv
     -in build-tools/git_rsa.enc -out ~/.ssh/git_rsa -d
   - chmod 600 ~/.ssh/git_rsa
   - eval $(ssh-agent)

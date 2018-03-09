@@ -107,3 +107,9 @@ Bash["bash --version | head -1 | tr -d '\n'"]
 Notebook 左边这个小加号是能扩展的, 未来加个 Python 语言输入, Julia 语言输入也不是不可以啊...
 
 ![](https://i.loli.net/2018/02/23/5a8f94da42687.png)
+
+---
+
+Update
+
+语言成真了啊, Mathematica 真的加入了 Python Cell 和 JavaScript Cell!
