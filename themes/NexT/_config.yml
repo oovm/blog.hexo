@@ -110,7 +110,7 @@ index_with_subtitle: true
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
+  home: /index/ || home
   about: /about/ || user
   tags: /tags/ || tags
   categories: /categories/ || th
@@ -127,14 +127,8 @@ menu_settings:
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
-
-# Schemes
-#scheme: Muse
-#scheme: Mist
+# 主题
 scheme: Pisces
-#scheme: Gemini
-
-
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
@@ -414,7 +408,7 @@ math:
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
   # needed to full Katex support.
   katex:
-    css: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.0/katex.min.css
+    css: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
     js: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
     # 可选择的 CDN
     # jsdelivr as default CDN, works everywhere even in China
@@ -535,7 +529,7 @@ needmoreshare2:
     enable: true
     options:
       iconStyle: box
-      boxForm: horizontal
+      boxForm: vertical
       position: topRight
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Reddit,Facebook,GooglePlus,Tumblr,Evernote
 
@@ -765,29 +759,13 @@ fancybox: false
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
 fastclick: false
 
-# Added switch option for separated repo in 6.0.0.
+# 惰性加载
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
 lazyload: false
 
-# Progress bar in the top during page loading.
+# 加载进度
 # Dependencies: https://github.com/theme-next/theme-next-pace
 pace: false
-# Themes list:
-#pace-theme-big-counter
-#pace-theme-bounce
-#pace-theme-barber-shop
-#pace-theme-center-atom
-#pace-theme-center-circle
-#pace-theme-center-radar
-#pace-theme-center-simple
-#pace-theme-corner-indicator
-#pace-theme-fill-left
-#pace-theme-flash
-#pace-theme-loading-bar
-#pace-theme-mac-osx
-#pace-theme-minimal
-# For example
-# pace_theme: pace-theme-center-simple
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
