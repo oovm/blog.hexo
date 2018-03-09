@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-cd .. &&
+cd .. && npm cache verify
 # 更新npm, 检查服务, 一键处理奇葩问题
-npm cache verify &&
-npm update -g &&
-npm install &&
+npm update -g && npm install
 # 解决白板 Cannot GET /
-npm install hexo-server --save &&
-npm install hexo-renderer-ejs --save &&
-npm install hexo-renderer-stylus --save &&
+npm install hexo-server --save
+npm install hexo-generator-sitemap --save
+npm install hexo-renderer-ejs --save
+npm install hexo-renderer-stylus --save
 # 使用 KaTeX 方案
 # npm uninstall hexo-renderer-marked --save &&
 npm i hexo-renderer-markdown-it-plus --save &&
