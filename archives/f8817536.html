@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.4" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.0.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="收集,积分,孪生积分," />
+
+
+<meta name="description" content="所谓孪生积分就是一种积分技巧,就是一次性算两个积分.唔,这是很常用的积分技巧啦…教科书上基本都有. 一般用于三角函数积分…就是用的多了会养成习惯…然后连简单的积分都用这个…然后就没有然后了,因为简单的考试题用基本的积分技巧就能秒了,用这个不是找事情么…  我们来研究这样一个积分: F(x)=∫c+dTri(x)a+bTri(x)dxF(x) = \int\frac{c + d\;{\text{Tr">
+<meta name="keywords" content="收集,积分,孪生积分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="积分习题XI:孪生积分">
+<meta property="og:url" content="https://0x0.life/archives/f8817536.html">
+<meta property="og:site_name" content="理宅异闻录">
+<meta property="og:description" content="所谓孪生积分就是一种积分技巧,就是一次性算两个积分.唔,这是很常用的积分技巧啦…教科书上基本都有. 一般用于三角函数积分…就是用的多了会养成习惯…然后连简单的积分都用这个…然后就没有然后了,因为简单的考试题用基本的积分技巧就能秒了,用这个不是找事情么…  我们来研究这样一个积分: F(x)=∫c+dTri(x)a+bTri(x)dxF(x) = \int\frac{c + d\;{\text{Tr">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-20T08:50:20.884Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="积分习题XI:孪生积分">
+<meta name="twitter:description" content="所谓孪生积分就是一种积分技巧,就是一次性算两个积分.唔,这是很常用的积分技巧啦…教科书上基本都有. 一般用于三角函数积分…就是用的多了会养成习惯…然后连简单的积分都用这个…然后就没有然后了,因为简单的考试题用基本的积分技巧就能秒了,用这个不是找事情么…  我们来研究这样一个积分: F(x)=∫c+dTri(x)a+bTri(x)dxF(x) = \int\frac{c + d\;{\text{Tr">
+
+
+
+
+
+
+  <link rel="canonical" href="https://0x0.life/archives/f8817536.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+  <title>积分习题XI:孪生积分 | 理宅异闻录</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">理宅异闻录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">喵喵喵?</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/index/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">32</span>
+              </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">7</span>
+              </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">35</span>
+              </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+  
+  
+  
+    
+      
+    
+    <a href="https://github.com/GalAster/galaster.github.io" class="github-corner" target="_blank" title="Follow my blog on GitHub" aria-label="Follow my blog on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+    
+      </a>
+    
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://0x0.life/archives/f8817536.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GalAster">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="理宅异闻录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">积分习题XI:孪生积分</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-15T21:20:06+08:00">2017-01-15</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/collection/" itemprop="url" rel="index"><span itemprop="name">数学题集</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="\assets\js\APlayer.min.js"> </script><p>所谓孪生积分就是一种积分技巧,就是一次性算两个积分.唔,这是很常用的积分技巧啦…教科书上基本都有.</p>
+<p>一般用于三角函数积分…就是用的多了会养成习惯…然后连简单的积分都用这个…然后就没有然后了,因为简单的考试题用基本的积分技巧就能秒了,用这个不是找事情么…</p>
+<hr>
+<p>我们来研究这样一个积分:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>∫</mo><mfrac><mrow><mi>c</mi><mo>+</mo><mi>d</mi><mspace width="0.277778em"></mspace><mrow><mtext>Tri</mtext></mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mspace width="0.277778em"></mspace><mrow><mtext>Tri</mtext></mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mfrac><mspace width="0.277778em"></mspace><mrow><mi mathvariant="normal">d</mi></mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">F(x) = \int\frac{c + d\;{\text{Tri}}(x)}{a + b\;{\text{Tri}}(x)}\;\mathrm{d}x
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.427em;"></span><span class="strut bottom" style="height:2.363em;vertical-align:-0.936em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathit">a</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord mathit">b</span><span class="mspace thickspace"></span><span class="mord"><span class="mord text"><span class="mord">Tri</span></span></span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.2em;"><svg width="400em" height="0.2em" viewbox="0 0 400000 200" preserveaspectratio="xMinYMin slice"><path d="M0 80H400000 v40H0z M0 80H400000 v40H0z"/></svg></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathit">c</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord mathit">d</span><span class="mspace thickspace"></span><span class="mord"><span class="mord text"><span class="mord">Tri</span></span></span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace thickspace"></span><span class="mord"><span class="mord mathrm">d</span></span><span class="mord mathit">x</span></span></span></span></span></p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br></pre></td><td class="code"><pre><span class="line">其中$\text&#123;Tri&#125;(x)$表示三角函数,三角函数一共有8个,但是其中有俩没啥存在感,正矢和余矢能直接化归到正弦余弦,没啥好研究的.</span><br><span class="line"></span><br><span class="line">所以我们发现这个其实就等价于求以下六个函数积分:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">\left\&#123; &#123;\frac&#123;&#123;\sin (x)&#125;&#125;&#123;&#123;a + b\sin (x)&#125;&#125;,\frac&#123;&#123;\cos (x)&#125;&#125;&#123;&#123;a + b\cos (x)&#125;&#125;,\frac&#123;&#123;\tan (x)&#125;&#125;&#123;&#123;a + b\tan (x)&#125;&#125;,\frac&#123;&#123;\cot (x)&#125;&#125;&#123;&#123;a + b\cot (x)&#125;&#125;,\frac&#123;&#123;\sec (x)&#125;&#125;&#123;&#123;a + b\sec (x)&#125;&#125;,\frac&#123;&#123;\csc (x)&#125;&#125;&#123;&#123;a + b\csc (x)&#125;&#125;&#125; \right\&#125;  \\</span><br><span class="line">= \left\&#123; &#123;\frac&#123;1&#125;&#123;&#123;a\csc (x) + b&#125;&#125;,\frac&#123;1&#125;&#123;&#123;a\sec (x) + b&#125;&#125;,\frac&#123;1&#125;&#123;&#123;a\cot (x) + b&#125;&#125;,\frac&#123;1&#125;&#123;&#123;a\tan (x) + b&#125;&#125;,\frac&#123;1&#125;&#123;&#123;a\cos (x) + b&#125;&#125;,\frac&#123;1&#125;&#123;&#123;a\sin (x) + b&#125;&#125;&#125; \right\&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">等会儿,我想多了,余切,正割和余割也能化归,其实只要积前三个就行了:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">\left\&#123; &#123;\frac&#123;&#123;c + d\cot (x)&#125;&#125;&#123;&#123;a + b\cot (x)&#125;&#125;,\frac&#123;&#123;c + d\sec (x)&#125;&#125;&#123;&#123;a + b\sec (x)&#125;&#125;,\frac&#123;&#123;c + d\csc (x)&#125;&#125;&#123;&#123;a + b\csc (x)&#125;&#125;&#125; \right\&#125;\\</span><br><span class="line">= \left\&#123; &#123;\frac&#123;&#123;c\tan (x) + d&#125;&#125;&#123;&#123;a\tan (x) + b&#125;&#125;,\frac&#123;&#123;c\cos (x) + d&#125;&#125;&#123;&#123;a\cos (x) + b&#125;&#125;,\frac&#123;&#123;c\sin (x) + d&#125;&#125;&#123;&#123;a\sin (x) + b&#125;&#125;&#125; \right\&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">我们知道这些积分总是可以积出来的,因为万能代换嘛,转化为多项式积分,多项式积分总是存在原函数的.但是简单情况还好,复杂情况比如这三道这么做的话........</span><br><span class="line"></span><br><span class="line">所以就到孪生积分法的Show Time了:</span><br><span class="line"></span><br><span class="line">设:</span><br><span class="line"></span><br><span class="line">$$ \begin&#123;aligned&#125;</span><br><span class="line">&#123;P_1&#125;(a,b) &amp;= \int &#123;\frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a + b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125;\\</span><br><span class="line">&#123;Q_1&#125;(a,b) &amp;= \int &#123;\frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a - b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">两式相加:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;f_1&#125;(a,b) &amp;= &#123;P_1&#125;(a,b) + &#123;Q_1&#125;(a,b) \\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a + b\sin x&#125;&#125;+\frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a - b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125;\\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;2a\sin x&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125;&#123;&#123;\sin &#125;^2&#125;x&#125;&#125;\mathrm&#123;d&#125;x&#125;\\</span><br><span class="line">&amp;= - \frac&#123;&#123;2a&#125;&#125;&#123;b&#125;\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;(b\cos x)&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125; + &#123;b^2&#125;&#123;&#123;\cos &#125;^2&#125;x&#125;&#125;&#125;\\</span><br><span class="line">&amp;= \frac&#123;&#123; - 2&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;\frac&#123;a&#125;&#123;b&#125;\arctan \frac&#123;&#123;b\cos x&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">两式相减:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;g_1&#125;(a,b)&amp;= &#123;P_1&#125;(a,b) - &#123;Q_1&#125;(a,b)\\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a + b\sin x&#125;&#125; - \frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a - b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123; - 2b\sin x&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125;&#123;&#123;\sin &#125;^2&#125;x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \frac&#123;2&#125;&#123;b&#125;\int &#123;\frac&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125;&#123;&#123;\sin &#125;^2&#125;x - &#123;a^2&#125;&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125;&#123;&#123;\sin &#125;^2&#125;x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \frac&#123;2&#125;&#123;b&#125;\int &#123;\mathrm&#123;d&#125;x&#125; - \frac&#123;&#123;2&#123;a^2&#125;&#125;&#125;&#123;b&#125;\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;x&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125;&#123;&#123;\sin &#125;^2&#125;x&#125;&#125;&#125; \\</span><br><span class="line">&amp;= \frac&#123;2&#125;&#123;b&#125;x + \frac&#123;&#123;2&#123;a^2&#125;&#125;&#125;&#123;b&#125;\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;(\cot x)&#125;&#125;&#123;&#123;&#123;a^2&#125;&#123;&#123;\csc &#125;^2&#125;x - &#123;b^2&#125;&#125;&#125;&#125; \\</span><br><span class="line">&amp;= \frac&#123;2&#125;&#123;b&#125;x + \frac&#123;&#123;2a&#125;&#125;&#123;b&#125;\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;(a\cot x)&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125; + &#123;a^2&#125;&#123;&#123;\cot &#125;^2&#125;x&#125;&#125;&#125; \\</span><br><span class="line">&amp;= \frac&#123;2&#125;&#123;b&#125;\left( &#123;x + \frac&#123;a&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;\arctan \frac&#123;&#123;a\cot x&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;&#125; \right)</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">解个方程就能得到各自的积分了,比万能代换或者去凑三角恒等式快得多了.</span><br><span class="line"></span><br><span class="line">Well,可是还缺了一半,再积一下吗?不用了,其实已经出来了:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;P_1&#125;(a,b) &amp;= \int &#123;\frac&#123;&#123;\sin x&#125;&#125;&#123;&#123;a + b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \frac&#123;1&#125;&#123;b&#125;\int &#123;\frac&#123;&#123;a + b\sin x - a&#125;&#125;&#123;&#123;a + b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \frac&#123;x&#125;&#123;b&#125; - \frac&#123;a&#125;&#123;b&#125;\int &#123;\frac&#123;1&#125;&#123;&#123;a + b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">综上所述,最终化简后的结果是:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;I_&#123;\sin &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\sin x&#125;&#125;&#123;&#123;a + b\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= d&#123;P_1&#125;(a,b) + \frac&#123;c&#125;&#123;a&#125;\left( &#123;x - b&#123;P_1&#125;(a,b)&#125; \right)\\</span><br><span class="line">&amp;= \frac&#123;d&#125;&#123;b&#125;x + \frac&#123;&#123;2(bc - ad)&#125;&#125;&#123;&#123;b\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;\arctan \left( &#123;\frac&#123;&#123;a\tan (x/2) + b&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;&#125; \right)\\</span><br><span class="line">&#123;I_&#123;\csc &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\csc x&#125;&#125;&#123;&#123;a + b\csc x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;d + c\sin x&#125;&#125;&#123;&#123;b + a\sin x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \frac&#123;c&#125;&#123;a&#125;x + \frac&#123;&#123;2(ad - bc)&#125;&#125;&#123;&#123;a\sqrt &#123;&#123;b^2&#125; - &#123;a^2&#125;&#125; &#125;&#125;\arctan \left( &#123;\frac&#123;&#123;a + b\tan (x/2)&#125;&#125;&#123;&#123;\sqrt &#123;&#123;b^2&#125; - &#123;a^2&#125;&#125; &#125;&#125;&#125; \right)</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">设:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;P_2&#125;(a,b) &amp;= \int &#123;\frac&#123;&#123;\cos x&#125;&#125;&#123;&#123;a + b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125;\\</span><br><span class="line">&#123;Q_2&#125;(a,b) &amp;= \int &#123;\frac&#123;&#123;\cos x&#125;&#125;&#123;&#123;a - b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">两式相加:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;f_2&#125;(a,b)&amp;= &#123;P_2&#125;(a,b) + &#123;Q_2&#125;(a,b)\\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;\cos x&#125;&#125;&#123;&#123;a + b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125; + \int &#123;\frac&#123;&#123;\cos x&#125;&#125;&#123;&#123;a - b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= 2a\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;x&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125;&#123;&#123;\cos &#125;^2&#125;x&#125;&#125;&#125; \\</span><br><span class="line">&amp;= 2a\int &#123;\frac&#123;1&#125;&#123;&#123;&#123;a^2&#125;&#123;&#123;\sec &#125;^2&#125;x - &#123;b^2&#125;&#125;&#125;\frac&#123;&#123;\mathrm&#123;d&#125;x&#125;&#125;&#123;&#123;&#123;&#123;\cos &#125;^2&#125;x&#125;&#125;&#125; \\</span><br><span class="line">&amp;= 2\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;(a\tan x)&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125; + &#123;a^2&#125;&#123;&#123;\tan &#125;^2&#125;x&#125;&#125;&#125; \\</span><br><span class="line">&amp;= \frac&#123;2&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;\arctan \frac&#123;&#123;a\tan x&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">两式相减:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;g_2&#125;(a,b) &amp;= &#123;P_2&#125;(a,b) - &#123;Q_2&#125;(a,b)\\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;\cos x&#125;&#125;&#123;&#123;a + b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125; - \int &#123;\frac&#123;&#123;\cos x&#125;&#125;&#123;&#123;a - b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= -2 b \int \frac&#123;\cos ^2(x) \mathrm&#123;d&#125;x&#125;&#123;a^2-b^2 \cos ^2(x)&#125; \\</span><br><span class="line">&amp;= - 2\int &#123;\frac&#123;&#123;\mathrm&#123;d&#125;(b\sin x)&#125;&#125;&#123;&#123;&#123;a^2&#125; - &#123;b^2&#125; + &#123;b^2&#125;&#123;&#123;\sin &#125;^2&#125;x&#125;&#125;&#125; \\</span><br><span class="line">&amp;= - \frac&#123;2&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;\arctan \frac&#123;&#123;b\sin x&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">然后一样的步骤后可以得到:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">I_&#123;\cos &#125; &amp;= \int &#123;\frac&#123;&#123;c + d\cos x&#125;&#125;&#123;&#123;a + b\cos x&#125;&#125;\mathrm&#123;d&#125;x&#125; = \frac&#123;\mathrm&#123;d&#125;x&#125;&#123;b&#125; + \frac&#123;&#123;2(ad - bc)&#125;&#125;&#123;&#123;b\sqrt &#123;&#123;b^2&#125; - &#123;a^2&#125;&#125; &#125;&#125;&#123;\tanh ^&#123; - 1&#125;&#125;\left( &#123;\frac&#123;&#123;(a - b)\tan (x/2)&#125;&#125;&#123;&#123;\sqrt &#123;&#123;b^2&#125; - &#123;a^2&#125;&#125; &#125;&#125;&#125; \right)\\</span><br><span class="line">I_&#123;\sec &#125; &amp;= \int &#123;\frac&#123;&#123;c + d\sec x&#125;&#125;&#123;&#123;a + b\sec x&#125;&#125;\mathrm&#123;d&#125;x&#125; = \frac&#123;&#123;cx&#125;&#125;&#123;a&#125; + \frac&#123;&#123;2(bc - ad)&#125;&#125;&#123;&#123;a\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;&#123;\tanh ^&#123; - 1&#125;&#125;\left( &#123;\frac&#123;&#123;(b - a)\tan (x/2)&#125;&#125;&#123;&#123;\sqrt &#123;&#123;a^2&#125; - &#123;b^2&#125;&#125; &#125;&#125;&#125; \right)</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">这个反倒更加简单,设:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;P_3&#125;(a,b) &amp;= \int &#123;\frac&#123;&#123;\tan x&#125;&#125;&#123;&#123;a + b\tan x&#125;&#125;\mathrm&#123;d&#125;x&#125;\\</span><br><span class="line">&#123;Q_3&#125;(a,b) &amp;= \int &#123;\frac&#123;1&#125;&#123;&#123;a + b\tan x&#125;&#125;\mathrm&#123;d&#125;x&#125;</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">两式相加:</span><br><span class="line"></span><br><span class="line">$$&#123;f_3&#125;(a,b) = a&#123;Q_3&#125;(a,b) + b&#123;P_3&#125;(a,b) = x$$</span><br><span class="line"></span><br><span class="line">两式相减:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;g_3&#125;(a,b) &amp;= b&#123;Q_3&#125;(a,b) - a&#123;P_3&#125;(a,b)\\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;b - a\tan x&#125;&#125;&#123;&#123;a + b\tan x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;\frac&#123;b&#125;&#123;a&#125; - \tan x&#125;&#125;&#123;&#123;1 + \frac&#123;b&#125;&#123;a&#125;\tan x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \int &#123;\tan \left( &#123;\arctan \frac&#123;b&#125;&#123;a&#125; - x&#125; \right)\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \ln \left| &#123;\cos \left( &#123;\arctan \frac&#123;b&#125;&#123;a&#125; - x&#125; \right)&#125; \right|</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">综上所述:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;I_&#123;\tan &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\tan x&#125;&#125;&#123;&#123;a + b\tan x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= d&#123;P_3&#125;(a,b) + c&#123;Q_3&#125;(a,b)\\</span><br><span class="line">&amp;= \frac&#123;&#123;ac + bd&#125;&#125;&#123;&#123;&#123;a^2&#125; + &#123;b^2&#125;&#125;&#125;x + \frac&#123;&#123;bc - ad&#125;&#125;&#123;&#123;&#123;a^2&#125; + &#123;b^2&#125;&#125;&#125;\log (a\cos x + b\sin x)\\</span><br><span class="line">&#123;I_&#123;\cot &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\cot x&#125;&#125;&#123;&#123;a + b\cot x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \int &#123;\frac&#123;&#123;d + c\tan x&#125;&#125;&#123;&#123;b + a\tan x&#125;&#125;\mathrm&#123;d&#125;x&#125; \\</span><br><span class="line">&amp;= \frac&#123;&#123;ac + bd&#125;&#125;&#123;&#123;&#123;a^2&#125; + &#123;b^2&#125;&#125;&#125;x + \frac&#123;&#123;ad - bc&#125;&#125;&#123;&#123;&#123;a^2&#125; + &#123;b^2&#125;&#125;&#125;\log (a\sin x + b\cos x)</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">还没完呢,是不是得考虑下$a = b$时的积分?此时下面的系数可以直接提出来,所以就是:</span><br><span class="line"></span><br><span class="line">$$\begin&#123;aligned&#125;</span><br><span class="line">&#123;I_&#123;\sin &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\sin x&#125;&#125;&#123;&#123;1 + \sin x&#125;&#125;\mathrm&#123;d&#125;x&#125; = \frac&#123;&#123;2(c - d)&#125;&#125;&#123;&#123;\cot (x/2) + 1&#125;&#125; + \mathrm&#123;d&#125;x\\</span><br><span class="line">&#123;I_&#123;\csc &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\csc x&#125;&#125;&#123;&#123;1 + \csc x&#125;&#125;\mathrm&#123;d&#125;x&#125; = \frac&#123;&#123;2(d - c)&#125;&#125;&#123;&#123;\cot (x/2) + 1&#125;&#125; + cx\\</span><br><span class="line">&#123;I_&#123;\cos &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\cos x&#125;&#125;&#123;&#123;1 + \cos x&#125;&#125;\mathrm&#123;d&#125;x&#125; = (c - d)\tan \left( &#123;\frac&#123;x&#125;&#123;2&#125;&#125; \right) + \mathrm&#123;d&#125;x\\</span><br><span class="line">&#123;I_&#123;\sec &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\sec x&#125;&#125;&#123;&#123;1 + \sec x&#125;&#125;\mathrm&#123;d&#125;x&#125; = (d - c)\tan \left( &#123;\frac&#123;x&#125;&#123;2&#125;&#125; \right) + cx\\</span><br><span class="line">&#123;I_&#123;\tan &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\tan x&#125;&#125;&#123;&#123;1 + \tan x&#125;&#125;\mathrm&#123;d&#125;x&#125; = \frac&#123;&#123;c - d&#125;&#125;&#123;2&#125;\log (\sin x + \cos x) + \frac&#123;&#123;c + d&#125;&#125;&#123;2&#125;x\\</span><br><span class="line">&#123;I_&#123;\cot &#125;&#125; &amp;= \int &#123;\frac&#123;&#123;c + d\cot x&#125;&#125;&#123;&#123;1 + \cot x&#125;&#125;\mathrm&#123;d&#125;x&#125; = \frac&#123;&#123;d - c&#125;&#125;&#123;2&#125;\log (\sin x + \cos x) + \frac&#123;&#123;c + d&#125;&#125;&#123;2&#125;x</span><br><span class="line">\end&#123;aligned&#125;$$</span><br><span class="line"></span><br><span class="line">其实吧,也不用重新积,一般这种情景下,除零错误是能通过求极限来化简的.</span><br><span class="line"></span><br><span class="line">还算基础吧,实在不会的话,先令一个为1,然后在求另一个趋于1时候的极限.</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/收集/" rel="tag"><i class="fa fa-tag"></i> 收集</a>
+          
+            <a href="/tags/integrate/" rel="tag"><i class="fa fa-tag"></i> 积分</a>
+          
+            <a href="/tags/孪生积分/" rel="tag"><i class="fa fa-tag"></i> 孪生积分</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/archives/40991628.html" rel="next" title="积分习题X:格拉瑟主定理">
+                <i class="fa fa-chevron-left"></i> 积分习题X:格拉瑟主定理
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/archives/a22d89a2.html" rel="prev" title="积分习题XII:孪生积分(2)">
+                积分习题XII:孪生积分(2) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="GalAster" />
+            
+              <p class="site-author-name" itemprop="name">GalAster</p>
+              <p class="site-description motion-element" itemprop="description">爱数学,爱编程,爱游戏,爱动漫</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">32</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/GalAster" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:galaster@foxmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-pencil"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">GalAster</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/GalAster/Galaster.github.io-NexT">GalAster Flavored NexT.Pisces</a> v6.0.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.4"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <!--script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script-->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+   
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "vertical";
+      
+          flOptions.position = "topRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Linkedin,Reddit,Facebook,GooglePlus,Tumblr,Evernote";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+  
+  
+    
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
+  <script type="text/javascript">pangu.spacingPage();</script>
+
+
+  
+
+  
+
+  
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#more");
+  
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":75,"height":150,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.2}});</script></body>
+</html>
