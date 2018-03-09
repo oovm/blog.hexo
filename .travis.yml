@@ -22,9 +22,13 @@ before_script:
   # 设置github账户信息
   - git config --global user.name "${GIT_NAME}" #设置github用户名
   - git config --global user.email "${GIT_MAIL}" #设置github用户邮箱
-  - cp build-tools/ssh.config ~/.ssh/config # 配置ssh秘钥
-  - echo ${GIT_RSA} > ~/.ssh/git_rsa
 script:
-  - hexo generate --silent # 静默执行命令
+  # 配置ssh秘钥
+  - cp build-tools/ssh.config ~/.ssh/config
+  - openssl aes-256-cbc -K $encrypted_c6f7d7451c25_key -iv $encrypted_c6f7d7451c25_iv
+    -in build-tools/git_rsa.enc -out ~/.ssh/git_rsa -d
+  - chmod 600 ~/.ssh/git_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/git_rsa
 after_success:
-  - hexo deploy -g
+  - hexo deploy
