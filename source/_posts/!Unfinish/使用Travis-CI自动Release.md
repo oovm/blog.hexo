@@ -23,3 +23,21 @@ File to Upload: a
 Deploy only from GalAster/Geis? |yes| yes
 Deploy from test branch? |yes| no
 Encrypt API key? |yes| no
+
+
+
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0644 for '/home/travis/.ssh/git_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+bad permissions: ignore key: /home/travis/.ssh/git_rsa
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+```
+
+
+sudo apt install ruby ruby-dev
+sudo gem install travis
