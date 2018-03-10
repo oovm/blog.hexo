@@ -137,8 +137,10 @@ aplayer:
   meting: true
 
 deploy:
-  type: git
-  repo:
-      github: git@github.com:GalAster/Galaster.github.io.git,master
-      coding: git@git.coding.net:GalAster/0x0.life.git,master
-  message: ":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."
+  - type: git
+    repo:
+        github: git@github.com:GalAster/Galaster.github.io.git,master
+        coding: git@git.coding.net:GalAster/0x0.life.git,master
+    name: Gal@Builder
+    email: galseraph@gmail.com
+    message: ":octocat:Site updated at {{ now('YYYY-MM-DD HH:mm:ss') }}."

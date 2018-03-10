@@ -23,11 +23,12 @@ install:
   - npm install -g hexo-cli
   - npm install  # 安装依赖组件
   - cp Readme.md source/Readme.md # 添加 github Readme 文件
-  - sed -i "s~:octocat:~:beginning:~" _config.yml # 卖萌
+  - sed -i "s~:octocat:~:beginner:~" _config.yml # 卖萌
 before_script:
   # 设置github账户信息
   - git config --global user.name "${GIT_NAME}" #设置github用户名
   - git config --global user.email "${GIT_MAIL}" #设置github用户邮箱
   - export TZ='Asia/Shanghai' # deploy commit 会用到
 script:
-  - hexo generate -deploy
+  - git clone --depth 1 --branch master --single-branch git@github.com:GalAster/Galaster.github.io.git .deploy_git
+  - hexo deploy -generate --debug
