@@ -1,4 +1,4 @@
-<script src="\assets\js\APlayer.min.js"> </script>'use strict';
+<script src="/assets/js/APlayer.min.js"> </script>'use strict';
 ​
 var Canvas = require("canvas");
 var cloud = require("d3-cloud");
