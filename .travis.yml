@@ -30,4 +30,4 @@ before_script:
   - git config --global user.email "${GIT_MAIL}" #设置github用户邮箱
   - export TZ='Asia/Shanghai' # deploy commit 会用到
 script:
-  - hexo generate －deploy
+  - hexo generate -deploy
