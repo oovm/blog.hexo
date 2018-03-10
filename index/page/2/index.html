@@ -228,7 +228,7 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">32</span>
+            <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">33</span>
               </a>
         </li>
       
@@ -242,7 +242,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">35</span>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">37</span>
               </a>
         </li>
       
@@ -282,6 +282,146 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://0x0.life/archives/5f51bc9f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="GalAster">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="理宅异闻录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/archives/5f51bc9f.html" itemprop="url">Mathematica 级数高级教程</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-04T15:06:12+08:00">2018-03-04</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <script src="\assets\js\APlayer.min.js"> </script><h2 id="级数反演"><a class="markdownIt-Anchor" href="#级数反演"></a> 级数反演</h2>
+<p>Rest[CoefficientList[<br>
+InverseSeries[Series[2<em>Log[1 + z] - z, {z, 0, max}], z], z]]</em><br>
+Range[max]!<br>
+Rest@Block[{n = 18},<br>
+CoefficientList[InverseSeries[Series[1 + 2 r - E^r, {r, 0, n}], z],<br>
+z]*Range[0, n]!]<br>
+Block[{n = 18},<br>
+n! SeriesCoefficient[InverseSeries[Series[1 + 2 f - E^f, {f, 0, n}]],<br>
+n]]</p>
+<h2 id="双重复合"><a class="markdownIt-Anchor" href="#双重复合"></a> 双重复合</h2>
+<p>n = 10; a[x_] = Sum[c[k] k! x^k, {k, 1, n, 2}];</p>
+<p>sa = Series[a[x], {x, 0, n}];</p>
+<p>coes = CoefficientList[<br>
+ComposeSeries[sa, sa] - Series[ArcTan[x], {x, 0, n}], x] // Rest;</p>
+<p>eq = Reduce[((# == 0) &amp; /@ coes)];<br>
+Table[c[k] k!, {k, 1, n, 2}] /. First[Solve[eq]]</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -922,146 +1062,11 @@ S(x)&amp;=A(z^2)-1
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://0x0.life/archives/178b903e.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GalAster">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="理宅异闻录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/archives/178b903e.html" itemprop="url">Anaconda 安装</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-23T15:07:32+08:00">2018-02-23</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="安装-anaconda"><a class="markdownIt-Anchor" href="#安装-anaconda"></a> 安装 Anaconda</h2>
-<p>到清华镜像站下载最新 Anaconda 安装包, Date 倒序排列即可.</p>
-<p><a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a></p>
-<p>然后全局安装, 第二个最新 Python 勾上</p>
-<h2 id="配置-anaconda"><a class="markdownIt-Anchor" href="#配置-anaconda"></a> 配置 Anaconda</h2>
-<!--�0-->
-<p>接下来就没bash什么事了, 切换到新搞的python3环境, 然后我看看, jupyterlab,spyder和vscode走起,其他不要了.</p>
-<p>打开 spyder 开干!</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/archives/178b903e.html#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/index/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/index/">1</a><span class="page-number current">2</span><a class="page-number" href="/index/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/7/">7</a><a class="extend next" rel="next" href="/index/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/index/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/index/">1</a><span class="page-number current">2</span><a class="page-number" href="/index/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/index/page/8/">8</a><a class="extend next" rel="next" href="/index/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1108,7 +1113,7 @@ S(x)&amp;=A(z^2)-1
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-count">37</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1212,7 +1217,9 @@ S(x)&amp;=A(z^2)-1
                     
                       
                     
-                    <span class="site-state-item-count">32</span>
+                      
+                    
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1512,8 +1519,8 @@ S(x)&amp;=A(z^2)-1
   
     bookmark.loadBookmark();
   
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":75,"height":150,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.2}});</script></body>
+<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":75,"height":150,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.2}});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 </html>
