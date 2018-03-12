@@ -1,4 +1,4 @@
-<script src="/assets/js/APlayer.min.js"> </script>
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>
 /**
  * Copyright (C) 2011 Hakim El Hattab, http://hakim.se
  * 
