@@ -2,8 +2,10 @@
 cd .. && npm cache verify
 # 更新npm, 检查服务, 一键处理奇葩问题
 npm update -g && npm install
-# 解决白板 Cannot GET /
+# Hexo 本地调试套件
+npm install hexo-cli -g
 npm install hexo-server --save
+# 解决白板 Cannot GET /
 npm install hexo-generator-sitemap --save
 npm install hexo-renderer-ejs --save
 npm install hexo-renderer-stylus --save
