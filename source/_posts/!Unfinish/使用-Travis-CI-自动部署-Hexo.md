@@ -1,9 +1,10 @@
 ---
 title: 使用 Travis CI 自动部署 Hexo
+copyright: true
+abbrlink: 6c332584
 date: 2018-03-12 21:21:20
 tags:
 categories:
-copyright: true
 ---
 
 

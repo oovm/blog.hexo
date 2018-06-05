@@ -1,9 +1,10 @@
 ---
 title: x = cos x
+copyright: true
+abbrlink: ba2637fc
 date: 2018-04-30 23:58:17
 tags:
 categories:
-copyright: true
 ---
 
 ### 玩计算器的发现
